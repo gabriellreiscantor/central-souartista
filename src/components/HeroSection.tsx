@@ -2,7 +2,6 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { DownloadButtons } from './DownloadButtons';
 import { DollarSign, Users } from 'lucide-react';
-import appIcon from '@/assets/app-icon.png';
 import testimonialAvatar1 from '@/assets/testimonial-avatar-1.jpg';
 import testimonialAvatar2 from '@/assets/testimonial-avatar-2.jpg';
 import testimonialAvatar3 from '@/assets/testimonial-avatar-3.jpg';
@@ -31,18 +30,9 @@ export const HeroSection: React.FC = () => {
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-8 animate-fade-in-up">
               <DollarSign className="w-4 h-4 text-primary" />
               <span className="text-sm text-white/90 font-medium">{t.hero.badge}</span>
-            </div>
-
-            {/* App Icon */}
-            <div className="flex justify-center lg:justify-start mb-6 animate-fade-in-up stagger-1">
-              <img 
-                src={appIcon} 
-                alt="SouArtista App" 
-                className="w-16 h-16 rounded-2xl shadow-lg shadow-primary/30"
-              />
             </div>
 
             {/* Headline */}
