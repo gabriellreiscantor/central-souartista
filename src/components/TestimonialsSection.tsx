@@ -1,12 +1,14 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { TestimonialCard } from './TestimonialCard';
+import testimonialAvatar1 from '@/assets/testimonial-avatar-1.jpg';
 
 const testimonials = [
   {
     name: 'João Mendes',
     handle: '@joaomendes_music',
     content: 'Finalmente consigo saber exatamente quanto ganho por mês. O SouArtista mudou minha vida financeira como músico.',
+    avatar: testimonialAvatar1,
   },
   {
     name: 'Ana Silva',
@@ -62,6 +64,7 @@ export const TestimonialsSection: React.FC = () => {
               name={testimonial.name}
               handle={testimonial.handle}
               content={testimonial.content}
+              avatar={testimonial.avatar}
             />
           ))}
         </div>
