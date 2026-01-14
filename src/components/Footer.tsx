@@ -2,17 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
+import { DownloadModal } from './DownloadModal';
 import { Instagram, Youtube } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = React.useState(false);
 
   const footerLinks = {
     product: [
       { label: t.footer.features, path: '/funcionalidades' },
       { label: t.footer.pricing, path: '/precos' },
-      { label: t.footer.download, path: '/download' },
+      { label: t.footer.download, path: null, onClick: () => setIsDownloadModalOpen(true) },
     ],
     company: [
       { label: t.footer.about, path: '/sobre' },
@@ -59,14 +61,23 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-4">{t.footer.product}</h4>
             <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.path}>
-                  <Link 
-                    to={link.path}
-                    className="text-white/60 hover:text-white transition-smooth text-sm"
-                  >
-                    {link.label}
-                  </Link>
+              {footerLinks.product.map((link, index) => (
+                <li key={link.path || index}>
+                  {link.path ? (
+                    <Link 
+                      to={link.path}
+                      className="text-white/60 hover:text-white transition-smooth text-sm"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <button
+                      onClick={link.onClick}
+                      className="text-white/60 hover:text-white transition-smooth text-sm"
+                    >
+                      {link.label}
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>
@@ -142,6 +153,11 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <DownloadModal
+        open={isDownloadModalOpen}
+        onOpenChange={setIsDownloadModalOpen}
+      />
     </footer>
   );
 };
