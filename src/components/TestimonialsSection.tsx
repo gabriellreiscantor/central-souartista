@@ -8,43 +8,13 @@ import testimonialAvatar4 from '@/assets/testimonial-avatar-4.jpg';
 import testimonialAvatar5 from '@/assets/testimonial-avatar-5.jpg';
 import testimonialAvatar6 from '@/assets/testimonial-avatar-6.jpg';
 
-const testimonials = [
-  {
-    name: 'João Mendes',
-    handle: '@joaomendes_music',
-    content: 'Finalmente consigo saber exatamente quanto ganho por mês. O SouArtista mudou minha vida financeira como músico.',
-    avatar: testimonialAvatar1,
-  },
-  {
-    name: 'Ana Silva',
-    handle: '@anasilvamusic',
-    content: 'O simulador de nota fiscal me salvou! Agora sei exatamente quanto vou receber líquido antes de fechar qualquer show.',
-    avatar: testimonialAvatar2,
-  },
-  {
-    name: 'Ricardo Costa',
-    handle: '@ricardocosta_',
-    content: 'Gerenciar minha banda nunca foi tão fácil. Todos os pagamentos organizados e a galera sempre sabe quando vai receber.',
-    avatar: testimonialAvatar3,
-  },
-  {
-    name: 'Luísa Pereira',
-    handle: '@luisap_sax',
-    content: 'Uso há 6 meses e já economizei horas de trabalho com planilhas. Super recomendo para qualquer músico profissional.',
-    avatar: testimonialAvatar6,
-  },
-  {
-    name: 'Marcos Gomes',
-    handle: '@marcosgomes_drums',
-    content: 'A agenda integrada com as finanças é genial. Vejo meus shows e já sei quanto vou faturar no mês.',
-    avatar: testimonialAvatar5,
-  },
-  {
-    name: 'Carla Freitas',
-    handle: '@carlafreitas',
-    content: 'O melhor investimento que fiz na minha carreira. O app é lindo, fácil de usar e resolve todos os meus problemas.',
-    avatar: testimonialAvatar4,
-  },
+const avatars = [
+  testimonialAvatar1,
+  testimonialAvatar2,
+  testimonialAvatar3,
+  testimonialAvatar6,
+  testimonialAvatar5,
+  testimonialAvatar4,
 ];
 
 export const TestimonialsSection: React.FC = () => {
@@ -68,13 +38,13 @@ export const TestimonialsSection: React.FC = () => {
 
         {/* Testimonials Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
+          {t.testimonials.items.map((testimonial, index) => (
             <TestimonialCard
               key={index}
               name={testimonial.name}
               handle={testimonial.handle}
               content={testimonial.content}
-              avatar={testimonial.avatar}
+              avatar={avatars[index]}
             />
           ))}
         </div>
