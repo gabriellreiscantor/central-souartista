@@ -27,7 +27,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
   return (
     <>
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="sm:max-w-md bg-white border-0 rounded-3xl p-8 shadow-2xl">
+        <DialogContent className="sm:max-w-md bg-white border-0 rounded-3xl p-8 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)]">
           <DialogHeader className="flex flex-col items-center text-center space-y-4">
             <div className="w-24 h-24 rounded-[1.75rem] overflow-hidden shadow-xl ring-4 ring-primary/10">
               <img 
