@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
       <div className="container">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Description */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-2 md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center mb-4">
               <img src={logo} alt="SouArtista" className="h-16 w-auto" />
             </Link>
