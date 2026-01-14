@@ -8,6 +8,7 @@ import { FeaturesCTA } from '@/components/features/FeaturesCTA';
 import {
   Music,
   Wallet,
+  Receipt,
   Users,
   Car,
   BarChart3,
@@ -19,6 +20,7 @@ import {
 const categories = [
   { id: 'shows', label: 'Gestão de Shows', icon: Music },
   { id: 'financeiro', label: 'Financeiro', icon: Wallet },
+  { id: 'despesas', label: 'Despesas Gerais', icon: Receipt },
   { id: 'equipe', label: 'Equipe', icon: Users },
   { id: 'locomocao', label: 'Locomoção', icon: Car },
   { id: 'relatorios', label: 'Relatórios', icon: BarChart3 },
@@ -82,16 +84,37 @@ const financeiroFeatures = [
     ],
     badge: 'Pro',
   },
+];
+
+const despesasFeatures = [
   {
-    title: 'Despesas Gerais',
-    description: 'Registre gastos profissionais por categoria, sem vinculação a shows específicos.',
+    title: 'Categorias de Despesas',
+    description: 'Organize seus gastos profissionais em categorias pré-definidas para melhor controle.',
     resources: [
-      'Equipamento e Acessórios',
-      'Manutenção e Vestuário',
-      'Marketing e Formação/Cursos',
-      'Software/Apps e Outros',
-      'Vincula despesa a um mês específico',
+      'Equipamento',
+      'Acessórios',
+      'Manutenção',
+      'Vestuário',
+    ],
+  },
+  {
+    title: 'Mais Categorias',
+    description: 'Cubra todas as áreas de investimento da sua carreira musical.',
+    resources: [
+      'Marketing',
+      'Formação/Cursos',
+      'Software/Apps',
+      'Outros',
+    ],
+  },
+  {
+    title: 'Gestão Mensal',
+    description: 'Vincule despesas a meses específicos e acompanhe seus gastos ao longo do tempo.',
+    resources: [
+      'Vincula despesa a um mês',
       'Visualiza total por categoria',
+      'Histórico de gastos',
+      'Análise de tendências',
     ],
   },
 ];
@@ -285,10 +308,18 @@ const Features: React.FC = () => {
         />
         
         <FeatureSection
+          id="despesas"
+          title="Despesas Gerais"
+          icon={Receipt}
+          features={despesasFeatures}
+        />
+        
+        <FeatureSection
           id="equipe"
           title="Equipe e Músicos"
           icon={Users}
           features={equipeFeatures}
+          className="bg-muted/30"
         />
         
         <FeatureSection
