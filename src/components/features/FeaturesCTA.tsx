@@ -22,7 +22,7 @@ export const FeaturesCTA: React.FC = () => {
               onClick={() => setIsModalOpen(true)}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              Baixar agora
+              Começar
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
