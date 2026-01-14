@@ -29,7 +29,7 @@ export const FAQSection: React.FC = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="border border-border rounded-xl mb-3 px-6 data-[state=open]:border-primary/30 transition-smooth"
+              className="border border-primary/20 rounded-xl mb-3 px-6 bg-background hover:border-primary/40 data-[state=open]:border-primary/50 transition-all duration-200"
             >
               <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5">
                 {item.question}
