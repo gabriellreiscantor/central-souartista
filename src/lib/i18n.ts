@@ -103,27 +103,59 @@ export const translations = {
       questions: [
         {
           question: 'O que é o SouArtista?',
-          answer: 'O SouArtista é um aplicativo de gestão financeira e agenda desenvolvido especialmente para músicos e artistas de todo o mundo. Com ele, você organiza cachês, despesas, shows e toda sua carreira em um só lugar.',
+          answer: 'O SouArtista é o aplicativo completo de gestão para músicos e artistas. Organize seus shows, controle cachês, gerencie despesas, calcule impostos, registre custos de locomoção e acompanhe toda sua carreira financeira em um só lugar. Desenvolvido por músicos que entendem sua realidade.',
         },
         {
-          question: 'Como funciona o período de teste?',
-          answer: 'Você pode testar todas as funcionalidades do plano Pro gratuitamente por 7 dias. Não pedimos cartão de crédito para iniciar o teste.',
+          question: 'Qual a diferença entre Artista e Músico no app?',
+          answer: 'O Artista é quem contrata, gerencia a banda e define os cachês dos shows. O Músico é quem toca nas bandas e recebe convites de participação. Se você faz os dois, pode ter uma conta como Artista e gerenciar seus músicos.',
+        },
+        {
+          question: 'Como funciona o período de teste gratuito?',
+          answer: 'Você tem 7 dias grátis para testar todas as funcionalidades do plano Pro. Não pedimos cartão de crédito para começar. Após o período, você pode continuar no plano gratuito com funcionalidades básicas ou assinar o Pro.',
+        },
+        {
+          question: 'O app me lembra dos meus shows?',
+          answer: 'Sim! O SouArtista envia notificações inteligentes para você nunca esquecer um compromisso: 7 dias antes do show, 1 dia antes, no dia do show, 3 horas antes e 30 minutos antes. Você nunca mais vai perder um show ou ensaio!',
         },
         {
           question: 'Posso usar no iPhone e Android?',
-          answer: 'Sim! O SouArtista está disponível tanto na App Store (iOS) quanto na Google Play Store (Android).',
+          answer: 'Sim! O SouArtista está disponível na App Store (iOS) e Google Play Store (Android). O app funciona offline e sincroniza quando você tiver internet.',
         },
         {
           question: 'Meus dados estão seguros?',
-          answer: 'Absolutamente. Utilizamos criptografia de ponta a ponta e seguimos as melhores práticas de segurança da indústria. Seus dados financeiros são tratados com o máximo sigilo.',
+          answer: 'Absolutamente. Utilizamos criptografia de ponta a ponta e infraestrutura de nível bancário. Seguimos a LGPD (Lei Geral de Proteção de Dados) e você pode solicitar exportação ou exclusão dos seus dados a qualquer momento.',
+        },
+        {
+          question: 'O que é o Simulador de Nota Fiscal?',
+          answer: 'É uma ferramenta exclusiva que calcula automaticamente quanto você vai receber líquido após impostos (ISS, IRRF). Basta informar o valor bruto do cachê e o tipo de recebimento (PF ou PJ) para saber exatamente quanto vai cair na sua conta.',
+        },
+        {
+          question: 'Posso registrar custos de locomoção?',
+          answer: 'Sim! O app tem uma seção dedicada para registrar quilometragem, pedágios, combustível e hospedagem. No final do mês, você sabe exatamente quanto gastou para se deslocar até os shows.',
+        },
+        {
+          question: 'Como funciona o programa de indicação?',
+          answer: 'Cada usuário tem um código de indicação único. Quando alguém se cadastra usando seu código, vocês dois ganham benefícios. Acompanhe suas indicações e recompensas diretamente no app.',
+        },
+        {
+          question: 'Posso gerenciar múltiplas bandas?',
+          answer: 'No momento, o gerenciamento de múltiplos projetos/bandas está disponível apenas para produtoras e empresas. Se você gerencia várias bandas profissionalmente, entre em contato conosco para conhecer nosso plano especial.',
         },
         {
           question: 'Como cancelo minha assinatura?',
-          answer: 'Você pode cancelar a qualquer momento diretamente pelo app, sem burocracia. O acesso continua até o fim do período pago.',
+          answer: 'Você pode cancelar a qualquer momento diretamente pelo app, na seção "Assinatura". Sem burocracia, sem ligações. O acesso Pro continua até o fim do período já pago.',
         },
         {
-          question: 'Posso usar para múltiplas bandas?',
-          answer: 'Sim! No plano Premium, você pode gerenciar múltiplas bandas/projetos musicais separadamente, com relatórios individuais para cada um.',
+          question: 'Preciso de internet para usar o app?',
+          answer: 'O app funciona offline para consultas básicas. Para sincronizar dados, adicionar shows ou gerar relatórios, você precisa de conexão. Assim que conectar, tudo é atualizado automaticamente.',
+        },
+        {
+          question: 'Posso exportar meus relatórios?',
+          answer: 'Sim! O plano Pro permite exportar relatórios financeiros em PDF e Excel. Perfeito para declaração de imposto de renda ou para mostrar ao seu contador.',
+        },
+        {
+          question: 'Como entro em contato com o suporte?',
+          answer: 'Diretamente pelo app! Na seção "Suporte", você pode enviar mensagens, sugestões ou reportar problemas. Nossa equipe responde em até 24 horas úteis.',
         },
       ],
     },
@@ -253,27 +285,59 @@ export const translations = {
       questions: [
         {
           question: 'What is SouArtista?',
-          answer: 'SouArtista is a financial management and scheduling app designed specifically for musicians and artists. Organize gig fees, expenses, shows, and your entire career in one place.',
+          answer: 'SouArtista is the complete management app for musicians and artists. Organize your shows, control fees, manage expenses, calculate taxes, track travel costs, and monitor your entire financial career in one place. Built by musicians who understand your reality.',
+        },
+        {
+          question: 'What\'s the difference between Artist and Musician in the app?',
+          answer: 'The Artist is who hires, manages the band, and sets show fees. The Musician plays in bands and receives participation invites. If you do both, you can have an Artist account and manage your musicians.',
         },
         {
           question: 'How does the free trial work?',
-          answer: 'You can test all Pro features free for 7 days. No credit card required to start.',
+          answer: 'You get 7 free days to test all Pro plan features. No credit card required to start. After the trial, you can continue on the free plan with basic features or subscribe to Pro.',
         },
         {
-          question: 'Is it available on iPhone and Android?',
-          answer: 'Yes! SouArtista is available on both the App Store (iOS) and Google Play Store (Android).',
+          question: 'Does the app remind me of my shows?',
+          answer: 'Yes! SouArtista sends smart notifications so you never forget a commitment: 7 days before the show, 1 day before, on the day, 3 hours before, and 30 minutes before. You\'ll never miss a show or rehearsal again!',
+        },
+        {
+          question: 'Can I use it on iPhone and Android?',
+          answer: 'Yes! SouArtista is available on the App Store (iOS) and Google Play Store (Android). The app works offline and syncs when you have internet.',
         },
         {
           question: 'Is my data secure?',
-          answer: 'Absolutely. We use end-to-end encryption and follow industry best security practices. Your financial data is treated with maximum confidentiality.',
+          answer: 'Absolutely. We use end-to-end encryption and bank-level infrastructure. We follow data protection regulations and you can request export or deletion of your data at any time.',
+        },
+        {
+          question: 'What is the Invoice Simulator?',
+          answer: 'It\'s an exclusive tool that automatically calculates how much you\'ll receive net after taxes. Just enter the gross fee amount and payment type to know exactly how much will hit your account.',
+        },
+        {
+          question: 'Can I track travel costs?',
+          answer: 'Yes! The app has a dedicated section to record mileage, tolls, fuel, and lodging. At the end of the month, you know exactly how much you spent traveling to shows.',
+        },
+        {
+          question: 'How does the referral program work?',
+          answer: 'Each user has a unique referral code. When someone signs up using your code, you both earn benefits. Track your referrals and rewards directly in the app.',
+        },
+        {
+          question: 'Can I manage multiple bands?',
+          answer: 'Currently, multi-project/band management is available only for production companies and businesses. If you manage multiple bands professionally, contact us to learn about our special plan.',
         },
         {
           question: 'How do I cancel my subscription?',
-          answer: 'You can cancel anytime directly through the app, hassle-free. Access continues until the end of the paid period.',
+          answer: 'You can cancel anytime directly through the app, in the "Subscription" section. No hassle, no calls. Pro access continues until the end of the already paid period.',
         },
         {
-          question: 'Can I use it for multiple bands?',
-          answer: 'Yes! With the Premium plan, you can manage multiple bands/music projects separately, with individual reports for each.',
+          question: 'Do I need internet to use the app?',
+          answer: 'The app works offline for basic queries. To sync data, add shows, or generate reports, you need a connection. Once connected, everything updates automatically.',
+        },
+        {
+          question: 'Can I export my reports?',
+          answer: 'Yes! The Pro plan allows exporting financial reports in PDF and Excel. Perfect for tax returns or to show your accountant.',
+        },
+        {
+          question: 'How do I contact support?',
+          answer: 'Directly through the app! In the "Support" section, you can send messages, suggestions, or report issues. Our team responds within 24 business hours.',
         },
       ],
     },
