@@ -21,23 +21,27 @@ export const translations = {
       subtitle: 'Ferramentas pensadas por músicos, para músicos',
       financial: {
         title: 'Controle total do seu dinheiro',
-        description: 'Registre cachês, despesas, recebimentos e tenha relatórios detalhados de quanto você ganha por show',
+        description: 'Registre cachês, despesas e recebimentos. Veja exatamente quanto sobra no seu bolso depois de cada show.',
       },
       calendar: {
-        title: 'Nunca mais perca um show',
-        description: 'Cadastre shows, ensaios e compromissos. Receba lembretes e mantenha sua agenda sempre organizada',
+        title: 'Nunca mais perca um compromisso',
+        description: 'Shows, ensaios e eventos em um só lugar. Receba lembretes automáticos e mantenha sua agenda sempre organizada.',
       },
       musicians: {
         title: 'Sua banda na palma da mão',
-        description: 'Gerencie músicos, pagamentos de sideman e comunicação com sua equipe',
+        description: 'Gerencie sidemen, divida cachês automaticamente e mantenha a comunicação clara com toda sua equipe.',
       },
       invoice: {
-        title: 'Simule seus impostos',
-        description: 'Calcule quanto receberá líquido considerando ISS, INSS e outros descontos',
+        title: 'Saiba quanto vai receber de verdade',
+        description: 'Simule notas fiscais e descubra seu cachê líquido após ISS, INSS e outros descontos. Sem surpresas na hora do pagamento.',
       },
       reports: {
-        title: 'Entenda seu negócio',
-        description: 'Gráficos e relatórios que mostram sua evolução financeira mês a mês',
+        title: 'Entenda seu negócio como nunca',
+        description: 'Gráficos claros que mostram sua evolução mês a mês. Saiba quais shows pagam melhor e onde você pode economizar.',
+      },
+      transportation: {
+        title: 'Seus custos de estrada organizados',
+        description: 'Registre quilometragem, pedágios, combustível e hospedagem. Saiba exatamente quanto cada show custa para você chegar.',
       },
     },
     testimonials: {
@@ -167,23 +171,27 @@ export const translations = {
       subtitle: 'Tools designed by musicians, for musicians',
       financial: {
         title: 'Total control of your money',
-        description: 'Record gig fees, expenses, and payments with detailed reports of how much you earn per show',
+        description: 'Record gig fees, expenses, and payments. See exactly how much you take home after each show.',
       },
       calendar: {
-        title: 'Never miss a gig again',
-        description: 'Schedule shows, rehearsals, and appointments. Get reminders and keep your calendar organized',
+        title: 'Never miss an appointment',
+        description: 'Shows, rehearsals, and events in one place. Get automatic reminders and keep your schedule organized.',
       },
       musicians: {
         title: 'Your band in your pocket',
-        description: 'Manage musicians, sideman payments, and team communication',
+        description: 'Manage sidemen, split fees automatically, and keep clear communication with your entire team.',
       },
       invoice: {
-        title: 'Simulate your taxes',
-        description: 'Calculate your net earnings considering all tax deductions',
+        title: 'Know what you\'ll really earn',
+        description: 'Simulate invoices and discover your net fee after taxes and deductions. No surprises at payment time.',
       },
       reports: {
-        title: 'Understand your business',
-        description: 'Charts and reports showing your financial growth month by month',
+        title: 'Understand your business like never before',
+        description: 'Clear charts showing your growth month by month. Know which gigs pay best and where you can save.',
+      },
+      transportation: {
+        title: 'Your road costs organized',
+        description: 'Track mileage, tolls, fuel, and lodging. Know exactly how much each show costs you to get there.',
       },
     },
     testimonials: {
