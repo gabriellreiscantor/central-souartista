@@ -17,7 +17,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({ variant = 'l
 
   const getLanguageLabel = () => {
     switch (language) {
-      case 'pt': return 'Português';
+      case 'pt': return 'Portug...';
       case 'en': return 'English';
       case 'es': return 'Español';
     }
