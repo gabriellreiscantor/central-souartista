@@ -66,13 +66,15 @@ export const HeroSection: React.FC = () => {
               
               {/* iPhone Mockup Container */}
               <div className="relative w-[280px] sm:w-[320px] animate-float">
+                {/* Sombra externa */}
+                <div className="absolute inset-0 bg-primary/30 blur-[60px] rounded-[4rem] scale-105" />
+                
                 {/* Frame do iPhone via CSS */}
-                <div className="relative w-full aspect-[9/19] bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-[3rem] p-[3px] shadow-2xl">
-                  {/* Borda interna */}
-                  <div className="w-full h-full rounded-[2.8rem] bg-black overflow-hidden relative">
-                    
-                    {/* Área da tela com vídeo */}
-                    <div className="w-full h-full rounded-[2.8rem] overflow-hidden">
+                <div className="relative w-full aspect-[9/19.5] bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 rounded-[2.5rem] p-[10px] shadow-[0_25px_80px_-15px_rgba(0,0,0,0.8),0_0_40px_rgba(139,92,246,0.3)]">
+                  {/* Borda interna metálica */}
+                  <div className="w-full h-full rounded-[2rem] bg-gradient-to-b from-gray-900 to-black p-[3px] overflow-hidden relative">
+                    {/* Tela */}
+                    <div className="w-full h-full rounded-[1.8rem] overflow-hidden bg-black">
                       <video 
                         autoPlay 
                         loop 
@@ -85,6 +87,12 @@ export const HeroSection: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                
+                {/* Botões laterais do iPhone */}
+                <div className="absolute left-0 top-[20%] w-[3px] h-8 bg-gray-700 rounded-l-sm" />
+                <div className="absolute left-0 top-[32%] w-[3px] h-12 bg-gray-700 rounded-l-sm" />
+                <div className="absolute left-0 top-[45%] w-[3px] h-12 bg-gray-700 rounded-l-sm" />
+                <div className="absolute right-0 top-[28%] w-[3px] h-16 bg-gray-700 rounded-r-sm" />
               </div>
             </div>
           </div>
