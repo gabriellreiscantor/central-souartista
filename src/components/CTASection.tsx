@@ -23,9 +23,11 @@ export const CTASection: React.FC = () => {
 
           <DownloadButtons size="lg" className="justify-center mb-12" />
 
-          <div className="flex items-center justify-center gap-2 text-white/50">
-            <Mail className="w-4 h-4" />
-            <span className="text-sm">{t.cta.contact}</span>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-white/50 text-center">
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4" />
+              <span className="text-sm">{t.cta.contact}</span>
+            </div>
             <a 
               href="mailto:contato@souartista.app" 
               className="text-sm text-primary hover:underline"
