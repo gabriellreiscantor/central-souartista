@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
 import { Instagram, Youtube } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
@@ -45,11 +46,8 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-purple">
-                <span className="text-white font-display font-bold text-xl">S</span>
-              </div>
-              <span className="font-display font-bold text-xl">SouArtista</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logo} alt="SouArtista" className="h-16 w-auto" />
             </Link>
             <p className="text-white/50 text-sm mb-4">
               Gestão financeira e agenda para músicos e artistas.
