@@ -68,14 +68,6 @@ export const HeroSection: React.FC = () => {
               <div className="relative w-[280px] sm:w-[320px] animate-float">
                 {/* Screen Content Area - positioned inside the phone frame */}
                 <div className="absolute top-[2.8%] left-[6%] w-[88%] h-[94.5%] rounded-[2rem] overflow-hidden bg-purple-dark z-0">
-                  {/* 
-                    PARA ADICIONAR VÍDEO/GIF NO FUTURO:
-                    1. Descomente o bloco de vídeo abaixo
-                    2. Adicione seu arquivo em /public/demo-video.mp4 ou /public/demo.gif
-                    3. Comente ou remova o conteúdo estático
-                  */}
-                  
-                  {/* Opção 1: Vídeo (descomente quando tiver o vídeo)
                   <video 
                     autoPlay 
                     loop 
@@ -85,46 +77,6 @@ export const HeroSection: React.FC = () => {
                   >
                     <source src="/demo-video.mp4" type="video/mp4" />
                   </video>
-                  */}
-                  
-                  {/* Opção 2: GIF (descomente quando tiver o gif)
-                  <img 
-                    src="/demo.gif" 
-                    alt="App Demo"
-                    className="w-full h-full object-cover"
-                  />
-                  */}
-                  
-                  {/* Conteúdo estático (remover quando adicionar vídeo/gif) */}
-                  <div className="p-5 pt-12 h-full">
-                    <div className="text-white/60 text-xs mb-2">Olá, João 👋</div>
-                    <div className="text-white text-lg font-display font-bold mb-5">Sua semana</div>
-                    
-                    {/* Balance Card */}
-                    <div className="bg-primary/20 rounded-2xl p-4 mb-4 border border-primary/30">
-                      <div className="text-white/60 text-xs mb-1">Saldo do mês</div>
-                      <div className="text-white text-2xl font-bold">R$ 8.450,00</div>
-                      <div className="text-green-400 text-xs mt-1">+12% vs mês anterior</div>
-                    </div>
-
-                    {/* Upcoming Shows */}
-                    <div className="text-white/60 text-xs mb-3">Próximos shows</div>
-                    {[
-                      { day: 'Sex', date: '17', venue: 'Bar do Blues', value: 'R$ 1.200' },
-                      { day: 'Sab', date: '18', venue: 'Casa de Shows', value: 'R$ 2.500' },
-                    ].map((show, i) => (
-                      <div key={i} className="flex items-center gap-3 bg-white/5 rounded-xl p-3 mb-2">
-                        <div className="w-10 h-10 bg-primary/30 rounded-lg flex flex-col items-center justify-center">
-                          <span className="text-[9px] text-white/60">{show.day}</span>
-                          <span className="text-white text-sm font-bold">{show.date}</span>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-white text-sm font-medium">{show.venue}</div>
-                          <div className="text-primary text-xs">{show.value}</div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
                 </div>
                 
                 {/* iPhone Frame - realistic device frame */}
