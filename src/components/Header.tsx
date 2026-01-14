@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="SouArtista" className="h-16 w-auto" />
+            <img src={logo} alt="SouArtista" className="h-20 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
