@@ -3,43 +3,46 @@ import { LucideIcon, Check } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
-interface Feature {
-  icon: LucideIcon;
+interface FeatureItem {
   title: string;
   description: string;
   resources: string[];
   badge?: string;
-  formula?: string;
+  badgeVariant?: 'default' | 'secondary' | 'outline';
 }
 
 interface FeatureSectionProps {
+  id: string;
   title: string;
-  subtitle: string;
-  features: Feature[];
+  icon: LucideIcon;
+  features: FeatureItem[];
+  className?: string;
 }
 
 export const FeatureSection: React.FC<FeatureSectionProps> = ({
+  id,
   title,
-  subtitle,
+  icon: Icon,
   features,
+  className,
 }) => {
   return (
-    <section className="py-20 bg-[#FAFAFA]">
+    <section id={id} className={cn('py-12 scroll-mt-28', className)}>
       <div className="container">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-[#1E082B] mb-4">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+            <Icon className="w-5 h-5 text-primary" />
+          </div>
+          <h2 className="font-display font-semibold text-2xl text-foreground">
             {title}
           </h2>
-          <p className="text-lg text-[#6B7280]">
-            {subtitle}
-          </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((feature, index) => (
-            <FeatureCard key={index} feature={feature} index={index} />
+            <FeatureCard key={index} {...feature} />
           ))}
         </div>
       </div>
@@ -47,71 +50,53 @@ export const FeatureSection: React.FC<FeatureSectionProps> = ({
   );
 };
 
-const FeatureCard: React.FC<{ feature: Feature; index: number }> = ({ feature, index }) => {
-  const Icon = feature.icon;
-  
+const FeatureCard: React.FC<FeatureItem> = ({
+  title,
+  description,
+  resources,
+  badge,
+  badgeVariant = 'secondary',
+}) => {
   return (
-    <div 
-      className={cn(
-        "group relative p-6 bg-white rounded-2xl border border-gray-100",
-        "hover:shadow-xl hover:shadow-[#B96FFF]/10 hover:-translate-y-1 hover:border-[#B96FFF]/20",
-        "transition-all duration-300 animate-fade-in-up"
-      )}
-      style={{ animationDelay: `${index * 0.1}s` }}
-    >
-      {/* Badge */}
-      {feature.badge && (
-        <Badge 
-          className={cn(
-            "absolute top-4 right-4 text-xs",
-            feature.badge === 'Pro' 
-              ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white border-0" 
-              : feature.badge === 'Novo'
-              ? "bg-green-500 text-white border-0"
-              : "bg-[#B96FFF]/10 text-[#B96FFF] border-[#B96FFF]/20"
-          )}
-        >
-          {feature.badge === 'Pro' && '🌟 '}
-          {feature.badge === 'Novo' && '✨ '}
-          {feature.badge === 'Ganhe meses grátis' && '🎁 '}
-          {feature.badge}
-        </Badge>
-      )}
-      
-      {/* Icon */}
-      <div 
-        className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 bg-gradient-to-br from-[#B96FFF]/15 to-[#B96FFF]/5 group-hover:from-[#B96FFF]/25 group-hover:to-[#B96FFF]/10 transition-all duration-300"
-      >
-        <Icon className="w-7 h-7 text-[#B96FFF]" />
+    <div className="group bg-card border border-border rounded-2xl p-5 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300">
+      {/* Header */}
+      <div className="flex items-start justify-between gap-2 mb-3">
+        <h3 className="font-semibold text-foreground leading-tight">
+          {title}
+        </h3>
+        {badge && (
+          <Badge 
+            variant={badgeVariant} 
+            className={cn(
+              "shrink-0 text-xs",
+              badge === 'Pro' && "bg-gradient-to-r from-amber-500 to-orange-500 text-white border-0",
+              badge === 'Exclusivo' && "bg-primary/10 text-primary border-primary/20"
+            )}
+          >
+            {badge === 'Pro' && '🌟 '}
+            {badge}
+          </Badge>
+        )}
       </div>
-      
-      {/* Title */}
-      <h3 className="font-display font-semibold text-xl text-[#1E082B] mb-3 group-hover:text-[#B96FFF] transition-colors">
-        {feature.title}
-      </h3>
-      
+
       {/* Description */}
-      <p className="text-[#6B7280] leading-relaxed mb-5">
-        {feature.description}
+      <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+        {description}
       </p>
 
-      {/* Formula (if exists) */}
-      {feature.formula && (
-        <div className="mb-5 p-3 bg-[#1E082B] rounded-lg">
-          <code className="text-sm text-[#B96FFF] font-mono">
-            {feature.formula}
-          </code>
-        </div>
-      )}
-      
-      {/* Resources List */}
+      {/* Resources */}
       <ul className="space-y-2">
-        {feature.resources.map((resource, idx) => (
-          <li key={idx} className="flex items-start gap-2 text-sm text-[#4B5563]">
-            <Check className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-            <span>{resource}</span>
+        {resources.slice(0, 4).map((resource, index) => (
+          <li key={index} className="flex items-start gap-2 text-sm">
+            <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+            <span className="text-muted-foreground">{resource}</span>
           </li>
         ))}
+        {resources.length > 4 && (
+          <li className="text-xs text-muted-foreground pl-6">
+            +{resources.length - 4} recursos
+          </li>
+        )}
       </ul>
     </div>
   );

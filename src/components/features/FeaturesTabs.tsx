@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -8,66 +8,78 @@ interface Category {
   icon: LucideIcon;
 }
 
-interface FeaturesTabsProps {
+interface FeaturesNavProps {
   categories: Category[];
-  activeTab: string;
-  onTabChange: (id: string) => void;
 }
 
-export const FeaturesTabs: React.FC<FeaturesTabsProps> = ({
-  categories,
-  activeTab,
-  onTabChange,
-}) => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const activeButtonRef = useRef<HTMLButtonElement>(null);
+export const FeaturesNav: React.FC<FeaturesNavProps> = ({ categories }) => {
+  const [activeSection, setActiveSection] = useState<string>(categories[0]?.id || '');
 
   useEffect(() => {
-    if (activeButtonRef.current && scrollRef.current) {
-      const container = scrollRef.current;
-      const button = activeButtonRef.current;
-      const containerWidth = container.offsetWidth;
-      const buttonLeft = button.offsetLeft;
-      const buttonWidth = button.offsetWidth;
-      
-      container.scrollTo({
-        left: buttonLeft - containerWidth / 2 + buttonWidth / 2,
-        behavior: 'smooth',
+    const handleScroll = () => {
+      const sections = categories.map(cat => document.getElementById(cat.id));
+      const scrollPosition = window.scrollY + 150;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(categories[i].id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [categories]);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
     }
-  }, [activeTab]);
+  };
 
   return (
-    <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
-      <div className="container py-4">
-        <div 
-          ref={scrollRef}
-          className="flex gap-2 overflow-x-auto scrollbar-hide pb-2 -mb-2"
+    <div className="sticky top-20 z-40 bg-background/95 backdrop-blur-md border-b border-border">
+      <div className="container py-3">
+        <nav 
+          className="flex gap-1 overflow-x-auto scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {categories.map((category) => {
-            const isActive = activeTab === category.id;
+            const isActive = activeSection === category.id;
             const Icon = category.icon;
             
             return (
               <button
                 key={category.id}
-                ref={isActive ? activeButtonRef : null}
-                onClick={() => onTabChange(category.id)}
+                onClick={() => scrollToSection(category.id)}
                 className={cn(
-                  'flex items-center gap-2 px-4 py-2.5 rounded-full whitespace-nowrap transition-all duration-300 font-medium text-sm',
+                  'flex items-center gap-2 px-4 py-2 rounded-full whitespace-nowrap transition-all duration-200 text-sm font-medium',
                   isActive
-                    ? 'bg-[#B96FFF] text-white shadow-lg shadow-[#B96FFF]/30'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                 )}
               >
-                <span className="text-base">{category.label.split(' ')[0]}</span>
-                <span>{category.label.split(' ').slice(1).join(' ')}</span>
+                <Icon className="w-4 h-4" />
+                <span className="hidden sm:inline">{category.label}</span>
+                <span className="sm:hidden">{category.label.split(' ')[0]}</span>
               </button>
             );
           })}
-        </div>
+        </nav>
       </div>
     </div>
   );
 };
+
+// Keep backward compatibility
+export const FeaturesTabs = FeaturesNav;
