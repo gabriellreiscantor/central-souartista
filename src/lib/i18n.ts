@@ -7,7 +7,7 @@ export const translations = {
       features: 'Funcionalidades',
       pricing: 'Preços',
       blog: 'Blog',
-      download: 'Baixar App',
+      download: 'Começar',
     },
     hero: {
       badge: 'Experimente 7 dias grátis',
@@ -221,7 +221,7 @@ export const translations = {
       features: 'Features',
       pricing: 'Pricing',
       blog: 'Blog',
-      download: 'Download App',
+      download: 'Get Started',
     },
     hero: {
       badge: 'Try 7 days free',
@@ -435,7 +435,7 @@ export const translations = {
       features: 'Funcionalidades',
       pricing: 'Precios',
       blog: 'Blog',
-      download: 'Descargar App',
+      download: 'Empezar',
     },
     hero: {
       badge: 'Prueba 7 días gratis',

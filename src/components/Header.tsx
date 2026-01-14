@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
+import { DownloadModal } from './DownloadModal';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import logo from '@/assets/logo.png';
@@ -11,6 +12,7 @@ export const Header: React.FC = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +75,10 @@ export const Header: React.FC = () => {
           {/* Right Side */}
           <div className="hidden md:flex items-center gap-3">
             <LanguageSelector variant="dark" />
-            <Button className="rounded-full px-6 shadow-purple hover:shadow-purple-lg transition-smooth">
+            <Button 
+              onClick={() => setIsDownloadModalOpen(true)}
+              className="rounded-full px-6 shadow-purple hover:shadow-purple-lg transition-smooth"
+            >
               {t.nav.download}
             </Button>
           </div>
@@ -115,7 +120,13 @@ export const Header: React.FC = () => {
               </nav>
               <div className="mt-8 flex flex-col gap-4">
                 <LanguageSelector variant="dark" />
-                <Button className="w-full rounded-full shadow-purple">
+                <Button 
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    setIsDownloadModalOpen(true);
+                  }}
+                  className="w-full rounded-full shadow-purple"
+                >
                   {t.nav.download}
                 </Button>
               </div>
@@ -123,6 +134,11 @@ export const Header: React.FC = () => {
           </div>
         </div>
       )}
+
+      <DownloadModal 
+        open={isDownloadModalOpen} 
+        onOpenChange={setIsDownloadModalOpen} 
+      />
     </>
   );
 };
