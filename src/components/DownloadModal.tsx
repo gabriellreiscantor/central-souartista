@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogDescription,
 } from '@/components/ui/dialog';
+import { toast } from '@/hooks/use-toast';
 import appIcon from '@/assets/app-icon.png';
 import appleLogo from '@/assets/apple-logo.png';
 import playstoreLogo from '@/assets/playstore-logo.webp';
@@ -17,106 +17,94 @@ interface DownloadModalProps {
 }
 
 export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange }) => {
-  const [showComingSoon, setShowComingSoon] = useState(false);
-
   const webDownload = {
     label: 'SouArtista no Web App',
     href: 'https://souartista.app',
   };
 
+  const handleAndroidClick = () => {
+    onOpenChange(false);
+    toast({
+      title: "Em breve! 🚀",
+      description: "Já, já chegamos na Play Store!",
+      duration: 3000,
+    });
+  };
+
   return (
-    <>
-      <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="sm:max-w-md bg-white border-0 rounded-3xl p-8 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)]">
-          <DialogHeader className="flex flex-col items-center text-center space-y-4">
-            <div className="w-24 h-24 rounded-[1.75rem] overflow-hidden shadow-xl ring-4 ring-primary/10">
-              <img 
-                src={appIcon} 
-                alt="SouArtista" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <DialogTitle className="text-xl font-semibold text-gray-900">
-              SouArtista - Cachês e agenda
-            </DialogTitle>
-          </DialogHeader>
-          
-          <div className="flex flex-col gap-6 mt-6">
-            {/* App Downloads Section */}
-            <div className="space-y-3">
-              <p className="text-sm font-medium text-gray-400 uppercase tracking-wide px-1">
-                Baixe o app SouArtista
-              </p>
-              <div className="flex flex-col gap-2">
-                {/* iOS Button */}
-                <a
-                  href="https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
-                >
-                  <div className="w-11 h-11 rounded-xl overflow-hidden">
-                    <img src={appleLogo} alt="Apple" className="w-full h-full object-cover" />
-                  </div>
-                  <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
-                    SouArtista no iOS
-                  </span>
-                </a>
-
-                {/* Android Button */}
-                <button
-                  onClick={() => setShowComingSoon(true)}
-                  className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md w-full text-left"
-                >
-                  <div className="w-11 h-11 rounded-xl overflow-hidden flex items-center justify-center bg-white">
-                    <img src={playstoreLogo} alt="Google Play" className="w-8 h-8 object-contain" />
-                  </div>
-                  <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
-                    SouArtista no Android
-                  </span>
-                </button>
-              </div>
-            </div>
-
-            {/* Web App Section */}
-            <div className="space-y-3">
-              <p className="text-sm font-medium text-gray-400 uppercase tracking-wide px-1">
-                Use no seu PC
-              </p>
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent className="sm:max-w-md bg-white border-0 rounded-3xl p-8 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)]">
+        <DialogHeader className="flex flex-col items-center text-center space-y-4">
+          <div className="w-24 h-24 rounded-[1.75rem] overflow-hidden shadow-xl ring-4 ring-primary/10">
+            <img 
+              src={appIcon} 
+              alt="SouArtista" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <DialogTitle className="text-xl font-semibold text-gray-900">
+            SouArtista - Cachês e agenda
+          </DialogTitle>
+        </DialogHeader>
+        
+        <div className="flex flex-col gap-6 mt-6">
+          {/* App Downloads Section */}
+          <div className="space-y-3">
+            <p className="text-sm font-medium text-gray-400 uppercase tracking-wide px-1">
+              Baixe o app SouArtista
+            </p>
+            <div className="flex flex-col gap-2">
+              {/* iOS Button */}
               <a
-                href={webDownload.href}
+                href="https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
               >
                 <div className="w-11 h-11 rounded-xl overflow-hidden">
-                  <img src={webLogo} alt="Web App" className="w-full h-full object-cover" />
+                  <img src={appleLogo} alt="Apple" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
-                  {webDownload.label}
+                  SouArtista no iOS
                 </span>
               </a>
+
+              {/* Android Button */}
+              <button
+                onClick={handleAndroidClick}
+                className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md w-full text-left opacity-70"
+              >
+                <div className="w-11 h-11 rounded-xl overflow-hidden flex items-center justify-center bg-white">
+                  <img src={playstoreLogo} alt="Google Play" className="w-8 h-8 object-contain" />
+                </div>
+                <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
+                  SouArtista no Android
+                </span>
+              </button>
             </div>
           </div>
-        </DialogContent>
-      </Dialog>
 
-      {/* Coming Soon Modal */}
-      <Dialog open={showComingSoon} onOpenChange={setShowComingSoon}>
-        <DialogContent className="sm:max-w-sm bg-white border-0 rounded-3xl p-8 shadow-2xl">
-          <DialogHeader className="flex flex-col items-center text-center space-y-4">
-            <div className="w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center bg-white shadow-lg">
-              <img src={playstoreLogo} alt="Google Play" className="w-12 h-12 object-contain" />
-            </div>
-            <DialogTitle className="text-xl font-semibold text-gray-900">
-              Em breve!
-            </DialogTitle>
-            <DialogDescription className="text-gray-600">
-              Estamos trabalhando para criar o aplicativo no Android
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
-    </>
+          {/* Web App Section */}
+          <div className="space-y-3">
+            <p className="text-sm font-medium text-gray-400 uppercase tracking-wide px-1">
+              Use no seu PC
+            </p>
+            <a
+              href={webDownload.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
+            >
+              <div className="w-11 h-11 rounded-xl overflow-hidden">
+                <img src={webLogo} alt="Web App" className="w-full h-full object-cover" />
+              </div>
+              <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
+                {webDownload.label}
+              </span>
+            </a>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 };
