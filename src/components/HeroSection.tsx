@@ -66,25 +66,27 @@ export const HeroSection: React.FC = () => {
               
               {/* iPhone Mockup Container */}
               <div className="relative w-[280px] sm:w-[320px] animate-float">
-                {/* Vídeo posicionado ATRÁS do frame PNG */}
-                <div className="absolute top-[3%] left-[6%] w-[88%] h-[94%] rounded-[2.5rem] overflow-hidden z-0">
-                  <video 
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline
-                    className="w-full h-full object-cover"
-                  >
-                    <source src="/demo-video.mp4" type="video/mp4" />
-                  </video>
+                {/* Frame do iPhone via CSS */}
+                <div className="relative w-full aspect-[9/19] bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-[3rem] p-[3px] shadow-2xl">
+                  {/* Borda interna */}
+                  <div className="w-full h-full rounded-[2.8rem] bg-black overflow-hidden relative">
+                    {/* Dynamic Island */}
+                    <div className="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-8 bg-black rounded-full z-20 border border-gray-800" />
+                    
+                    {/* Área da tela com vídeo */}
+                    <div className="w-full h-full rounded-[2.8rem] overflow-hidden">
+                      <video 
+                        autoPlay 
+                        loop 
+                        muted 
+                        playsInline
+                        className="w-full h-full object-cover"
+                      >
+                        <source src="/demo-video.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
                 </div>
-                
-                {/* Frame PNG do iPhone */}
-                <img 
-                  src="/iphone-mockup.png" 
-                  alt="iPhone"
-                  className="relative z-10 w-full h-auto"
-                />
               </div>
             </div>
           </div>
