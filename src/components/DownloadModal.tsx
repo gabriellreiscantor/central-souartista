@@ -14,7 +14,7 @@ interface DownloadModalProps {
 }
 
 export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange }) => {
-  const downloadOptions = [
+  const appDownloads = [
     {
       label: 'SouArtista no iOS',
       icon: Apple,
@@ -25,18 +25,19 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
       icon: Smartphone,
       href: '#',
     },
-    {
-      label: 'SouArtista no Web App',
-      icon: Globe,
-      href: 'https://souartista.app',
-    },
   ];
+
+  const webDownload = {
+    label: 'SouArtista no Web App',
+    icon: Globe,
+    href: 'https://souartista.app',
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md bg-white border-0 rounded-3xl p-8">
+      <DialogContent className="sm:max-w-md bg-white border-0 rounded-3xl p-8 shadow-2xl">
         <DialogHeader className="flex flex-col items-center text-center space-y-4">
-          <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-lg">
+          <div className="w-24 h-24 rounded-[1.75rem] overflow-hidden shadow-xl ring-4 ring-primary/10">
             <img 
               src={appIcon} 
               alt="SouArtista" 
@@ -48,23 +49,49 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
           </DialogTitle>
         </DialogHeader>
         
-        <div className="flex flex-col gap-3 mt-6">
-          {downloadOptions.map((option) => (
+        <div className="flex flex-col gap-6 mt-6">
+          {/* App Downloads Section */}
+          <div className="space-y-3">
+            <p className="text-sm font-medium text-gray-400 uppercase tracking-wide px-1">
+              Baixe o app SouArtista
+            </p>
+            <div className="flex flex-col gap-2">
+              {appDownloads.map((option) => (
+                <a
+                  key={option.label}
+                  href={option.href}
+                  className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
+                >
+                  <div className="w-11 h-11 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/25">
+                    <option.icon className="w-5 h-5" />
+                  </div>
+                  <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
+                    {option.label}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Web App Section */}
+          <div className="space-y-3">
+            <p className="text-sm font-medium text-gray-400 uppercase tracking-wide px-1">
+              Use no seu PC
+            </p>
             <a
-              key={option.label}
-              href={option.href}
-              target={option.href.startsWith('http') ? '_blank' : undefined}
-              rel={option.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="flex items-center gap-4 px-5 py-4 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors group"
+              href={webDownload.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
             >
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white">
-                <option.icon className="w-5 h-5" />
+              <div className="w-11 h-11 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/25">
+                <webDownload.icon className="w-5 h-5" />
               </div>
-              <span className="text-gray-900 font-medium group-hover:text-primary transition-colors">
-                {option.label}
+              <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
+                {webDownload.label}
               </span>
             </a>
-          ))}
+          </div>
         </div>
       </DialogContent>
     </Dialog>
