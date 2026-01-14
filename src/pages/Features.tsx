@@ -84,12 +84,14 @@ const financeiroFeatures = [
   },
   {
     title: 'Despesas Gerais',
-    description: 'Registre despesas profissionais que não estão ligadas a shows específicos.',
+    description: 'Registre gastos profissionais por categoria, sem vinculação a shows específicos.',
     resources: [
-      'Equipamento e acessórios',
-      'Manutenção e vestuário',
-      'Marketing e formação',
-      'Software e outros',
+      'Equipamento e Acessórios',
+      'Manutenção e Vestuário',
+      'Marketing e Formação/Cursos',
+      'Software/Apps e Outros',
+      'Vincula despesa a um mês específico',
+      'Visualiza total por categoria',
     ],
   },
 ];
