@@ -7,7 +7,11 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  bannerVisible?: boolean;
+}
+
+export const Header: React.FC<HeaderProps> = ({ bannerVisible = false }) => {
   const { t } = useLanguage();
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,9 +36,12 @@ export const Header: React.FC = () => {
     { path: '/blog', label: t.nav.blog },
   ];
 
+  // Altura do banner: ~64px no mobile
+  const bannerOffset = bannerVisible ? 'top-16' : 'top-0';
+
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      <header className={`fixed ${bannerOffset} left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-purple-dark/90 backdrop-blur-xl border-b border-white/10 py-3' 
           : isHomePage 
