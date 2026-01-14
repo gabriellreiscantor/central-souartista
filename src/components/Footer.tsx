@@ -4,11 +4,37 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
 import { DownloadModal } from './DownloadModal';
 import { Instagram, Youtube } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 import logo from '@/assets/logo.png';
 
 export const Footer: React.FC = () => {
   const { t } = useLanguage();
+  const { toast } = useToast();
   const [isDownloadModalOpen, setIsDownloadModalOpen] = React.useState(false);
+
+  const handleComingSoon = (platform: string) => {
+    toast({
+      title: "Em breve! 🎵",
+      description: `Nosso ${platform} está chegando. Fique ligado!`,
+    });
+  };
+
+  const handleInstagramClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    const username = 'souartista.oficial';
+    
+    if (isMobile) {
+      // Try to open Instagram app first
+      window.location.href = `instagram://user?username=${username}`;
+      // Fallback to web after a short delay if app doesn't open
+      setTimeout(() => {
+        window.open(`https://www.instagram.com/${username}/`, '_blank');
+      }, 500);
+    } else {
+      window.open(`https://www.instagram.com/${username}/`, '_blank');
+    }
+  };
 
   const footerLinks = {
     product: [
@@ -28,19 +54,11 @@ export const Footer: React.FC = () => {
     ],
   };
 
-  const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { 
-      icon: () => (
-        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
-        </svg>
-      ), 
-      href: '#', 
-      label: 'TikTok' 
-    },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-  ];
+  const TikTokIcon = () => (
+    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+    </svg>
+  );
 
   return (
     <footer className="bg-purple-dark text-white py-16">
@@ -121,16 +139,33 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-4">{t.footer.social}</h4>
             <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary transition-smooth"
-                  aria-label={social.label}
-                >
-                  <social.icon />
-                </a>
-              ))}
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/souartista.oficial/"
+                onClick={handleInstagramClick}
+                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary transition-smooth"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              
+              {/* TikTok - Em breve */}
+              <button
+                onClick={() => handleComingSoon('TikTok')}
+                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary transition-smooth opacity-60 hover:opacity-100"
+                aria-label="TikTok (Em breve)"
+              >
+                <TikTokIcon />
+              </button>
+              
+              {/* YouTube - Em breve */}
+              <button
+                onClick={() => handleComingSoon('YouTube')}
+                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary transition-smooth opacity-60 hover:opacity-100"
+                aria-label="YouTube (Em breve)"
+              >
+                <Youtube className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>
