@@ -2,6 +2,19 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { DownloadButtons } from './DownloadButtons';
 import { DollarSign, Users } from 'lucide-react';
+import testimonialAvatar1 from '@/assets/testimonial-avatar-1.jpg';
+import testimonialAvatar2 from '@/assets/testimonial-avatar-2.jpg';
+import testimonialAvatar3 from '@/assets/testimonial-avatar-3.jpg';
+import testimonialAvatar4 from '@/assets/testimonial-avatar-4.jpg';
+import testimonialAvatar5 from '@/assets/testimonial-avatar-5.jpg';
+
+const avatars = [
+  testimonialAvatar1,
+  testimonialAvatar2,
+  testimonialAvatar3,
+  testimonialAvatar4,
+  testimonialAvatar5,
+];
 
 export const HeroSection: React.FC = () => {
   const { t } = useLanguage();
@@ -40,15 +53,13 @@ export const HeroSection: React.FC = () => {
             {/* Social Proof */}
             <div className="flex items-center gap-4 mt-10 justify-center lg:justify-start animate-fade-in-up stagger-4">
               <div className="flex -space-x-3">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div
+                {avatars.map((avatar, i) => (
+                  <img
                     key={i}
-                    className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-purple-400 border-2 border-purple-dark flex items-center justify-center"
-                  >
-                    <span className="text-xs font-bold text-white">
-                      {['JM', 'AS', 'RC', 'LP', 'MG'][i - 1]}
-                    </span>
-                  </div>
+                    src={avatar}
+                    alt={`Usuário ${i + 1}`}
+                    className="w-10 h-10 rounded-full border-2 border-purple-dark object-cover"
+                  />
                 ))}
               </div>
               <div className="flex items-center gap-2">
