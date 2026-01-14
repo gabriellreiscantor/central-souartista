@@ -65,7 +65,7 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         href="https://souartista.app"
         target="_blank"
         rel="noopener noreferrer"
-        className={`flex items-center gap-3 bg-gradient-to-r from-primary to-purple-400 text-white rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
+        className={`hidden md:flex items-center gap-3 bg-gradient-to-r from-primary to-purple-400 text-white rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
         <Globe className={iconSizes[size]} />
         <div className="flex flex-col items-start">
