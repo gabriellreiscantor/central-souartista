@@ -11,7 +11,7 @@ export const FAQSection: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-background" id="faq">
+    <section className="py-24 bg-background overflow-hidden" id="faq">
       <div className="container max-w-3xl">
         {/* Header */}
         <div className="text-center mb-12">
