@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { DownloadButtons } from './DownloadButtons';
 import { DollarSign, Users } from 'lucide-react';
@@ -18,6 +18,31 @@ const avatars = [
 
 export const HeroSection: React.FC = () => {
   const { t } = useLanguage();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      // Garantir que está mudo (requisito do Safari para autoplay)
+      video.muted = true;
+      
+      // Tentar dar play
+      const playPromise = video.play();
+      
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Se falhar, adicionar listener para primeira interação
+          const handleInteraction = () => {
+            video.play();
+            document.removeEventListener('touchstart', handleInteraction);
+            document.removeEventListener('click', handleInteraction);
+          };
+          document.addEventListener('touchstart', handleInteraction);
+          document.addEventListener('click', handleInteraction);
+        });
+      }
+    }
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden pt-20">
@@ -89,10 +114,12 @@ export const HeroSection: React.FC = () => {
                     {/* Tela */}
                     <div className="w-full h-full rounded-[1.8rem] overflow-hidden bg-black">
                       <video 
+                        ref={videoRef}
                         autoPlay 
                         loop 
                         muted 
                         playsInline
+                        webkit-playsinline="true"
                         className="w-full h-full object-cover"
                       >
                         <source src="/demo-video.mp4" type="video/mp4" />
