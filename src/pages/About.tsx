@@ -33,29 +33,31 @@ const About: React.FC = () => {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <div className="bg-gradient-to-r from-primary/5 to-purple-400/5 rounded-3xl p-8 md:p-12 mb-12 border border-primary/10">
                 <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-0 font-medium">
-                  <strong className="text-primary">Gabriell Reis</strong>, cantor e músico brasileiro, 
-                  vivia o sonho de fazer música, mas também vivia o pesadelo de gerenciar tudo sozinho. 
-                  Shows, cachês, despesas, impostos, locomoção... eram planilhas perdidas, anotações 
-                  em cadernos e uma eterna sensação de que algo estava escapando.
+                  Tudo começou com uma amizade e um problema em comum: a paixão pela música e a dificuldade 
+                  de gerenciar uma carreira artística. <strong className="text-primary">Gabriell Reis</strong> e{' '}
+                  <strong className="text-primary">Domingos Sávio</strong> uniram forças para criar algo que 
+                  faltava no mercado.
                 </p>
               </div>
 
               <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  Como programador autodidata, Gabriell sempre teve facilidade com tecnologia. Criou um 
-                  app simples para ajudar ele mesmo a organizar quanto ganha e a agenda de shows. Logo 
-                  mostrou para seu amigo o que tinha feito.
+                  Gabriell, cantor e músico brasileiro, vivia o sonho de fazer música, mas também enfrentava 
+                  o desafio de gerenciar tudo sozinho — shows, cachês, despesas, impostos, locomoção... Como 
+                  programador autodidata, criou um app simples para organizar sua própria carreira.
                 </p>
                 
                 <p>
-                  E foi aí que a ideia surgiu. <strong className="text-foreground">Domingos Sávio</strong> pensou: 
-                  <em className="text-primary">"E se existisse um app feito por um músico, para músicos?"</em>
+                  Quando mostrou para Domingos, seu amigo de longa data, a ideia tomou forma. Domingos, dono 
+                  da agência <strong className="text-foreground">Savini Comunicação</strong>, pode não subir 
+                  nos palcos, mas carrega a música no coração. Ele viu potencial e propôs: 
+                  <em className="text-primary"> "E se existisse um app feito por músicos, para músicos?"</em>
                 </p>
 
                 <p>
-                  Domingos, dono da agência <strong className="text-foreground">Savini Comunicação</strong>, 
-                  pode não subir nos palcos, mas carrega a música no coração. Ele viu potencial naquela 
-                  ideia e decidiu embarcar junto.
+                  A visão estratégica de Domingos combinada com a experiência musical e técnica de Gabriell 
+                  criou a parceria perfeita. Um entende as dores do artista, o outro sabe como transformar 
+                  isso em um negócio que realmente ajuda.
                 </p>
 
                 <div className="bg-muted/50 rounded-2xl p-8 my-8 border-l-4 border-primary">
