@@ -36,9 +36,12 @@ export const Header: React.FC = () => {
           ? 'bg-purple-dark/90 backdrop-blur-xl border-b border-white/10 py-3' 
           : 'bg-transparent py-5'
       }`}>
-        <div className="container flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
+        <div className="container flex items-center justify-between relative">
+          {/* Spacer for mobile to center logo */}
+          <div className="w-10 md:hidden" />
+          
+          {/* Logo - centered on mobile */}
+          <Link to="/" className="flex items-center absolute left-1/2 -translate-x-1/2 md:relative md:left-0 md:translate-x-0">
             <img src={logo} alt="SouArtista" className="h-20 w-auto" />
           </Link>
 
