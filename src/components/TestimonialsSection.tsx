@@ -3,6 +3,10 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { TestimonialCard } from './TestimonialCard';
 import testimonialAvatar1 from '@/assets/testimonial-avatar-1.jpg';
 import testimonialAvatar2 from '@/assets/testimonial-avatar-2.jpg';
+import testimonialAvatar3 from '@/assets/testimonial-avatar-3.jpg';
+import testimonialAvatar4 from '@/assets/testimonial-avatar-4.jpg';
+import testimonialAvatar5 from '@/assets/testimonial-avatar-5.jpg';
+import testimonialAvatar6 from '@/assets/testimonial-avatar-6.jpg';
 
 const testimonials = [
   {
@@ -21,21 +25,25 @@ const testimonials = [
     name: 'Ricardo Costa',
     handle: '@ricardocosta_',
     content: 'Gerenciar minha banda nunca foi tão fácil. Todos os pagamentos organizados e a galera sempre sabe quando vai receber.',
+    avatar: testimonialAvatar3,
   },
   {
     name: 'Luísa Pereira',
     handle: '@luisap_sax',
     content: 'Uso há 6 meses e já economizei horas de trabalho com planilhas. Super recomendo para qualquer músico profissional.',
+    avatar: testimonialAvatar6,
   },
   {
     name: 'Marcos Gomes',
     handle: '@marcosgomes_drums',
     content: 'A agenda integrada com as finanças é genial. Vejo meus shows e já sei quanto vou faturar no mês.',
+    avatar: testimonialAvatar5,
   },
   {
     name: 'Carla Freitas',
     handle: '@carlafreitas',
     content: 'O melhor investimento que fiz na minha carreira. O app é lindo, fácil de usar e resolve todos os meus problemas.',
+    avatar: testimonialAvatar4,
   },
 ];
 
