@@ -1,5 +1,5 @@
 import React from 'react';
-import { Apple } from 'lucide-react';
+import { Apple, Globe } from 'lucide-react';
 
 interface DownloadButtonsProps {
   size?: 'sm' | 'md' | 'lg';
@@ -47,6 +47,20 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         <div className="flex flex-col items-start">
           <span className="text-[10px] opacity-70 leading-none">Disponível no</span>
           <span className="font-semibold leading-tight">Google Play</span>
+        </div>
+      </a>
+
+      {/* Web App Button */}
+      <a
+        href="https://souartista.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`flex items-center gap-3 bg-gradient-to-r from-primary to-purple-400 text-white rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
+      >
+        <Globe className={iconSizes[size]} />
+        <div className="flex flex-col items-start">
+          <span className="text-[10px] opacity-90 leading-none">Acessar via</span>
+          <span className="font-semibold leading-tight">Web App</span>
         </div>
       </a>
     </div>
