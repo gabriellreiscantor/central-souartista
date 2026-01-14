@@ -47,6 +47,38 @@ export const translations = {
     testimonials: {
       title: 'Amado por milhares de artistas',
       subtitle: 'Veja o que nossos usuários estão dizendo',
+      items: [
+        {
+          name: 'João Mendes',
+          handle: '@joaomendes_music',
+          content: 'Finalmente consigo saber exatamente quanto ganho por mês. O SouArtista mudou minha vida financeira como músico.',
+        },
+        {
+          name: 'Ana Silva',
+          handle: '@anasilvamusic',
+          content: 'O simulador de nota fiscal me salvou! Agora sei exatamente quanto vou receber líquido antes de fechar qualquer show.',
+        },
+        {
+          name: 'Ricardo Costa',
+          handle: '@ricardocosta_',
+          content: 'Gerenciar minha banda nunca foi tão fácil. Todos os pagamentos organizados e a galera sempre sabe quando vai receber.',
+        },
+        {
+          name: 'Luísa Pereira',
+          handle: '@luisap_sax',
+          content: 'Uso há 6 meses e já economizei horas de trabalho com planilhas. Super recomendo para qualquer músico profissional.',
+        },
+        {
+          name: 'Marcos Gomes',
+          handle: '@marcosgomes_drums',
+          content: 'A agenda integrada com as finanças é genial. Vejo meus shows e já sei quanto vou faturar no mês.',
+        },
+        {
+          name: 'Carla Freitas',
+          handle: '@carlafreitas',
+          content: 'O melhor investimento que fiz na minha carreira. O app é lindo, fácil de usar e resolve todos os meus problemas.',
+        },
+      ],
     },
     pricing: {
       title: 'Escolha seu plano',
@@ -229,6 +261,38 @@ export const translations = {
     testimonials: {
       title: 'Loved by thousands of artists',
       subtitle: 'See what our users are saying',
+      items: [
+        {
+          name: 'John Miller',
+          handle: '@johnmiller_music',
+          content: 'I finally know exactly how much I earn each month. SouArtista changed my financial life as a musician.',
+        },
+        {
+          name: 'Anna Smith',
+          handle: '@annasmithmusic',
+          content: 'The invoice simulator saved me! Now I know exactly how much I\'ll receive net before closing any gig.',
+        },
+        {
+          name: 'Richard Costa',
+          handle: '@richardcosta_',
+          content: 'Managing my band has never been easier. All payments organized and everyone knows when they\'ll get paid.',
+        },
+        {
+          name: 'Lisa Parker',
+          handle: '@lisap_sax',
+          content: 'Been using it for 6 months and saved hours of spreadsheet work. Highly recommend for any professional musician.',
+        },
+        {
+          name: 'Mark Gomes',
+          handle: '@markgomes_drums',
+          content: 'The calendar integrated with finances is genius. I see my shows and already know how much I\'ll earn that month.',
+        },
+        {
+          name: 'Carla Freitas',
+          handle: '@carlafreitas',
+          content: 'The best investment I made in my career. The app is beautiful, easy to use, and solves all my problems.',
+        },
+      ],
     },
     pricing: {
       title: 'Choose your plan',
@@ -411,6 +475,38 @@ export const translations = {
     testimonials: {
       title: 'Amado por miles de artistas',
       subtitle: 'Mira lo que dicen nuestros usuarios',
+      items: [
+        {
+          name: 'Juan Méndez',
+          handle: '@juanmendez_music',
+          content: 'Finalmente sé exactamente cuánto gano al mes. SouArtista cambió mi vida financiera como músico.',
+        },
+        {
+          name: 'Ana García',
+          handle: '@anagarciamusic',
+          content: '¡El simulador de factura me salvó! Ahora sé exactamente cuánto recibiré neto antes de cerrar cualquier show.',
+        },
+        {
+          name: 'Ricardo Costa',
+          handle: '@ricardocosta_',
+          content: 'Gestionar mi banda nunca fue tan fácil. Todos los pagos organizados y todos saben cuándo van a cobrar.',
+        },
+        {
+          name: 'Luisa Pérez',
+          handle: '@luisap_sax',
+          content: 'Lo uso hace 6 meses y ya ahorré horas de trabajo con planillas. Lo recomiendo para cualquier músico profesional.',
+        },
+        {
+          name: 'Marcos Gómez',
+          handle: '@marcosgomez_drums',
+          content: 'La agenda integrada con las finanzas es genial. Veo mis shows y ya sé cuánto voy a facturar en el mes.',
+        },
+        {
+          name: 'Carla Freitas',
+          handle: '@carlafreitas',
+          content: 'La mejor inversión que hice en mi carrera. La app es hermosa, fácil de usar y resuelve todos mis problemas.',
+        },
+      ],
     },
     pricing: {
       title: 'Elige tu plan',
