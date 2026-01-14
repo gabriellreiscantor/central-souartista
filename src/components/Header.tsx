@@ -23,6 +23,7 @@ export const Header: React.FC = () => {
   }, []);
 
   const isActive = (path: string) => location.pathname === path;
+  const isHomePage = location.pathname === '/';
 
   const navLinks = [
     { path: '/', label: t.nav.home },
@@ -36,7 +37,9 @@ export const Header: React.FC = () => {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-purple-dark/90 backdrop-blur-xl border-b border-white/10 py-3' 
-          : 'bg-transparent py-5'
+          : isHomePage 
+            ? 'bg-transparent py-5'
+            : 'bg-purple-dark py-5'
       }`}>
         <div className="container flex items-center justify-between relative">
           {/* Language selector on mobile (left side) */}
