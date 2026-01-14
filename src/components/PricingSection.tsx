@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Check, X, Star, Building2, Shield, Lock, RefreshCw, Headphones, CreditCard, QrCode } from 'lucide-react';
+import { Check, X, Star, Shield, Lock, RefreshCw, Headphones, CreditCard, QrCode } from 'lucide-react';
+import { DownloadModal } from '@/components/DownloadModal';
 
 type BillingCycle = 'monthly' | 'yearly';
 type PaymentMethod = 'card' | 'pix';
@@ -8,6 +9,7 @@ type PaymentMethod = 'card' | 'pix';
 export const PricingSection: React.FC = () => {
   const [billingCycle, setBillingCycle] = useState<BillingCycle>('yearly');
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('card');
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
 
   const plans = {
     monthly: {
@@ -223,6 +225,7 @@ export const PricingSection: React.FC = () => {
             <Button 
               className="w-full rounded-full shadow-purple hover:shadow-purple-lg"
               size="lg"
+              onClick={() => setIsDownloadModalOpen(true)}
             >
               {paymentMethod === 'card' ? 'Começar teste grátis' : 'Assinar agora'}
             </Button>
@@ -353,6 +356,12 @@ export const PricingSection: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Download Modal */}
+        <DownloadModal 
+          open={isDownloadModalOpen} 
+          onOpenChange={setIsDownloadModalOpen} 
+        />
       </div>
     </section>
   );
