@@ -23,7 +23,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     
     // Check localStorage
     const savedLang = localStorage.getItem('souartista-lang') as Language;
-    if (savedLang && (savedLang === 'pt' || savedLang === 'en')) {
+    if (savedLang && (savedLang === 'pt' || savedLang === 'en' || savedLang === 'es')) {
       setLanguage(savedLang);
     }
   }, []);

@@ -1,4 +1,4 @@
-export type Language = 'pt' | 'en';
+export type Language = 'pt' | 'en' | 'es';
 
 export const translations = {
   pt: {
@@ -362,6 +362,188 @@ export const translations = {
       trust: 'Trust Center',
       copyright: '© 2025 SouArtista',
       developer: 'Developed by Savini Comunicação',
+      cnpj: 'CNPJ: 50.075.961/0001-33',
+    },
+  },
+  es: {
+    nav: {
+      home: 'Inicio',
+      features: 'Funcionalidades',
+      pricing: 'Precios',
+      blog: 'Blog',
+      download: 'Descargar App',
+    },
+    hero: {
+      badge: 'Prueba 7 días gratis',
+      title: 'Tus finanzas musicales y agenda organizadas',
+      subtitle: 'Nos encargamos de lo aburrido para que te enfoques en la música',
+      socialProof: 'Más de 5.000 artistas ya gestionan su carrera con nosotros',
+      downloadApp: 'Descargar App',
+    },
+    features: {
+      title: 'Todo lo que necesitas para gestionar tu carrera',
+      subtitle: 'Herramientas diseñadas por músicos, para músicos',
+      financial: {
+        title: 'Control total de tu dinero',
+        description: 'Registra cachés, gastos y pagos. Mira exactamente cuánto te queda después de cada show.',
+      },
+      calendar: {
+        title: 'Nunca pierdas una cita',
+        description: 'Shows, ensayos y eventos en un solo lugar. Recibe notificaciones en tu celular y nunca olvides un show.',
+      },
+      musicians: {
+        title: 'Tu banda en la palma de tu mano',
+        description: 'Gestiona músicos, divide cachés automáticamente y mantén comunicación clara con todo tu equipo.',
+      },
+      invoice: {
+        title: 'Sabe cuánto vas a recibir realmente',
+        description: 'Simula facturas y descubre tu caché neto después de impuestos. Sin sorpresas al momento del pago.',
+      },
+      reports: {
+        title: 'Entiende tu negocio como nunca',
+        description: 'Gráficos claros que muestran tu crecimiento mes a mes. Sabe qué shows pagan mejor y dónde puedes ahorrar.',
+      },
+      transportation: {
+        title: 'Tus costos de viaje organizados',
+        description: 'Registra kilometraje, peajes, combustible y hospedaje. Sabe exactamente cuánto cuesta cada show.',
+      },
+    },
+    testimonials: {
+      title: 'Amado por miles de artistas',
+      subtitle: 'Mira lo que dicen nuestros usuarios',
+    },
+    pricing: {
+      title: 'Elige tu plan',
+      subtitle: 'Empieza gratis y mejora cuando lo necesites',
+      monthly: 'Mensual',
+      yearly: 'Anual',
+      yearlyDiscount: '15% de descuento',
+      popular: 'Más Popular',
+      free: {
+        name: 'Gratuito',
+        price: '$0',
+        period: '/mes',
+        features: [
+          'Hasta 5 shows',
+          'Agenda básica',
+          'Reportes limitados',
+        ],
+        cta: 'Empezar Gratis',
+      },
+      pro: {
+        name: 'Pro',
+        price: '$9.90',
+        priceYearly: '$99',
+        period: '/mes',
+        periodYearly: '/año',
+        features: [
+          'Shows ilimitados',
+          'Gestión de músicos',
+          'Reportes completos',
+          'Simulador de factura',
+          'Soporte prioritario',
+        ],
+        cta: 'Suscribirse Pro',
+      },
+      premium: {
+        name: 'Premium',
+        price: '$19.90',
+        priceYearly: '$199',
+        period: '/mes',
+        periodYearly: '/año',
+        features: [
+          'Todo de Pro +',
+          'Multi-bandas',
+          'Exportación avanzada',
+          'Backup en la nube',
+          'Soporte VIP',
+        ],
+        cta: 'Suscribirse Premium',
+      },
+    },
+    faq: {
+      title: 'Preguntas Frecuentes',
+      subtitle: 'Resuelve tus dudas sobre SouArtista',
+      questions: [
+        {
+          question: '¿Qué es SouArtista?',
+          answer: 'SouArtista es la app completa de gestión para músicos y artistas. Organiza tus shows, controla cachés, gestiona gastos, calcula impuestos, registra costos de viaje y acompaña toda tu carrera financiera en un solo lugar. Desarrollado por músicos que entienden tu realidad.',
+        },
+        {
+          question: '¿Cuál es la diferencia entre Artista y Músico en la app?',
+          answer: 'El Artista es quien contrata, gestiona la banda y define los cachés de los shows. El Músico es quien toca en las bandas y recibe invitaciones de participación. Si haces ambos, puedes tener una cuenta como Artista y gestionar tus músicos.',
+        },
+        {
+          question: '¿Cómo funciona el período de prueba gratuito?',
+          answer: 'Tienes 7 días gratis para probar todas las funcionalidades del plan Pro. No pedimos tarjeta de crédito para empezar. Después del período, puedes continuar en el plan gratuito con funcionalidades básicas o suscribirte al Pro.',
+        },
+        {
+          question: '¿La app me recuerda mis shows?',
+          answer: '¡Sí! SouArtista envía notificaciones inteligentes para que nunca olvides un compromiso: 7 días antes del show, 1 día antes, el día del show, 3 horas antes y 30 minutos antes. ¡Nunca más perderás un show o ensayo!',
+        },
+        {
+          question: '¿Puedo usarla en iPhone y Android?',
+          answer: '¡Sí! SouArtista está disponible en la App Store (iOS) y Google Play Store (Android). La app funciona offline y sincroniza cuando tengas internet.',
+        },
+        {
+          question: '¿Mis datos están seguros?',
+          answer: 'Absolutamente. Utilizamos encriptación de punta a punta e infraestructura de nivel bancario. Seguimos las regulaciones de protección de datos y puedes solicitar exportación o eliminación de tus datos en cualquier momento.',
+        },
+        {
+          question: '¿Qué es el Simulador de Factura?',
+          answer: 'Es una herramienta exclusiva que calcula automáticamente cuánto vas a recibir neto después de impuestos. Solo ingresa el valor bruto del caché y el tipo de pago para saber exactamente cuánto llegará a tu cuenta.',
+        },
+        {
+          question: '¿Puedo registrar costos de viaje?',
+          answer: '¡Sí! La app tiene una sección dedicada para registrar kilometraje, peajes, combustible y hospedaje. Al final del mes, sabes exactamente cuánto gastaste en desplazarte a los shows.',
+        },
+        {
+          question: '¿Cómo funciona el programa de referidos?',
+          answer: 'Cada usuario tiene un código de referido único. Cuando alguien se registra usando tu código, ambos ganan beneficios. Acompaña tus referidos y recompensas directamente en la app.',
+        },
+        {
+          question: '¿Puedo gestionar múltiples bandas?',
+          answer: 'Por el momento, la gestión de múltiples proyectos/bandas está disponible solo para productoras y empresas. Si gestionas varias bandas profesionalmente, contáctanos para conocer nuestro plan especial.',
+        },
+        {
+          question: '¿Cómo cancelo mi suscripción?',
+          answer: 'Puedes cancelar en cualquier momento directamente por la app, en la sección "Suscripción". Sin burocracia, sin llamadas. El acceso Pro continúa hasta el fin del período ya pagado.',
+        },
+        {
+          question: '¿Necesito internet para usar la app?',
+          answer: 'La app funciona offline para consultas básicas. Para sincronizar datos, agregar shows o generar reportes, necesitas conexión. Una vez conectado, todo se actualiza automáticamente.',
+        },
+        {
+          question: '¿Puedo exportar mis reportes?',
+          answer: '¡Sí! El plan Pro permite exportar reportes financieros en PDF y Excel. Perfecto para declaración de impuestos o para mostrar a tu contador.',
+        },
+        {
+          question: '¿Cómo contacto al soporte?',
+          answer: '¡Directamente por la app! En la sección "Soporte", puedes enviar mensajes, sugerencias o reportar problemas. Nuestro equipo responde en máximo 24 horas hábiles.',
+        },
+      ],
+    },
+    cta: {
+      title: '¿Listo para organizar tu carrera musical?',
+      subtitle: 'Descarga ahora y empieza a usar gratis',
+      contact: '¿Dudas? Contáctanos:',
+    },
+    footer: {
+      product: 'Producto',
+      company: 'Empresa',
+      legal: 'Legal',
+      social: 'Redes Sociales',
+      features: 'Funcionalidades',
+      pricing: 'Precios',
+      download: 'Descargar',
+      about: 'Acerca de',
+      blog: 'Blog',
+      contact: 'Contacto',
+      terms: 'Términos de Uso',
+      privacy: 'Política de Privacidad',
+      trust: 'Centro de Confianza',
+      copyright: '© 2025 SouArtista',
+      developer: 'Desarrollado por Savini Comunicação',
       cnpj: 'CNPJ: 50.075.961/0001-33',
     },
   },
