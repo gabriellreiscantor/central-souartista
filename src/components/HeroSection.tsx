@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Social Proof */}
-            <div className="flex items-center gap-4 mt-10 justify-center lg:justify-start animate-fade-in-up stagger-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mt-10 justify-center lg:justify-start animate-fade-in-up stagger-4">
               <div className="flex -space-x-3">
                 {avatars.map((avatar, i) => (
                   <img
@@ -62,8 +62,8 @@ export const HeroSection: React.FC = () => {
                   />
                 ))}
               </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-primary" />
+              <div className="flex items-center gap-2 text-center sm:text-left">
+                <Users className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-sm text-white/70">{t.hero.socialProof}</span>
               </div>
             </div>
