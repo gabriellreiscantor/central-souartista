@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const FeaturesHero: React.FC = () => {
   return (
-    <section className="pt-28 pb-12 bg-background">
+    <section className="pt-32 pb-12 bg-background">
       <div className="container">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
