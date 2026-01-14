@@ -62,9 +62,11 @@ export const HeroSection: React.FC = () => {
                   />
                 ))}
               </div>
-              <div className="flex items-center gap-2 text-center sm:text-left">
-                <Users className="w-4 h-4 text-primary flex-shrink-0" />
-                <span className="text-sm text-white/70">{t.hero.socialProof}</span>
+              <div className="text-center sm:text-left">
+                <span className="text-sm text-white/70">
+                  <Users className="w-4 h-4 text-primary inline-block mr-1 align-middle" />
+                  {t.hero.socialProof}
+                </span>
               </div>
             </div>
           </div>
