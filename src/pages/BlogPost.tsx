@@ -103,7 +103,7 @@ const BlogPost: React.FC = () => {
 
   return (
     <Layout>
-      <article className="relative pt-28 pb-20">
+      <article className="relative pt-32 pb-20">
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-40 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-[120px]" />
