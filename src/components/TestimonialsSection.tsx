@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { TestimonialCard } from './TestimonialCard';
 import testimonialAvatar1 from '@/assets/testimonial-avatar-1.jpg';
+import testimonialAvatar2 from '@/assets/testimonial-avatar-2.jpg';
 
 const testimonials = [
   {
@@ -14,6 +15,7 @@ const testimonials = [
     name: 'Ana Silva',
     handle: '@anasilvamusic',
     content: 'O simulador de nota fiscal me salvou! Agora sei exatamente quanto vou receber líquido antes de fechar qualquer show.',
+    avatar: testimonialAvatar2,
   },
   {
     name: 'Ricardo Costa',
