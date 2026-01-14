@@ -66,8 +66,8 @@ export const HeroSection: React.FC = () => {
               
               {/* iPhone Mockup Container */}
               <div className="relative w-[280px] sm:w-[320px] animate-float">
-                {/* Screen Content Area - positioned inside the phone frame */}
-                <div className="absolute top-[2.8%] left-[6%] w-[88%] h-[94.5%] rounded-[2rem] overflow-hidden bg-purple-dark z-0">
+                {/* Vídeo posicionado ATRÁS do frame PNG */}
+                <div className="absolute top-[3%] left-[6%] w-[88%] h-[94%] rounded-[2.5rem] overflow-hidden z-0">
                   <video 
                     autoPlay 
                     loop 
@@ -79,13 +79,12 @@ export const HeroSection: React.FC = () => {
                   </video>
                 </div>
                 
-                {/* iPhone Frame - realistic device frame */}
-                <div className="relative z-10 w-full aspect-[9/19] bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-[3rem] p-1 shadow-purple-lg">
-                  <div className="w-full h-full rounded-[2.8rem] border-4 border-gray-700/50 bg-transparent">
-                    {/* Dynamic Island */}
-                    <div className="absolute top-3 left-1/2 -translate-x-1/2 w-24 h-7 bg-black rounded-full z-20" />
-                  </div>
-                </div>
+                {/* Frame PNG do iPhone */}
+                <img 
+                  src="/iphone-mockup.png" 
+                  alt="iPhone"
+                  className="relative z-10 w-full h-auto"
+                />
               </div>
             </div>
           </div>
