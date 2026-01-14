@@ -82,7 +82,6 @@ const financeiroFeatures = [
       'IRRF com tabela atualizada',
       'Suporte para MEI e CNPJ',
     ],
-    badge: 'Pro',
   },
 ];
 
@@ -147,7 +146,6 @@ const equipeFeatures = [
       'Total ganho por artista',
       'Dashboard adaptado',
     ],
-    badge: 'Exclusivo',
   },
 ];
 
@@ -203,7 +201,6 @@ const relatoriosFeatures = [
       'Exportação em XLSX',
       'Envio por e-mail',
     ],
-    badge: 'Pro',
   },
 ];
 
@@ -281,7 +278,6 @@ const configuracoesFeatures = [
       'Progresso visual',
       'Sistema multi-ciclo',
     ],
-    badge: '🎁 Grátis',
   },
 ];
 
