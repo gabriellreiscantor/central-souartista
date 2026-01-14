@@ -103,7 +103,7 @@ export const translations = {
       questions: [
         {
           question: 'O que é o SouArtista?',
-          answer: 'O SouArtista é um aplicativo de gestão financeira e agenda desenvolvido especialmente para músicos e artistas brasileiros. Com ele, você organiza cachês, despesas, shows e toda sua carreira em um só lugar.',
+          answer: 'O SouArtista é um aplicativo de gestão financeira e agenda desenvolvido especialmente para músicos e artistas de todo o mundo. Com ele, você organiza cachês, despesas, shows e toda sua carreira em um só lugar.',
         },
         {
           question: 'Como funciona o período de teste?',
