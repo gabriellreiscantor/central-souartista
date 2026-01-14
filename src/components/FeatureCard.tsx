@@ -16,16 +16,24 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   return (
     <div 
-      className="group p-6 bg-card rounded-2xl border border-border hover:border-primary/30 transition-smooth hover-lift"
+      className="group p-6 bg-white rounded-2xl border border-[#E5E7EB] hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 animate-fade-in-up"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-smooth">
-        <Icon className="w-7 h-7 text-primary" />
+      {/* Icon Container - 48x48px circle */}
+      <div 
+        className="w-12 h-12 rounded-full flex items-center justify-center mb-5"
+        style={{ backgroundColor: 'rgba(147, 51, 234, 0.15)' }}
+      >
+        <Icon className="w-6 h-6 text-[#9333EA]" />
       </div>
-      <h3 className="font-display font-semibold text-xl text-foreground mb-3">
+      
+      {/* Title */}
+      <h3 className="font-display font-semibold text-xl text-[#111827] mb-3">
         {title}
       </h3>
-      <p className="text-muted-foreground leading-relaxed">
+      
+      {/* Description */}
+      <p className="text-[#6B7280] leading-relaxed">
         {description}
       </p>
     </div>
