@@ -37,8 +37,10 @@ export const Header: React.FC = () => {
           : 'bg-transparent py-5'
       }`}>
         <div className="container flex items-center justify-between relative">
-          {/* Spacer for mobile to center logo */}
-          <div className="w-10 md:hidden" />
+          {/* Language selector on mobile (left side) */}
+          <div className="md:hidden">
+            <LanguageSelector variant="dark" />
+          </div>
           
           {/* Logo - centered on mobile */}
           <Link to="/" className="flex items-center absolute left-1/2 -translate-x-1/2 md:relative md:left-0 md:translate-x-0">
