@@ -42,7 +42,13 @@ export const Header: React.FC = () => {
           
           {/* Logo - centered on mobile */}
           <Link to="/" className="flex items-center absolute left-1/2 -translate-x-1/2 md:relative md:left-0 md:translate-x-0">
-            <img src={logo} alt="SouArtista" className="h-20 w-auto" />
+            <img 
+              src={logo} 
+              alt="SouArtista" 
+              className={`w-auto transition-all duration-300 ${
+                isScrolled ? 'h-12' : 'h-16 md:h-20'
+              }`} 
+            />
           </Link>
 
           {/* Desktop Navigation */}
