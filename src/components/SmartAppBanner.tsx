@@ -63,8 +63,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
 
   const handleOpen = () => {
     if (os === 'ios') {
-      // App Store link - substitua pelo link real quando disponível
-      window.open('https://apps.apple.com/app/souartista/id6743639498', '_blank');
+      window.open('https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476', '_blank');
     } else if (os === 'android') {
       toast({
         title: "Em breve! 🚀",
@@ -94,9 +93,9 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
             className="w-12 h-12 rounded-xl shadow-sm flex-shrink-0"
           />
           <div className="min-w-0">
-            <h3 className="font-semibold text-foreground text-sm leading-tight">SouArtista</h3>
+            <h3 className="font-semibold text-foreground text-sm leading-tight">SouArtista: Cachês e agenda</h3>
             <p className="text-xs text-muted-foreground leading-tight mt-0.5">
-              Gerencie seus shows
+              Para músicos e cantores
             </p>
             <p className="text-[10px] text-muted-foreground/70 leading-tight">
               {os === 'ios' ? 'App Store' : 'Google Play'}
