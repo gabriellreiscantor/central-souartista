@@ -236,10 +236,6 @@ export const PricingSection: React.FC = () => {
 
           {/* Enterprise Card */}
           <div className="rounded-2xl p-8 bg-card border border-border flex flex-col">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-              <Building2 className="w-6 h-6 text-primary" />
-            </div>
-
             <h3 className="font-display font-semibold text-xl text-foreground mb-2">
               Plano Enterprise
             </h3>
