@@ -20,7 +20,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
     {
       label: 'SouArtista no iOS',
       icon: 'apple' as const,
-      href: '#',
+      href: 'https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476',
     },
     {
       label: 'SouArtista no Android',
