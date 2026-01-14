@@ -25,7 +25,7 @@ export const translations = {
       },
       calendar: {
         title: 'Nunca mais perca um compromisso',
-        description: 'Shows, ensaios e eventos em um só lugar. Receba lembretes automáticos e mantenha sua agenda sempre organizada.',
+        description: 'Shows, ensaios e eventos em um só lugar. Receba notificações direto na tela do seu celular e nunca esqueça um show.',
       },
       musicians: {
         title: 'Sua banda na palma da mão',
@@ -175,7 +175,7 @@ export const translations = {
       },
       calendar: {
         title: 'Never miss an appointment',
-        description: 'Shows, rehearsals, and events in one place. Get automatic reminders and keep your schedule organized.',
+        description: 'Shows, rehearsals, and events in one place. Get notifications right on your phone screen and never forget a gig.',
       },
       musicians: {
         title: 'Your band in your pocket',
