@@ -35,7 +35,7 @@ export const PricingSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-secondary/30" id="pricing">
+    <section className="pt-32 pb-24 bg-secondary/30" id="pricing">
       <div className="container">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
