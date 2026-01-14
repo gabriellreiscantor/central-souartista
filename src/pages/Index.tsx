@@ -1,7 +1,6 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
 import { HeroSection } from '@/components/HeroSection';
-import { LogoCloud } from '@/components/LogoCloud';
 import { FeaturesSection } from '@/components/FeaturesSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { PricingSection } from '@/components/PricingSection';
@@ -12,7 +11,6 @@ const Index: React.FC = () => {
   return (
     <Layout>
       <HeroSection />
-      <LogoCloud />
       <FeaturesSection />
       <TestimonialsSection />
       <PricingSection />
