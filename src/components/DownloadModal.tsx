@@ -5,8 +5,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { Apple, Smartphone, Globe } from 'lucide-react';
+import { Smartphone, Globe } from 'lucide-react';
 import appIcon from '@/assets/app-icon.png';
+import appleLogo from '@/assets/apple-logo.png';
 
 interface DownloadModalProps {
   open: boolean;
@@ -17,7 +18,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
   const appDownloads = [
     {
       label: 'SouArtista no iOS',
-      icon: Apple,
+      icon: 'apple' as const,
       href: '#',
     },
     {
@@ -63,7 +64,11 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
                   className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
                 >
                   <div className="w-11 h-11 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/25">
-                    <option.icon className="w-5 h-5" />
+                    {option.icon === 'apple' ? (
+                      <img src={appleLogo} alt="Apple" className="w-5 h-5 object-contain" />
+                    ) : (
+                      <option.icon className="w-5 h-5" />
+                    )}
                   </div>
                   <span className="text-gray-800 font-medium group-hover:text-primary transition-colors">
                     {option.label}
