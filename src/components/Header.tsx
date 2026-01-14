@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { LanguageSelector } from './LanguageSelector';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 export const Header: React.FC = () => {
   const { t } = useLanguage();
@@ -37,11 +38,8 @@ export const Header: React.FC = () => {
       }`}>
         <div className="container flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-purple">
-              <span className="text-white font-display font-bold text-xl">S</span>
-            </div>
-            <span className="font-display font-bold text-xl text-white">SouArtista</span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="SouArtista" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
