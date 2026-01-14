@@ -142,7 +142,9 @@ export const translations = {
       terms: 'Termos de Uso',
       privacy: 'Política de Privacidade',
       trust: 'Central de Confiança',
-      copyright: '© 2025 SouArtista. Todos os direitos reservados.',
+      copyright: '© 2025 SouArtista',
+      developer: 'Desenvolvido por Savini Comunicação',
+      cnpj: 'CNPJ: 50.075.961/0001-33',
     },
   },
   en: {
@@ -286,7 +288,9 @@ export const translations = {
       terms: 'Terms of Service',
       privacy: 'Privacy Policy',
       trust: 'Trust Center',
-      copyright: '© 2025 SouArtista. All rights reserved.',
+      copyright: '© 2025 SouArtista',
+      developer: 'Developed by Savini Comunicação',
+      cnpj: 'CNPJ: 50.075.961/0001-33',
     },
   },
 };

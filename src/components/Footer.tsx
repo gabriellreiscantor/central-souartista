@@ -125,10 +125,21 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom */}
-        <div className="pt-8 border-t border-white/10 text-center">
-          <p className="text-white/40 text-sm">
-            {t.footer.copyright}
-          </p>
+        <div className="pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
+              <p className="text-white/60 text-sm font-medium">
+                {t.footer.copyright}
+              </p>
+              <span className="hidden md:block text-white/30">|</span>
+              <p className="text-white/40 text-sm">
+                {t.footer.developer}
+              </p>
+            </div>
+            <p className="text-white/30 text-xs">
+              {t.footer.cnpj}
+            </p>
+          </div>
         </div>
       </div>
     </footer>
