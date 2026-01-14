@@ -47,7 +47,7 @@ export const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#FAFAFA]" id="features">
+    <section className="py-24 bg-[#FAFAFA] overflow-hidden" id="features">
       <div className="container">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

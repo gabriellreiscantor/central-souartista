@@ -51,7 +51,7 @@ export const TestimonialsSection: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 section-dark" id="testimonials">
+    <section className="py-24 section-dark overflow-hidden relative" id="testimonials">
       {/* Glow Effect */}
       <div className="blob-purple top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" />
       
