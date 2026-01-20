@@ -5,6 +5,7 @@ import { FeaturesNav } from '@/components/features/FeaturesTabs';
 import { FeatureSection } from '@/components/features/FeatureSection';
 import { FeatureCompare } from '@/components/features/FeatureCompare';
 import { FeaturesCTA } from '@/components/features/FeaturesCTA';
+import { SEOHead } from '@/components/SEOHead';
 import {
   Music,
   Wallet,
@@ -284,6 +285,12 @@ const configuracoesFeatures = [
 const Features: React.FC = () => {
   return (
     <Layout>
+      <SEOHead 
+        title="Funcionalidades - SouArtista | Gestão Completa para Músicos"
+        description="Descubra todas as funcionalidades do SouArtista: gestão de shows, controle financeiro, simulador de nota fiscal, agenda, relatórios e muito mais para músicos."
+        keywords="funcionalidades souartista, recursos app músico, gestão shows, controle cachê, simulador nota fiscal, agenda músico, relatórios financeiros"
+        canonical="https://souartista.app/funcionalidades"
+      />
       <FeaturesHero />
       <FeaturesNav categories={categories} />
       

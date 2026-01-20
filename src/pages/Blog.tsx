@@ -5,6 +5,7 @@ import { CategoryFilter } from '@/components/blog/CategoryFilter';
 import { Button } from '@/components/ui/button';
 import { BlogCategory, blogPosts, filterPostsByCategory } from '@/data/blogData';
 import { Newspaper } from 'lucide-react';
+import { SEOHead } from '@/components/SEOHead';
 
 const POSTS_PER_PAGE = 6;
 
@@ -26,6 +27,12 @@ const Blog: React.FC = () => {
 
   return (
     <Layout>
+      <SEOHead 
+        title="Blog SouArtista - Dicas e Insights para Músicos"
+        description="Artigos educativos, dicas práticas e conteúdos que ajudam músicos a organizarem suas carreiras e finanças. Aprenda sobre gestão musical, impostos e muito mais."
+        keywords="blog músico, dicas músicos, gestão carreira musical, finanças artistas, impostos músico, nota fiscal músico, como organizar shows"
+        canonical="https://souartista.app/blog"
+      />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         {/* Background Elements */}
