@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
-import { Mail, Phone, MapPin, Clock, Send, Instagram, Facebook, Youtube } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, Instagram, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -45,12 +45,6 @@ const Contact: React.FC = () => {
       title: 'E-mail',
       value: 'contato@souartista.app',
       link: 'mailto:contato@souartista.app'
-    },
-    {
-      icon: Phone,
-      title: 'WhatsApp',
-      value: '+55 (11) 99999-9999',
-      link: 'https://wa.me/5511999999999'
     },
     {
       icon: Clock,
