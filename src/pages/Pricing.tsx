@@ -8,10 +8,14 @@ const Pricing: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Preços e Planos - SouArtista | App para Músicos"
-        description="Conheça os planos do SouArtista: Gratuito, Pro e Premium. Comece grátis por 7 dias e organize sua carreira musical. A partir de R$ 19,90/mês."
-        keywords="preços souartista, planos app músico, assinatura gestão musical, quanto custa souartista, plano pro músico"
+        title="Preços e Planos - SouArtista"
+        description="Conheça os planos do SouArtista: Plano Mensal por R$ 29,90 ou Plano Anual por R$ 300,00. Organize sua carreira musical com o melhor app para músicos, cantores e DJs."
+        keywords="preços souartista, planos app músico, assinatura gestão musical, quanto custa souartista, plano pro músico, app para DJ preço"
         canonical="https://souartista.app/precos"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Preços', url: 'https://souartista.app/precos' }
+        ]}
       />
       <PricingSection />
       <CTASection />

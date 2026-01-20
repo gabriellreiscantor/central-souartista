@@ -29,10 +29,14 @@ const Contact: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Contato - SouArtista | Fale Conosco"
-        description="Entre em contato com a equipe SouArtista. Estamos prontos para ajudar músicos e artistas com dúvidas sobre o app, suporte técnico e parcerias."
-        keywords="contato souartista, suporte app músico, falar com souartista, ajuda músicos, email souartista"
+        title="Contato - SouArtista"
+        description="Entre em contato com a equipe SouArtista. Estamos prontos para ajudar músicos, cantores, DJs e artistas com dúvidas sobre o app, suporte técnico e parcerias."
+        keywords="contato souartista, suporte app músico, falar com souartista, ajuda músicos, email souartista, suporte DJ"
         canonical="https://souartista.app/contato"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Contato', url: 'https://souartista.app/contato' }
+        ]}
       />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">

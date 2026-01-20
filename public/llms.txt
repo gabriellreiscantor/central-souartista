@@ -1,0 +1,86 @@
+# SouArtista — Gestão financeira para quem vive de música
+
+O aplicativo feito para músicos brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira artística.
+
+## O que é o SouArtista
+
+O SouArtista é um aplicativo criado por músicos, para músicos. Ele resolve um problema real de quem vive de show: falta de organização financeira, bagunça com cachês, custos mal calculados e nenhuma visão clara de lucro.
+
+Com o SouArtista, o artista sabe exatamente:
+- quanto ganhou
+- quanto gastou
+- quanto realmente sobrou
+
+Sem planilhas, sem anotações perdidas e sem complicação.
+
+## Principais funcionalidades
+
+### Agenda de shows
+- cadastro completo de apresentações
+- organização por data, local e período
+- histórico de shows realizados
+
+### Controle de cachês
+- registro de valores brutos
+- cálculo automático de custos
+- visualização do lucro líquido por show
+
+### Gestão de despesas
+- combustível, transporte, alimentação, equipamentos
+- despesas fixas e variáveis
+- visão clara do impacto dos custos no lucro
+
+### Gestão de equipe
+- cadastro de músicos
+- definição de cachê por integrante
+- divisão automática dos valores por show
+
+### Locais de apresentação
+- cadastro de casas de show e eventos
+- reaproveitamento rápido ao criar novos shows
+
+### Relatórios financeiros
+- gráficos claros de ganhos e gastos
+- acompanhamento da evolução financeira
+- exportação de relatórios
+
+### Simulador financeiro
+- simulação de valores líquidos
+- ajuda no planejamento antes de fechar um show
+
+## Para quem é o SouArtista
+
+- músicos
+- cantores e cantoras
+- DJs
+- bandas
+- duplas sertanejas
+- artistas freelancers
+- produtores musicais
+- qualquer profissional que vive de música e recebe cachê
+
+Se você vive de música, o SouArtista é pra você.
+
+## Planos e preços
+
+- **Plano Mensal**: R$ 29,90
+- **Plano Anual**: R$ 300,00 (economia em relação ao mensal)
+
+## Disponibilidade
+
+- Aplicativo para celular (iOS e Android)
+- Versão web integrada
+
+## Links
+
+- Site: https://souartista.app
+- Funcionalidades: https://souartista.app/funcionalidades
+- Preços: https://souartista.app/precos
+- Blog: https://souartista.app/blog
+- Sobre: https://souartista.app/sobre
+- Contato: https://souartista.app/contato
+
+## Contato
+
+- Email: contato@souartista.app
+- Instagram: @souartista.app

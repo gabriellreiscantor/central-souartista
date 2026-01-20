@@ -28,10 +28,14 @@ const Blog: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Blog SouArtista - Dicas e Insights para Músicos"
-        description="Artigos educativos, dicas práticas e conteúdos que ajudam músicos a organizarem suas carreiras e finanças. Aprenda sobre gestão musical, impostos e muito mais."
-        keywords="blog músico, dicas músicos, gestão carreira musical, finanças artistas, impostos músico, nota fiscal músico, como organizar shows"
+        title="Blog - SouArtista"
+        description="Artigos, dicas práticas e conteúdos que ajudam músicos, cantores, DJs e artistas a organizarem suas carreiras e finanças. Aprenda sobre gestão musical, impostos e muito mais."
+        keywords="blog músico, dicas músicos, gestão carreira musical, finanças artistas, impostos músico, nota fiscal músico, como organizar shows, dicas para DJ"
         canonical="https://souartista.app/blog"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Blog', url: 'https://souartista.app/blog' }
+        ]}
       />
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 overflow-hidden">

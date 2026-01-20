@@ -1,6 +1,7 @@
-# SouArtista - Gestão Financeira para Músicos
+# SouArtista — Gestão financeira para quem vive de música
 # https://souartista.app
 
+# Crawlers de Busca
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
@@ -9,6 +10,26 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
+# Crawlers de IA
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Redes Sociais
 User-agent: Twitterbot
 Allow: /
 
@@ -24,11 +45,12 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
+# Geral
 User-agent: *
 Allow: /
 Crawl-delay: 2
 
-# Sitemap
+# Sitemap e LLMs
 Sitemap: https://souartista.app/sitemap.xml
 
 # Disallow

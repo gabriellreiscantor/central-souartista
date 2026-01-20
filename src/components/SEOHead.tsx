@@ -1,5 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface SEOHeadProps {
   title?: string;
   description?: string;
@@ -8,19 +13,40 @@ interface SEOHeadProps {
   ogImage?: string;
   ogType?: string;
   noIndex?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'SouArtista - Gestão Financeira e Agenda para Músicos',
-  description = 'O app completo para músicos brasileiros. Organize seus shows, controle cachês, gerencie despesas, simule notas fiscais e acompanhe sua carreira financeira. Experimente 7 dias grátis!',
-  keywords = 'app para músicos, gestão financeira artistas, agenda de shows, controle de cachê, simulador nota fiscal músico, app banda, gerenciamento músicos, SouArtista, músicos brasileiros, app show, controle financeiro músico',
+  title = 'SouArtista — Gestão financeira para quem vive de música',
+  description = 'O aplicativo feito para músicos, cantores, DJs e artistas brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira.',
+  keywords = 'app para músicos, gestão financeira artistas, agenda de shows, controle de cachê, app para DJ, app para cantor, app banda, gerenciamento músicos, SouArtista, músicos brasileiros, app show, controle financeiro músico',
   canonical,
   ogImage = 'https://storage.googleapis.com/gpt-engineer-file-uploads/mKx26voRlBSrfQgaD8ihFhaECGz1/social-images/social-1768421693138-ICONE FINAL.png',
   ogType = 'website',
   noIndex = false,
+  breadcrumbs,
 }) => {
   const siteUrl = 'https://souartista.app';
   const canonicalUrl = canonical || siteUrl;
+
+  // JSON-LD WebSite Schema with SearchAction
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'SouArtista',
+    alternateName: 'SouArtista App',
+    url: siteUrl,
+    description: 'Gestão financeira para quem vive de música',
+    inLanguage: ['pt-BR', 'en', 'es'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${siteUrl}/blog?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
 
   // JSON-LD Organization Schema
   const organizationSchema = {
@@ -29,11 +55,17 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     name: 'SouArtista',
     url: siteUrl,
     logo: ogImage,
-    description: 'Aplicativo de gestão financeira e agenda para músicos brasileiros',
+    description: 'Aplicativo de gestão financeira para músicos, cantores, DJs e artistas brasileiros',
+    slogan: 'Gestão financeira para quem vive de música',
     foundingDate: '2024',
+    areaServed: {
+      '@type': 'Country',
+      name: 'Brazil',
+      alternateName: 'BR',
+    },
     sameAs: [
       'https://instagram.com/souartista.app',
-      'https://facebook.com/souartista',
+      'https://facebook.com/souartistaapp',
       'https://youtube.com/@souartista',
       'https://tiktok.com/@souartista.app',
     ],
@@ -51,13 +83,25 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     '@type': 'SoftwareApplication',
     name: 'SouArtista',
     applicationCategory: 'FinanceApplication',
-    operatingSystem: 'iOS, Android',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'BRL',
-      description: 'Teste grátis por 7 dias',
-    },
+    operatingSystem: 'iOS, Android, Web',
+    offers: [
+      {
+        '@type': 'Offer',
+        name: 'Plano Mensal',
+        price: '29.90',
+        priceCurrency: 'BRL',
+        priceValidUntil: '2027-12-31',
+        availability: 'https://schema.org/InStock',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Plano Anual',
+        price: '300.00',
+        priceCurrency: 'BRL',
+        priceValidUntil: '2027-12-31',
+        availability: 'https://schema.org/InStock',
+      },
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.8',
@@ -68,16 +112,16 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     description: description,
     screenshot: ogImage,
     featureList: [
-      'Controle de cachês e finanças',
-      'Agenda de shows e ensaios',
-      'Gestão de músicos e banda',
-      'Simulador de nota fiscal',
-      'Relatórios financeiros',
-      'Controle de custos de locomoção',
+      'Agenda de shows e apresentações',
+      'Controle de cachês e lucro líquido',
+      'Gestão de despesas e custos',
+      'Gestão de equipe e músicos',
+      'Relatórios financeiros com gráficos',
+      'Simulador financeiro',
     ],
   };
 
-  // JSON-LD FAQ Schema (for main page)
+  // JSON-LD FAQ Schema
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -87,15 +131,23 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         name: 'O que é o SouArtista?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'O SouArtista é o aplicativo completo de gestão para músicos e artistas. Organize seus shows, controle cachês, gerencie despesas, calcule impostos, registre custos de locomoção e acompanhe toda sua carreira financeira em um só lugar.',
+          text: 'O SouArtista é um aplicativo de gestão financeira criado por músicos, para músicos. Ele ajuda artistas, cantores, DJs e bandas a organizarem shows, cachês, despesas e terem controle real da vida financeira artística.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Como funciona o período de teste gratuito?',
+        name: 'Para quem é o SouArtista?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Você tem 7 dias grátis para testar todas as funcionalidades do plano Pro. Não pedimos cartão de crédito para começar. Após o período, você pode continuar no plano gratuito ou assinar o Pro.',
+          text: 'O SouArtista é para músicos, cantores, DJs, bandas, duplas sertanejas, produtores musicais e qualquer profissional que vive de música e recebe cachê.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Quanto custa o SouArtista?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'O SouArtista oferece o Plano Mensal por R$ 29,90 e o Plano Anual por R$ 300,00 (com economia em relação ao mensal).',
         },
       },
       {
@@ -103,33 +155,36 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         name: 'O SouArtista está disponível para iPhone e Android?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Sim! O SouArtista está disponível na App Store (iOS) e Google Play Store (Android). O app funciona offline e sincroniza quando você tiver internet.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'O que é o Simulador de Nota Fiscal?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'É uma ferramenta exclusiva que calcula automaticamente quanto você vai receber líquido após impostos (ISS, IRRF). Basta informar o valor bruto do cachê para saber exatamente quanto vai cair na sua conta.',
+          text: 'Sim! O SouArtista está disponível na App Store (iOS), Google Play Store (Android) e também possui versão web integrada.',
         },
       },
     ],
   };
 
   // JSON-LD Breadcrumb Schema
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Início',
-        item: siteUrl,
-      },
-    ],
-  };
+  const breadcrumbSchema = breadcrumbs
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbs.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.name,
+          item: item.url,
+        })),
+      }
+    : {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Início',
+            item: siteUrl,
+          },
+        ],
+      };
 
   return (
     <Helmet>
@@ -180,6 +235,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <meta property="al:android:app_name" content="SouArtista" />
       
       {/* JSON-LD Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify(websiteSchema)}
+      </script>
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>

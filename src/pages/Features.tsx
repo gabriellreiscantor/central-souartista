@@ -286,10 +286,14 @@ const Features: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Funcionalidades - SouArtista | Gestão Completa para Músicos"
-        description="Descubra todas as funcionalidades do SouArtista: gestão de shows, controle financeiro, simulador de nota fiscal, agenda, relatórios e muito mais para músicos."
-        keywords="funcionalidades souartista, recursos app músico, gestão shows, controle cachê, simulador nota fiscal, agenda músico, relatórios financeiros"
+        title="Funcionalidades - SouArtista"
+        description="Descubra todas as funcionalidades do SouArtista: gestão de shows, controle de cachês, gestão de despesas, relatórios financeiros e muito mais para músicos, cantores e DJs."
+        keywords="funcionalidades souartista, recursos app músico, gestão shows, controle cachê, simulador nota fiscal, agenda músico, relatórios financeiros, app para DJ"
         canonical="https://souartista.app/funcionalidades"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Funcionalidades', url: 'https://souartista.app/funcionalidades' }
+        ]}
       />
       <FeaturesHero />
       <FeaturesNav categories={categories} />
