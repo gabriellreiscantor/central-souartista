@@ -10,7 +10,14 @@ import { SEOHead } from '@/components/SEOHead';
 const Index: React.FC = () => {
   return (
     <Layout>
-      <SEOHead />
+      <SEOHead 
+        title="SouArtista — Gestão financeira para quem vive de música"
+        description="O aplicativo feito para músicos, cantores, DJs e artistas brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira."
+        canonical="https://souartista.app"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' }
+        ]}
+      />
       <HeroSection />
       <FeaturesSection />
       <TestimonialsSection />

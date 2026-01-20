@@ -84,10 +84,14 @@ const About: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Sobre a SouArtista - Plataforma de Gestão para Músicos"
-        description="Conheça a SouArtista: plataforma digital criada para organizar e profissionalizar a rotina de artistas, músicos e profissionais do mercado musical brasileiro."
-        keywords="sobre souartista, app para músicos, plataforma artistas, gestão musical, organização carreira musical"
+        title="Sobre - SouArtista"
+        description="Conheça o SouArtista: aplicativo de gestão financeira criado por músicos, para músicos. Organize shows, cachês e despesas. Para cantores, DJs, bandas e artistas."
+        keywords="sobre souartista, app para músicos, plataforma artistas, gestão musical, organização carreira musical, app para DJ, app para cantor"
         canonical="https://souartista.app/sobre"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Sobre', url: 'https://souartista.app/sobre' }
+        ]}
       />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
