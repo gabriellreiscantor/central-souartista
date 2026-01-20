@@ -13,7 +13,7 @@ export const translations = {
       badge: 'Experimente 7 dias grátis',
       title: 'Suas finanças musicais e agenda organizadas',
       subtitle: 'Cuidamos da parte chata e você cuida da música',
-      socialProof: 'Mais de 5.000 artistas já organizam sua carreira conosco',
+      socialProof: 'Milhares de artistas já organizam sua carreira conosco',
       downloadApp: 'Baixar App',
     },
     features: {
@@ -227,7 +227,7 @@ export const translations = {
       badge: 'Try 7 days free',
       title: 'Your music finances and schedule organized',
       subtitle: 'We handle the boring stuff so you can focus on the music',
-      socialProof: 'Over 5,000 artists already manage their career with us',
+      socialProof: 'Thousands of artists already manage their career with us',
       downloadApp: 'Download App',
     },
     features: {
@@ -441,7 +441,7 @@ export const translations = {
       badge: 'Prueba 7 días gratis',
       title: 'Tus finanzas musicales y agenda organizadas',
       subtitle: 'Nos encargamos de lo aburrido para que te enfoques en la música',
-      socialProof: 'Más de 5.000 artistas ya gestionan su carrera con nosotros',
+      socialProof: 'Miles de artistas ya gestionan su carrera con nosotros',
       downloadApp: 'Descargar App',
     },
     features: {
