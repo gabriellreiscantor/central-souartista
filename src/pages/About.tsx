@@ -17,7 +17,8 @@ import {
   Shield,
   RefreshCw,
   X,
-  Check
+  Check,
+  Bell
 } from 'lucide-react';
 
 const About: React.FC = () => {
@@ -41,6 +42,10 @@ const About: React.FC = () => {
     {
       icon: FolderOpen,
       title: 'Centralização de informações importantes da carreira',
+    },
+    {
+      icon: Bell,
+      title: 'Notificações na tela do celular para não perder compromissos',
     },
   ];
 
