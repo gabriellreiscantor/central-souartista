@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
 import { DownloadButtons } from '@/components/DownloadButtons';
+import { SEOHead } from '@/components/SEOHead';
 import { 
   Calendar, 
   DollarSign, 
@@ -82,6 +83,12 @@ const About: React.FC = () => {
 
   return (
     <Layout>
+      <SEOHead 
+        title="Sobre a SouArtista - Plataforma de Gestão para Músicos"
+        description="Conheça a SouArtista: plataforma digital criada para organizar e profissionalizar a rotina de artistas, músicos e profissionais do mercado musical brasileiro."
+        keywords="sobre souartista, app para músicos, plataforma artistas, gestão musical, organização carreira musical"
+        canonical="https://souartista.app/sobre"
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
         <div className="container">

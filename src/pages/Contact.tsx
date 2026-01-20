@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Mail, Clock, Instagram, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SEOHead } from '@/components/SEOHead';
 
 const Contact: React.FC = () => {
   const contactInfo = [
@@ -27,6 +28,12 @@ const Contact: React.FC = () => {
 
   return (
     <Layout>
+      <SEOHead 
+        title="Contato - SouArtista | Fale Conosco"
+        description="Entre em contato com a equipe SouArtista. Estamos prontos para ajudar músicos e artistas com dúvidas sobre o app, suporte técnico e parcerias."
+        keywords="contato souartista, suporte app músico, falar com souartista, ajuda músicos, email souartista"
+        canonical="https://souartista.app/contato"
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
         <div className="container">
