@@ -82,7 +82,7 @@ const About: React.FC = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Sobre a <span className="text-gradient">SouArtista</span>
+              Sobre a <span className="bg-foreground text-background px-3 py-1 -skew-x-3 inline-block"><span className="skew-x-3 inline-block">SouArtista</span></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Uma plataforma digital criada para organizar e profissionalizar a rotina de artistas, 
