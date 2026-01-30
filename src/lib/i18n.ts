@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       badge: 'Experimente 7 dias grátis',
       title: 'Suas finanças musicais e agenda organizadas',
-      subtitle: 'Cuidamos da parte chata e você cuida da música',
+      subtitle: 'Cuidamos da parte chata e você cuida da música.',
       socialProof: 'Milhares de artistas já organizam sua carreira conosco',
       downloadApp: 'Baixar App',
     },
