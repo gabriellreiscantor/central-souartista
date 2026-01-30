@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
     {
       icon: Clock,
       title: 'Horário de Atendimento',
-      value: 'Seg - Sex: 9h às 18h',
+      value: 'Seg - Sex: 9h às 18h.',
       link: null
     }
   ];
