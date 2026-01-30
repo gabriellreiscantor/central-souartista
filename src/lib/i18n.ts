@@ -21,7 +21,7 @@ export const translations = {
       subtitle: 'Ferramentas pensadas por músicos, para músicos',
       financial: {
         title: 'Controle total do seu dinheiro',
-        description: 'Registre cachês, despesas e recebimentos. Veja exatamente quanto sobra no seu bolso depois de cada show.',
+        description: 'Registre cachês, despesas e recebimentos. Veja exatamente quanto sobra no seu bolso depois de cada show..',
       },
       calendar: {
         title: 'Nunca mais perca um compromisso',
