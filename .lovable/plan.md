@@ -1,58 +1,63 @@
 
-# Plano: Instalar Google Tag Manager (GTM)
+# Plano: Banner Nativo do Android Chrome (como o iOS Safari)
 
-## Resumo
+## O que você quer
 
-Vou adicionar o código do Google Tag Manager ao arquivo `index.html` conforme as instruções do Google:
+No iOS Safari, aparece automaticamente aquele banner nativo do sistema lá em cima pedindo para baixar o app. Você quer a mesma coisa no Android Chrome.
 
-1. O script principal será adicionado logo após a abertura do `<head>`
-2. O código `<noscript>` será adicionado logo após a abertura do `<body>`
+## Como funciona no Android
 
----
+O Chrome no Android mostra um banner nativo chamado **"Abrir no app"** automaticamente quando o site tem o `site.webmanifest` configurado com as informações do app da Play Store usando o campo `related_applications` com `prefer_related_applications: true`.
 
-## Alterações
+## O que precisa mudar
 
-### Arquivo: `index.html`
+### 1. `public/site.webmanifest`
 
-**1. Adicionar script GTM no `<head>` (logo após a linha 3)**
+O arquivo atual está quase vazio (sem nome, sem app relacionado). Vou preencher corretamente com:
+- Nome do app
+- Ícones já existentes
+- **`related_applications`** apontando para o app na Play Store (`app.souartista`)
+- **`prefer_related_applications: true`** — isso é o que ativa o banner nativo do Chrome
 
-```html
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PB3S23ML');</script>
-<!-- End Google Tag Manager -->
+```json
+{
+  "name": "SouArtista",
+  "short_name": "SouArtista",
+  "description": "Gestão financeira para músicos e artistas",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1E082B",
+  "background_color": "#1E082B",
+  "icons": [...],
+  "related_applications": [{
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=app.souartista",
+    "id": "app.souartista"
+  }],
+  "prefer_related_applications": true
+}
 ```
 
-**2. Adicionar código noscript no `<body>` (logo após a abertura)**
+### 2. `index.html`
+
+Adicionar a meta tag `apple-itunes-app` para o banner nativo do Safari (iOS) que também estava faltando:
 
 ```html
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB3S23ML"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- iOS Smart App Banner (Safari nativo) -->
+<meta name="apple-itunes-app" content="app-id=6756150476" />
 ```
 
----
+## Resultado esperado
 
-## Detalhes Técnicos
+| Plataforma | Resultado |
+|---|---|
+| **iOS Safari** | Banner nativo do Safari no topo com botão "Abrir" |
+| **Android Chrome** | Banner nativo do Chrome "Abrir no app" |
+| **Outros navegadores** | `SmartAppBanner` customizado em React (já funciona) |
 
-| Item | Valor |
-|------|-------|
-| GTM Container ID | `GTM-PB3S23ML` |
-| Arquivos modificados | `index.html` |
-| Impacto no performance | Mínimo (script assíncrono) |
+## Arquivos modificados
 
-O código será carregado de forma assíncrona (`async=true`), então não vai impactar a velocidade de carregamento do site.
+- `public/site.webmanifest` — adicionar nome, app relacionado e `prefer_related_applications`
+- `index.html` — adicionar meta tag `apple-itunes-app` para o banner nativo do iOS
 
----
-
-## Resultado
-
-Após a aprovação, o Google Tag Manager estará instalado e você poderá:
-- Rastrear eventos e conversões
-- Adicionar o Google Analytics 4
-- Configurar pixels de remarketing
-- Monitorar comportamento dos usuários
+> **Obs:** O banner do Android Chrome pode levar alguns dias para aparecer em produção, pois o Chrome usa critérios de engajamento (como o usuário já ter visitado o site antes). O banner customizado em React (`SmartAppBanner`) continua como fallback imediato para todos os usuários.
