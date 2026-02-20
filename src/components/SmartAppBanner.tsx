@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { toast } from '@/hooks/use-toast';
 import appIcon from '@/assets/app-icon.png';
 
 const BANNER_DISMISS_KEY = 'souartista_banner_dismissed';
@@ -65,11 +64,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
     if (os === 'ios') {
       window.open('https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476', '_blank');
     } else if (os === 'android') {
-      toast({
-        title: "Em breve! 🚀",
-        description: "Já, já chegamos na Play Store!",
-        duration: 3000,
-      });
+      window.open('https://play.google.com/store/apps/details?id=app.souartista&hl=pt_BR', '_blank');
     }
   };
 
@@ -107,9 +102,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
         <div className="flex items-center gap-2 flex-shrink-0">
           <button
             onClick={handleOpen}
-            className={`px-4 py-1.5 bg-primary text-primary-foreground text-sm font-medium rounded-full hover:bg-primary/90 transition-colors ${
-              os === 'android' ? 'opacity-70' : ''
-            }`}
+            className="px-4 py-1.5 bg-primary text-primary-foreground text-sm font-medium rounded-full hover:bg-primary/90 transition-colors"
           >
             Abrir
           </button>
