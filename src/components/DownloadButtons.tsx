@@ -1,6 +1,5 @@
 import React from 'react';
 import { Apple, Globe } from 'lucide-react';
-import { toast } from '@/hooks/use-toast';
 
 interface DownloadButtonsProps {
   size?: 'sm' | 'md' | 'lg';
@@ -23,20 +22,13 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
     lg: 'w-7 h-7',
   };
 
-  const handleGooglePlayClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Em breve! 🚀",
-      description: "Já, já chegamos na Play Store!",
-      duration: 3000,
-    });
-  };
-
   return (
     <div className={`flex flex-wrap gap-3 ${className}`}>
       {/* App Store Button */}
       <a
-        href="#"
+        href="https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476"
+        target="_blank"
+        rel="noopener noreferrer"
         className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
         <Apple className={iconSizes[size]} />
@@ -47,9 +39,11 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
       </a>
 
       {/* Google Play Button */}
-      <button
-        onClick={handleGooglePlayClick}
-        className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift opacity-70 ${sizeClasses[size]}`}
+      <a
+        href="https://play.google.com/store/apps/details?id=app.souartista&hl=pt_BR"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
         <svg className={iconSizes[size]} viewBox="0 0 24 24" fill="currentColor">
           <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 9.99l-2.302 2.302-8.634-8.634z"/>
@@ -58,7 +52,7 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
           <span className="text-[10px] opacity-70 leading-none">Disponível no</span>
           <span className="font-semibold leading-tight">Google Play</span>
         </div>
-      </button>
+      </a>
 
       {/* Web App Button */}
       <a
