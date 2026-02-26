@@ -122,12 +122,12 @@ const despesasFeatures = [
 const equipeFeatures = [
   {
     title: 'Banco de Músicos',
-    description: 'Cadastre músicos parceiros com instrumentos e cachê padrão para usar em qualquer show.',
+    description: 'Cadastre músicos parceiros e administre os cachês de cada integrante de forma controlada, show a show.',
     resources: [
       'Nome e instrumento',
-      'Cachê padrão sugerido',
+      'Definir cachê por músico',
+      'Administração controlada dos pagamentos',
       'Histórico de shows juntos',
-      'Edição e exclusão',
     ],
   },
   {
@@ -141,11 +141,12 @@ const equipeFeatures = [
   },
   {
     title: 'Modo Músico',
-    description: 'Funcionalidades exclusivas para músicos freelancers que tocam com vários artistas.',
+    description: 'Dashboard independente para músicos freelancers que tocam com vários artistas. Veja quem te contrata e quem paga melhor.',
     resources: [
-      'Lista de artistas parceiros',
-      'Total ganho por artista',
-      'Dashboard adaptado',
+      'Veja quais artistas te contratam',
+      'Compare lucro por artista',
+      'Identifique quem paga melhor',
+      'Dashboard independente do artista',
     ],
   },
 ];

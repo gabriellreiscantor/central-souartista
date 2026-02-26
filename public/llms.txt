@@ -30,10 +30,16 @@ Sem planilhas, sem anotações perdidas e sem complicação.
 - despesas fixas e variáveis
 - visão clara do impacto dos custos no lucro
 
-### Gestão de equipe
-- cadastro de músicos
-- definição de cachê por integrante
-- divisão automática dos valores por show
+### Gestão de equipe (perspectiva do Artista)
+- cadastro de músicos da banda
+- definição e administração dos cachês de cada integrante
+- controle organizado dos pagamentos por show
+
+### Modo Músico (perspectiva do Freelancer)
+- veja quais artistas te contratam
+- acompanhe quanto cada artista paga
+- identifique quem gera mais lucro
+- dashboard independente com visão financeira própria
 
 ### Locais de apresentação
 - cadastro de casas de show e eventos
