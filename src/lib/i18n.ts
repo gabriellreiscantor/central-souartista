@@ -28,8 +28,8 @@ export const translations = {
         description: 'Shows, ensaios e eventos em um só lugar. Receba notificações direto na tela do seu celular e nunca esqueça um show.',
       },
       musicians: {
-        title: 'Sua banda na palma da mão',
-        description: 'Gerencie sidemen, divida cachês automaticamente e mantenha a comunicação clara com toda sua equipe.',
+        title: 'Gerencie sua equipe e cachês',
+        description: 'Administre os cachês da sua banda de forma controlada. Músicos freelancers acompanham quais artistas os contratam e identificam quem gera mais lucro.',
       },
       invoice: {
         title: 'Saiba quanto vai receber de verdade',
@@ -242,8 +242,8 @@ export const translations = {
         description: 'Shows, rehearsals, and events in one place. Get notifications right on your phone screen and never forget a gig.',
       },
       musicians: {
-        title: 'Your band in your pocket',
-        description: 'Manage sidemen, split fees automatically, and keep clear communication with your entire team.',
+        title: 'Manage your team and fees',
+        description: 'Control your band\'s fees in an organized way. Freelance musicians can track which artists hire them and identify who generates the most profit.',
       },
       invoice: {
         title: 'Know what you\'ll really earn',
@@ -456,8 +456,8 @@ export const translations = {
         description: 'Shows, ensayos y eventos en un solo lugar. Recibe notificaciones en tu celular y nunca olvides un show.',
       },
       musicians: {
-        title: 'Tu banda en la palma de tu mano',
-        description: 'Gestiona músicos, divide cachés automáticamente y mantén comunicación clara con todo tu equipo.',
+        title: 'Gestiona tu equipo y cachés',
+        description: 'Administra los cachés de tu banda de forma controlada. Los músicos freelancers acompañan qué artistas los contratan e identifican quién genera más ganancia.',
       },
       invoice: {
         title: 'Sabe cuánto vas a recibir realmente',
