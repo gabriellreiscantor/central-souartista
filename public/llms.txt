@@ -41,6 +41,12 @@ Sem planilhas, sem anotações perdidas e sem complicação.
 - identifique quem gera mais lucro
 - dashboard independente com visão financeira própria
 
+### Contratos, Riders e Mapa Técnico
+- contratos prontos e personalizáveis para bares, eventos privados e shows maiores
+- rider técnico com necessidades de som, luz e equipamentos
+- mapa de palco (stage plot) para enviar ao contratante
+- envio direto por WhatsApp ou e-mail
+
 ### Locais de apresentação
 - cadastro de casas de show e eventos
 - reaproveitamento rápido ao criar novos shows
