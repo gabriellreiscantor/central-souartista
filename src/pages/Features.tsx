@@ -149,6 +149,16 @@ const equipeFeatures = [
       'Dashboard independente do artista',
     ],
   },
+  {
+    title: 'Contratos, Riders e Mapa Técnico',
+    description: 'Crie contratos prontos e personalizáveis para bares, eventos privados e shows maiores. Monte seu rider técnico e mapa de palco.',
+    resources: [
+      'Contratos pré-formatados por tipo de evento',
+      'Rider técnico (som, luz, equipamentos)',
+      'Mapa de palco (stage plot)',
+      'Envio por WhatsApp ou e-mail',
+    ],
+  },
 ];
 
 const locomocaoFeatures = [

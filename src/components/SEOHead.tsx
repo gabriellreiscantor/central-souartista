@@ -117,6 +117,8 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       'Gestão de despesas e custos',
       'Gestão de equipe com administração de cachês da banda',
       'Modo Músico freelancer com dashboard independente',
+      'Contratos prontos para bares, eventos privados e shows',
+      'Rider técnico e mapa de palco',
       'Relatórios financeiros com gráficos',
       'Simulador financeiro',
     ],
@@ -157,6 +159,14 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Sim! O SouArtista está disponível na App Store (iOS), Google Play Store (Android) e também possui versão web integrada.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'O SouArtista faz contratos e riders técnicos?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Sim! O artista pode criar contratos prontos e personalizáveis para bares, eventos privados e shows maiores, além de montar rider técnico e mapa de palco (stage plot) para enviar ao contratante.',
         },
       },
     ],
