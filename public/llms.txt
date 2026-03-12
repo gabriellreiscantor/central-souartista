@@ -47,6 +47,14 @@ Sem planilhas, sem anotações perdidas e sem complicação.
 - mapa de palco (stage plot) para enviar ao contratante
 - envio direto por WhatsApp ou e-mail
 
+### Gestão de Cachês para Músicos
+- controle de status de pagamento por show (Pendente ou Recebido)
+- alternar status com um único toque
+- card "Cachê Pendente" no Dashboard com valor total e shows em aberto
+- modal detalhado com shows pendentes
+- notificações push semanais automáticas para cachês pendentes
+- disponível em iOS, Android e versão web
+
 ### Locais de apresentação
 - cadastro de casas de show e eventos
 - reaproveitamento rápido ao criar novos shows

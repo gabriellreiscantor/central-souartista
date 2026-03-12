@@ -131,6 +131,17 @@ const equipeFeatures = [
     ],
   },
   {
+    title: 'Gestão de Cachês para Músicos',
+    description: 'Controle o status de pagamento dos cachês diretamente pelo app. Veja o que está pendente, atualize com um toque e receba lembretes automáticos.',
+    resources: [
+      'Badge de status: Pendente ou Recebido',
+      'Alternar status com um clique',
+      'Card "Cachê Pendente" no Dashboard',
+      'Modal com detalhes dos shows pendentes',
+      'Notificações semanais automáticas',
+    ],
+  },
+  {
     title: 'Casas de Show',
     description: 'Cadastre locais de apresentação por cidade e estado para reutilizar em novos shows.',
     resources: [
@@ -299,7 +310,7 @@ const Features: React.FC = () => {
       <SEOHead 
         title="Funcionalidades - SouArtista"
         description="Descubra todas as funcionalidades do SouArtista: gestão de shows, controle de cachês, gestão de despesas, relatórios financeiros e muito mais para músicos, cantores e DJs."
-        keywords="funcionalidades souartista, recursos app músico, gestão shows, controle cachê, simulador nota fiscal, agenda músico, relatórios financeiros, app para DJ"
+        keywords="funcionalidades souartista, recursos app músico, gestão shows, controle cachê, simulador nota fiscal, agenda músico, relatórios financeiros, app para DJ, gestão de cachê músico, controle de pagamento músico, cachê pendente app, gerenciar pagamentos shows, contrato para músico, rider técnico, mapa de palco"
         canonical="https://souartista.app/funcionalidades"
         breadcrumbs={[
           { name: 'Início', url: 'https://souartista.app' },
