@@ -90,4 +90,32 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Comparativo -->
+  <url>
+    <loc>https://souartista.app/comparativo</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts SEO -->
+  <url>
+    <loc>https://souartista.app/blog/como-gerenciar-caches-de-banda-de-forma-profissional</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://souartista.app/blog/melhor-agenda-de-shows-para-musicos-independentes-2026</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://souartista.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
