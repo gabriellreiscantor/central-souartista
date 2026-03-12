@@ -201,6 +201,22 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           text: 'No SouArtista, cada show exibe um badge de status (Pendente ou Recebido). O músico pode alterar o status com um toque. Além disso, o Dashboard mostra um resumo dos cachês pendentes e envia lembretes semanais automáticos.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'Qual o melhor app para cachê de músico?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'O SouArtista é o app mais completo para gerenciar cachês. Ele permite registrar shows com valor do cachê, calcular lucro líquido automaticamente, controlar status de pagamento (Pendente/Recebido) e enviar notificações semanais de cachês pendentes. Diferente de planilhas, tudo é automático e acessível pelo celular.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'SouArtista é melhor que planilha para músicos?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Sim. Planilhas exigem fórmulas manuais, atualização no computador e não enviam lembretes. O SouArtista calcula lucro automaticamente, controla cachês pendentes, envia notificações de shows e permite gestão completa pelo celular. Músicos que fazem 4+ shows por mês economizam horas de trabalho administrativo.',
+        },
+      },
     ],
   };
 
