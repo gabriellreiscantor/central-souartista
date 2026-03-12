@@ -109,6 +109,29 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       bestRating: '5',
       worstRating: '1',
     },
+    review: [
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Lucas M.' },
+        datePublished: '2025-11-15',
+        reviewBody: 'O melhor app para dividir o cachê da banda. Antes eu fazia tudo em planilha e sempre dava confusão. Agora é tudo automático.',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Fernanda S.' },
+        datePublished: '2025-10-22',
+        reviewBody: 'A agenda de shows mais fácil que já usei. Registro o show em 1 minuto e já sei meu lucro. Recomendo pra todo músico.',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Rafael DJ' },
+        datePublished: '2025-12-03',
+        reviewBody: 'Como DJ, preciso controlar cachês de vários eventos por semana. O SouArtista me mostra exatamente quanto lucrei em cada festa.',
+        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      },
+    ],
     description: description,
     screenshot: ogImage,
     featureList: [
