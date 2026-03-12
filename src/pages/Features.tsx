@@ -131,6 +131,17 @@ const equipeFeatures = [
     ],
   },
   {
+    title: 'Gestão de Cachês para Músicos',
+    description: 'Controle o status de pagamento dos cachês diretamente pelo app. Veja o que está pendente, atualize com um toque e receba lembretes automáticos.',
+    resources: [
+      'Badge de status: Pendente ou Recebido',
+      'Alternar status com um clique',
+      'Card "Cachê Pendente" no Dashboard',
+      'Modal com detalhes dos shows pendentes',
+      'Notificações semanais automáticas',
+    ],
+  },
+  {
     title: 'Casas de Show',
     description: 'Cadastre locais de apresentação por cidade e estado para reutilizar em novos shows.',
     resources: [

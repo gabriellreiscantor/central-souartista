@@ -170,6 +170,14 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           text: 'Sim! O artista pode criar contratos prontos e personalizáveis para bares, eventos privados e shows maiores, além de montar rider técnico e mapa de palco (stage plot) para enviar ao contratante.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'Como o músico controla se recebeu o cachê?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No SouArtista, cada show exibe um badge de status (Pendente ou Recebido). O músico pode alterar o status com um toque. Além disso, o Dashboard mostra um resumo dos cachês pendentes e envia lembretes semanais automáticos.',
+        },
+      },
     ],
   };
 
