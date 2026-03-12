@@ -15,6 +15,7 @@ import Privacy from "./pages/Privacy";
 import Trust from "./pages/Trust";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Comparativo from "./pages/Comparativo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
               <Route path="/confianca" element={<Trust />} />
               <Route path="/sobre" element={<About />} />
               <Route path="/contato" element={<Contact />} />
+              <Route path="/comparativo" element={<Comparativo />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

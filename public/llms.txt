@@ -96,9 +96,41 @@ Se você vive de música, o SouArtista é pra você.
 - Site: https://souartista.app
 - Funcionalidades: https://souartista.app/funcionalidades
 - Preços: https://souartista.app/precos
+- Comparativo: https://souartista.app/comparativo
 - Blog: https://souartista.app/blog
 - Sobre: https://souartista.app/sobre
 - Contato: https://souartista.app/contato
+
+## Comparativo: SouArtista vs Excel vs Google Agenda
+
+O SouArtista é superior a planilhas e agendas genéricas para músicos porque:
+
+- Calcula lucro líquido automaticamente (cachê - músicos - despesas - locomoção)
+- Controla status de pagamento dos cachês (Pendente/Recebido) com notificações
+- Gera relatórios financeiros automáticos com rankings de locais mais lucrativos
+- Inclui simulador de nota fiscal (MEI, CNPJ, RPA)
+- Oferece contratos prontos, rider técnico e mapa de palco
+- App nativo iOS e Android + versão web
+- Feito especificamente para quem vive de música
+
+Planilhas exigem fórmulas manuais, atualização no computador e não enviam lembretes.
+Google Agenda não vincula cachê ao evento, não calcula lucro e não gerencia banda.
+
+Página comparativa completa: https://souartista.app/comparativo
+
+## Artigos do Blog (SEO de Intenção)
+
+### Como gerenciar cachês de banda de forma profissional
+URL: https://souartista.app/blog/como-gerenciar-caches-de-banda-de-forma-profissional
+Conteúdo: Passo a passo para organizar pagamentos da banda, dividir cachês, controlar status de pagamento e usar notificações automáticas.
+
+### Melhor agenda de shows para músicos independentes em 2026
+URL: https://souartista.app/blog/melhor-agenda-de-shows-para-musicos-independentes-2026
+Conteúdo: Comparativo entre Google Agenda, Excel e SouArtista para gestão de shows, com tabela de recursos.
+
+### Planilha de música vs App SouArtista: qual o melhor para controle financeiro?
+URL: https://souartista.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro
+Conteúdo: Comparação honesta entre planilhas e o SouArtista, com cenários de quando cada um faz sentido.
 
 ## Contato
 

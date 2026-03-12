@@ -30,6 +30,219 @@ export const categoryLabels: Record<BlogCategory, string> = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'como-gerenciar-caches-de-banda-de-forma-profissional',
+    title: 'Como gerenciar cachês de banda de forma profissional',
+    excerpt: 'Aprenda o passo a passo para organizar os pagamentos da sua banda, dividir cachês com justiça e nunca mais ter dor de cabeça financeira com seus músicos.',
+    category: 'gestao-financeira',
+    categoryLabel: 'Gestão Financeira',
+    publishedAt: '2026-03-10',
+    readingTime: 7,
+    coverImage: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=450&fit=crop',
+    content: `
+Você fecha um show de R$ 5.000 com a banda. Ótimo. Mas aí vem a pergunta: quanto pagar cada músico? Como dividir de forma justa? E como controlar se todo mundo já recebeu?
+
+## O problema da divisão de cachês
+
+A maioria dos líderes de banda faz a divisão "de cabeça" ou numa planilha improvisada. O resultado? Confusão, esquecimentos e, às vezes, desentendimentos com músicos que são seus parceiros de palco.
+
+## O método profissional com o SouArtista
+
+### 1. Cadastre sua equipe
+
+No app, você cria seu "Banco de Músicos" com:
+- Nome e instrumento de cada integrante
+- Cachê padrão (valor fixo ou porcentagem do show)
+- Dados para pagamento
+
+### 2. Associe músicos ao show
+
+Ao cadastrar um show, selecione quem vai tocar. O app calcula automaticamente:
+- Custo total da banda
+- Seu lucro líquido (cachê bruto - músicos - despesas)
+- Divisão individual de cada músico
+
+### 3. Controle o status de pagamento
+
+Cada músico tem um badge de status: **Pendente** (amarelo) ou **Recebido** (verde). Com um toque, você atualiza. No Dashboard, o card "Cachê Pendente" mostra o total em aberto.
+
+### 4. Notificações automáticas
+
+Músicos com cachês pendentes recebem lembretes semanais automáticos. Assim, ninguém precisa ficar cobrando ninguém.
+
+## Exemplo prático
+
+Show de R$ 5.000:
+- Guitarrista: R$ 600 (fixo)
+- Baixista: R$ 600 (fixo)
+- Baterista: R$ 700 (fixo)
+- Despesas do show: R$ 800
+- **Seu lucro líquido: R$ 2.300**
+
+Tudo calculado automaticamente. Sem planilha, sem erro.
+
+## Por que usar um app em vez de planilha?
+
+- Cálculos automáticos (sem fórmulas quebradas)
+- Histórico organizado por show
+- Notificações de pagamento
+- Relatórios de quanto cada músico custou no mês/ano
+- Acesso no celular, na hora do show
+
+## Conclusão
+
+Gerenciar cachês de banda de forma profissional não é luxo — é respeito com quem toca com você e com a sua própria carreira. O SouArtista automatiza tudo isso pra você focar no que importa: a música.
+    `.trim(),
+  },
+  {
+    slug: 'melhor-agenda-de-shows-para-musicos-independentes-2026',
+    title: 'Melhor agenda de shows para músicos independentes em 2026',
+    excerpt: 'Comparamos as opções de agenda disponíveis para músicos e mostramos por que uma ferramenta especializada faz toda a diferença na organização da carreira.',
+    category: 'dicas-praticas',
+    categoryLabel: 'Dicas Práticas',
+    publishedAt: '2026-03-08',
+    readingTime: 6,
+    coverImage: 'https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&h=450&fit=crop',
+    content: `
+Se você é músico independente em 2026, sabe que organizar shows vai muito além de anotar datas num calendário. Você precisa de uma ferramenta que entenda sua realidade: cachês, passagem de som, músicos contratados, despesas de locomoção...
+
+## O que uma agenda de shows precisa ter
+
+Uma agenda genérica (Google Agenda, Apple Calendar) serve pra marcar compromissos. Mas músico precisa de mais:
+
+- **Valor do cachê** vinculado ao evento
+- **Músicos escalados** para aquele show
+- **Despesas** associadas (van, alimentação, hospedagem)
+- **Lucro líquido** calculado automaticamente
+- **Notificações inteligentes** (7 dias, 1 dia, 3h e 30min antes)
+- **Histórico** de shows por local, por período, por faturamento
+
+## Google Agenda vs Excel vs SouArtista
+
+| Recurso | Google Agenda | Excel/Planilha | SouArtista |
+|---------|:---:|:---:|:---:|
+| Marcar data/hora | ✅ | ✅ | ✅ |
+| Cachê vinculado | ❌ | Manual | ✅ Automático |
+| Escalar músicos | ❌ | Manual | ✅ Automático |
+| Calcular lucro | ❌ | Manual | ✅ Automático |
+| Notificações inteligentes | Básico | ❌ | ✅ 5 lembretes |
+| Relatórios financeiros | ❌ | Manual | ✅ Automático |
+| Mobile nativo | ✅ | ❌ | ✅ iOS + Android |
+| Controle de cachê pendente | ❌ | Manual | ✅ Com notificações |
+
+## Por que músicos independentes precisam de mais
+
+Quando você tem 15 shows no mês com 3 bandas diferentes, cada uma com músicos e cachês diferentes, uma agenda genérica simplesmente não dá conta. Você precisa:
+
+1. **Saber quanto vai faturar no mês** antes dele começar
+2. **Ver quais shows já foram pagos** e quais estão pendentes
+3. **Comparar faturamento** entre meses e períodos
+4. **Identificar quais locais** pagam melhor e dão mais retorno
+
+## O SouArtista como agenda profissional
+
+O SouArtista foi construído por músicos que viviam exatamente essa dor. Cada show registrado se transforma em dado financeiro. No fim do mês, você não só sabe onde tocou — sabe quanto ganhou, quanto gastou e quanto sobrou.
+
+## Funcionalidades exclusivas para 2026
+
+- Contratos prontos para diferentes tipos de evento
+- Rider técnico e mapa de palco (stage plot)
+- Gestão de cachês com badge de status (Pendente/Recebido)
+- Notificações semanais de cachês pendentes
+- Simulador de nota fiscal (MEI, CNPJ, RPA)
+
+## Conclusão
+
+Em 2026, usar planilha ou agenda genérica para gerenciar shows é como usar GPS de papel numa era de Waze. O SouArtista é a agenda que entende que show não é só data — é negócio.
+    `.trim(),
+  },
+  {
+    slug: 'planilha-vs-app-souartista-qual-melhor-controle-financeiro',
+    title: 'Planilha de música vs App SouArtista: qual o melhor para controle financeiro?',
+    excerpt: 'Comparação honesta entre usar planilhas (Excel/Google Sheets) e o app SouArtista para gerenciar finanças da carreira musical. Descubra qual faz mais sentido pra você.',
+    category: 'gestao-financeira',
+    categoryLabel: 'Gestão Financeira',
+    publishedAt: '2026-03-05',
+    readingTime: 8,
+    coverImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop',
+    content: `
+"Eu já tenho minha planilha e funciona." Essa é a frase mais comum que ouvimos de músicos. E a verdade é: planilha funciona... até o dia que não funciona mais.
+
+## A realidade da planilha do músico
+
+Vamos ser honestos: a maioria das planilhas de músicos tem:
+- Fórmulas quebradas que ninguém sabe consertar
+- Dados desatualizados (quem lembra de atualizar no computador depois do show?)
+- Zero visão de lucro real (cachê bruto ≠ lucro)
+- Nenhum controle de quem já recebeu o cachê
+
+## Comparação lado a lado
+
+### 📝 Registro de shows
+
+**Planilha:** Abrir computador → abrir arquivo → encontrar a aba certa → preencher → salvar. Tempo: 5-10 min.
+
+**SouArtista:** Abrir app no celular → "Novo Show" → preencher → salvar. Tempo: 1 min.
+
+### 💰 Cálculo de lucro
+
+**Planilha:** Criar fórmulas para subtrair cachê dos músicos, despesas, locomoção... torcer pra não quebrar.
+
+**SouArtista:** Automático. Cadastrou o show, adicionou músicos e despesas? O app calcula receita bruta, custos e lucro líquido sozinho.
+
+### 👥 Gestão de banda
+
+**Planilha:** Criar aba separada pra cada músico, copiar valores manualmente, somar no final do mês...
+
+**SouArtista:** Banco de Músicos com cachê padrão. Selecionou pro show? Calculado. Badge de pagamento (Pendente/Recebido) com um toque.
+
+### 📊 Relatórios
+
+**Planilha:** Criar gráficos manualmente, configurar tabelas dinâmicas, atualizar mês a mês...
+
+**SouArtista:** Relatórios automáticos com filtro por período, rankings de locais mais lucrativos, top músicos, categorias de despesas.
+
+### 📱 Mobilidade
+
+**Planilha:** Precisa do computador ou de internet boa pra abrir no celular (e a formatação quebra).
+
+**SouArtista:** App nativo iOS e Android + versão web. Funciona onde você estiver.
+
+### 🔔 Lembretes e notificações
+
+**Planilha:** Zero. Você precisa abrir e lembrar.
+
+**SouArtista:** 5 lembretes automáticos antes de cada show + notificações semanais de cachês pendentes.
+
+## Quando a planilha faz sentido
+
+Sendo justo: planilha faz sentido se você:
+- Faz menos de 3 shows por mês
+- Toca sozinho (sem banda)
+- Gosta de criar fórmulas e tem disciplina pra atualizar
+- Não precisa de relatórios ou controle de pagamentos
+
+## Quando o SouArtista é a escolha certa
+
+O app é pra quem:
+- Faz 4+ shows por mês
+- Tem banda ou trabalha com múltiplos músicos
+- Quer saber o lucro real de cada show
+- Precisa controlar cachês pendentes
+- Quer relatórios sem esforço
+- Prefere resolver tudo pelo celular
+
+## O custo real
+
+"Mas o app custa R$ 29,90/mês e a planilha é grátis!"
+
+Verdade. Mas quanto tempo você gasta por mês atualizando sua planilha? Se são 2 horas por mês, e sua hora vale R$ 50... você está "economizando" R$ 29,90 e gastando R$ 100 em tempo.
+
+## Conclusão
+
+Planilha não é inimiga — ela foi sua aliada até aqui. Mas quando sua carreira cresce, você precisa de uma ferramenta que cresça junto. O SouArtista foi feito por quem vivia de planilha e cansou.
+    `.trim(),
+  },
+  {
     slug: 'por-que-musicos-precisam-controle-financeiro',
     title: 'Por que músicos precisam de controle financeiro (e como começar hoje)',
     excerpt: 'Descubra por que a maioria dos músicos não sabe quanto realmente ganha e como mudar isso em poucos minutos.',
