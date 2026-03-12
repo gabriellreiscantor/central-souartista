@@ -119,6 +119,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       'Modo Músico freelancer com dashboard independente',
       'Contratos prontos para bares, eventos privados e shows',
       'Rider técnico e mapa de palco',
+      'Gestão de cachês com status de pagamento e notificações',
       'Relatórios financeiros com gráficos',
       'Simulador financeiro',
     ],
