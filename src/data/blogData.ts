@@ -534,6 +534,183 @@ Quando você usa o SouArtista, você tem:
 Você dedica horas ensaiando, estudando, se apresentando. Dedique alguns minutos por semana pra organizar o lado business. Seu eu do futuro vai agradecer.
     `.trim(),
   },
+  {
+    slug: 'como-calcular-cache-de-musico-formula-exemplos',
+    title: 'Como calcular o cachê de músico: fórmula, exemplos e erros comuns',
+    excerpt: 'Aprenda a calcular seu cachê com uma fórmula simples que inclui custos, deslocamento e lucro. Com exemplos práticos e planilha de referência.',
+    category: 'gestao-financeira',
+    categoryLabel: 'Gestão Financeira',
+    publishedAt: '2026-07-01',
+    readingTime: 8,
+    coverImage: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=450&fit=crop',
+    content: `
+**Resposta rápida:** para calcular seu cachê, some seus custos diretos do show (deslocamento, equipamento, músicos contratados), some o valor do seu tempo e experiência, adicione uma margem de lucro e nunca cobre abaixo do seu "piso" (o valor mínimo que faz o show valer a pena). A fórmula base é: **Cachê = Custos do show + (Horas trabalhadas × Valor da sua hora) + Margem de lucro.**
+
+## Por que a maioria dos músicos erra o cachê
+
+O erro mais comum é cobrar "por sentimento" ou copiar o que o colega cobra. O problema: o cachê que parece bom no WhatsApp pode virar prejuízo depois de descontar combustível, pedágio, o baixista que você contratou e as três horas de deslocamento. O cachê não é o que você recebe — é o que sobra depois dos custos.
+
+## Passo 1 — Liste todos os custos do show
+
+Antes de pensar em lucro, mapeie o que aquele show custa:
+
+- **Deslocamento:** combustível (distância × consumo × preço do litro), pedágio, ou Uber/aplicativo.
+- **Equipe:** cachê dos músicos que você contrata (se você é o artista/contratante).
+- **Equipamento:** desgaste, aluguel de som, cordas, palhetas, transporte de instrumentos.
+- **Tempo morto:** montagem, passagem de som, espera — não só o tempo no palco.
+
+## Passo 2 — Defina o valor da sua hora
+
+Some as horas reais do compromisso (deslocamento + montagem + show + retorno). Defina quanto vale sua hora com base na sua experiência e no mercado da sua região. Um músico iniciante em bar e um instrumentista requisitado em casamento não têm a mesma hora — e tudo bem.
+
+## Passo 3 — Aplique a fórmula e a margem
+
+> Cachê = Custos do show + (Horas × Valor da hora) + Margem de lucro (20% a 40%)
+
+**Exemplo prático (músico solo em bar, outra cidade):**
+
+- Combustível + pedágio: R$ 120
+- Cordas/desgaste: R$ 30
+- Horas totais (ida, show de 3h, volta): 7h × R$ 60 = R$ 420
+- Subtotal: R$ 570
+- Margem de 30%: R$ 171
+- **Cachê sugerido: ~R$ 740**
+
+Se o contratante ofereceu R$ 500, você agora sabe, com números, que está saindo no prejuízo — e pode negociar ou recusar com segurança.
+
+## Passo 4 — Tenha um "piso" e nunca desça dele
+
+Seu piso é o valor mínimo abaixo do qual o show não compensa. Defina isso uma vez e proteja. É o que separa o profissional do "faço por qualquer valor".
+
+## O erro que come seu lucro: esquecer a locomoção
+
+Shows fora da cidade parecem mais lucrativos pelo cachê maior, mas o combustível e o pedágio comem a diferença. Calcular deslocamento por show é o detalhe que muda tudo — e é o que a maioria não faz porque dá trabalho na mão.
+
+## Como fazer isso sem planilha na mão toda vez
+
+Fazer essa conta manualmente a cada show é inviável na correria. O **SouArtista** calcula automaticamente o custo de combustível (distância × consumo × preço do litro), soma cachês da equipe e mostra o **lucro líquido real de cada show** — não só o cachê. Assim você negocia com número na mão, não no chute.
+
+## Perguntas frequentes
+
+**Qual o cachê médio de um músico em bar?** Varia muito por região e experiência, mas o certo é calcular pelo seu custo + hora, não por média. Um valor de referência não substitui a sua conta.
+
+**Devo cobrar mais por show fora da cidade?** Sim — inclua combustível, pedágio e as horas extras de deslocamento no cálculo.
+
+**Como cobrar de evento particular (casamento/corporativo)?** Costuma ter cachê maior que bar, pela exigência e horário; aplique a mesma fórmula com margem maior.
+    `.trim(),
+  },
+  {
+    slug: 'imposto-de-renda-mei-para-musico-guia-pratico',
+    title: 'Imposto de renda e MEI para músico: o guia prático',
+    excerpt: 'Músico precisa declarar imposto? Vale a pena ser MEI? Entenda de forma simples como organizar impostos, notas e receitas da sua música.',
+    category: 'gestao-financeira',
+    categoryLabel: 'Gestão Financeira',
+    publishedAt: '2026-07-01',
+    readingTime: 7,
+    coverImage: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=450&fit=crop',
+    content: `
+**Resposta rápida:** todo músico que recebe por shows tem renda tributável e, em geral, precisa declarar. Formalizar-se como **MEI** (Microempreendedor Individual) costuma valer a pena para quem tem renda recorrente de música, porque reduz a carga de imposto, permite emitir nota fiscal e dá acesso a benefícios do INSS — desde que a atividade e o faturamento se enquadrem nos limites do MEI vigentes.
+
+> Este artigo é educativo, não é aconselhamento contábil. Confirme valores atuais (limites do MEI, alíquotas, CNAEs de músico) com um contador antes de decidir.
+
+## Músico paga imposto? Sim — e o Leão sabe do seu Pix
+
+Receber cachê em dinheiro ou Pix não torna a renda "invisível". Renda de trabalho é tributável, e a Receita cruza dados de movimentação. Organizar isso desde o começo evita dor de cabeça (e multa) depois.
+
+## Pessoa física vs MEI: qual a diferença para o músico?
+
+- **Como pessoa física:** você declara os recebimentos e paga imposto pela tabela progressiva; não emite nota fiscal com CNPJ; a carga pode ser alta se a renda subir.
+- **Como MEI:** você tem CNPJ, paga um valor fixo mensal (DAS), emite nota fiscal, contribui para o INSS e simplifica muito a vida fiscal — respeitados o teto de faturamento e as atividades permitidas para MEI.
+
+## Quando vale a pena virar MEI
+
+Vale a pena avaliar o MEI se você: tem renda recorrente de música, precisa emitir nota (contratantes formais exigem), quer contribuir para aposentadoria, e está dentro do limite de faturamento. Se você toca esporadicamente e ganha pouco, talvez ainda não compense — por isso, confirme com um contador.
+
+## O que você precisa organizar (independente do formato)
+
+Para declarar certo, você precisa saber, o ano inteiro:
+
+- Quanto recebeu (por show, por contratante).
+- Quanto gastou e o que é dedutível (equipamento, deslocamento, etc.).
+- Notas emitidas e comprovantes.
+
+É aqui que a maioria trava: sem registro organizado durante o ano, a declaração vira um pesadelo de memória e extrato bancário.
+
+## Como manter tudo pronto para a declaração o ano inteiro
+
+Registrar cada show — cachê recebido, despesas, deslocamento — conforme acontece é o que transforma a declaração de um tormento em um relatório. O **SouArtista** registra receitas e despesas por show e gera relatórios em PDF/Excel que você (ou seu contador) usa direto na hora de declarar. Você chega em abril com tudo somado, não com uma pilha de comprovantes soltos.
+
+## Perguntas frequentes
+
+**Preciso declarar se ganho pouco com música?** Depende do total de rendimentos no ano; há um limite de isenção que muda anualmente — confira o valor vigente.
+
+**MEI pode ser músico?** Sim, há atividades de músico/artista permitidas no MEI; confirme o CNAE e o teto de faturamento atuais.
+
+**Posso deduzir meu instrumento?** Despesas ligadas à atividade podem entrar no cálculo dependendo do seu enquadramento; um contador orienta o que é dedutível no seu caso.
+    `.trim(),
+  },
+  {
+    slug: 'planilha-vs-app-vida-financeira-do-artista',
+    title: 'Planilha vs app: como organizar a vida financeira do artista',
+    excerpt: 'Planilha ou app para controlar shows e finanças de músico? Veja os prós, contras e quando cada um vale a pena — com um comparativo honesto.',
+    category: 'gestao-financeira',
+    categoryLabel: 'Gestão Financeira',
+    publishedAt: '2026-07-01',
+    readingTime: 6,
+    coverImage: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&h=450&fit=crop',
+    content: `
+**Resposta rápida:** planilha funciona no começo e é grátis, mas quebra quando o volume de shows cresce, exige disciplina manual e não calcula locomoção nem lucro líquido automaticamente. Um app de gestão para músicos vale a pena quando você faz shows com regularidade, quer relatórios prontos e não quer perder tempo (nem dinheiro) com conta feita errada. A escolha depende do seu volume de shows e de quanto seu tempo vale.
+
+## O ponto de partida de todo músico: a planilha
+
+Quase todo artista começa com uma planilha (ou o caderninho). Faz sentido: é grátis, flexível e você já sabe usar. Para quem faz 1-2 shows por mês, pode bastar.
+
+## Onde a planilha começa a doer
+
+- **Cálculo manual de tudo:** combustível, consumo, pedágio, divisão de cachê entre músicos — cada conta na mão, toda vez.
+- **Disciplina obrigatória:** esqueceu de anotar um show ou uma despesa? O número mente.
+- **Sem visão de lucro real:** planilha mostra o que você digitou; ela não te avisa que aquele show fora da cidade deu prejuízo depois do combustível.
+- **No celular é ruim:** editar planilha no palco ou no carro é sofrimento.
+- **Nada de lembretes:** ela não te avisa do show de amanhã nem do pagamento pendente.
+
+## O que um app resolve
+
+Um app pensado para músicos automatiza justamente o que dá trabalho na planilha:
+
+- Calcula locomoção (distância × consumo × preço do litro) sozinho.
+- Soma cachês da equipe e mostra o **lucro líquido por show**, não só o cachê.
+- Gera relatórios em PDF/Excel prontos para o contador.
+- Manda lembrete de show e de pagamento.
+- Funciona no celular, nativo, offline.
+
+## Comparativo honesto
+
+| Critério | Planilha | App de gestão (ex.: SouArtista) |
+|---|---|---|
+| Custo | Grátis | Assinatura (mensal/anual) |
+| Cálculo de locomoção | Manual | Automático |
+| Lucro líquido por show | Você calcula | Automático |
+| Relatórios prontos | Você monta | PDF/Excel em 1 clique |
+| Lembretes de show/pagamento | Não | Sim |
+| Uso no celular | Ruim | Nativo iOS/Android |
+| Curva de aprendizado | Zero | Baixa |
+
+## Quando cada um vale a pena
+
+- **Fique na planilha se:** você faz pouquíssimos shows, tem disciplina de ferro e seu tempo sobra.
+- **Migre para um app se:** você faz shows com regularidade, contrata ou é contratado por vários artistas, e prefere negociar cachê com o número do lucro real na mão.
+
+## Conclusão
+
+Planilha é um ótimo primeiro passo — mas na hora que a música vira renda séria, o custo do app se paga na primeira negociação em que você descobre, com número, que um show ia te dar prejuízo. O **SouArtista** foi feito exatamente para essa transição: da planilha bagunçada para o controle financeiro real do artista.
+
+## Perguntas frequentes
+
+**Dá pra migrar minha planilha para o app?** Você cadastra seus shows e passa a registrar os novos direto no app; o histórico antigo pode ser lançado aos poucos.
+
+**Qual a vantagem principal do app sobre a planilha?** Ver o lucro líquido real de cada show automaticamente, incluindo locomoção.
+    `.trim(),
+  },
 ];
 
 export const getPostBySlug = (slug: string): BlogPost | undefined => {
