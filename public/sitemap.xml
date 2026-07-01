@@ -5,46 +5,46 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://souartista.app/</loc>
+    <loc>https://central-souartista.lovable.app/</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://souartista.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://souartista.app/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://souartista.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://central-souartista.lovable.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://central-souartista.lovable.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://central-souartista.lovable.app/es/"/>
     <image:image>
-      <image:loc>https://souartista.app/favicon.png</image:loc>
+      <image:loc>https://central-souartista.lovable.app/favicon.png</image:loc>
       <image:title>SouArtista - Gestão financeira para quem vive de música</image:title>
     </image:image>
   </url>
 
   <!-- Features -->
   <url>
-    <loc>https://souartista.app/funcionalidades</loc>
+    <loc>https://central-souartista.lovable.app/funcionalidades</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://souartista.app/favicon.png</image:loc>
+      <image:loc>https://central-souartista.lovable.app/favicon.png</image:loc>
       <image:title>Funcionalidades do SouArtista</image:title>
     </image:image>
   </url>
 
   <!-- Pricing -->
   <url>
-    <loc>https://souartista.app/precos</loc>
+    <loc>https://central-souartista.lovable.app/precos</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://souartista.app/favicon.png</image:loc>
+      <image:loc>https://central-souartista.lovable.app/favicon.png</image:loc>
       <image:title>Preços e Planos SouArtista</image:title>
     </image:image>
   </url>
 
   <!-- About -->
   <url>
-    <loc>https://souartista.app/sobre</loc>
+    <loc>https://central-souartista.lovable.app/sobre</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -52,7 +52,7 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://souartista.app/blog</loc>
+    <loc>https://central-souartista.lovable.app/blog</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -60,7 +60,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://souartista.app/contato</loc>
+    <loc>https://central-souartista.lovable.app/contato</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -68,7 +68,7 @@
 
   <!-- Terms -->
   <url>
-    <loc>https://souartista.app/termos</loc>
+    <loc>https://central-souartista.lovable.app/termos</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
@@ -76,7 +76,7 @@
 
   <!-- Privacy -->
   <url>
-    <loc>https://souartista.app/privacidade</loc>
+    <loc>https://central-souartista.lovable.app/privacidade</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
@@ -84,7 +84,7 @@
 
   <!-- Trust Center -->
   <url>
-    <loc>https://souartista.app/confianca</loc>
+    <loc>https://central-souartista.lovable.app/confianca</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -92,7 +92,7 @@
 
   <!-- Comparativo -->
   <url>
-    <loc>https://souartista.app/comparativo</loc>
+    <loc>https://central-souartista.lovable.app/comparativo</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -100,37 +100,37 @@
 
   <!-- Blog Posts SEO -->
   <url>
-    <loc>https://souartista.app/blog/como-gerenciar-caches-de-banda-de-forma-profissional</loc>
+    <loc>https://central-souartista.lovable.app/blog/como-gerenciar-caches-de-banda-de-forma-profissional</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://souartista.app/blog/melhor-agenda-de-shows-para-musicos-independentes-2026</loc>
+    <loc>https://central-souartista.lovable.app/blog/melhor-agenda-de-shows-para-musicos-independentes-2026</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://souartista.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro</loc>
+    <loc>https://central-souartista.lovable.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://souartista.app/blog/como-calcular-cache-de-musico-formula-exemplos</loc>
+    <loc>https://central-souartista.lovable.app/blog/como-calcular-cache-de-musico-formula-exemplos</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://souartista.app/blog/imposto-de-renda-mei-para-musico-guia-pratico</loc>
+    <loc>https://central-souartista.lovable.app/blog/imposto-de-renda-mei-para-musico-guia-pratico</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://souartista.app/blog/planilha-vs-app-vida-financeira-do-artista</loc>
+    <loc>https://central-souartista.lovable.app/blog/planilha-vs-app-vida-financeira-do-artista</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
