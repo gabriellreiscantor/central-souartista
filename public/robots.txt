@@ -1,5 +1,5 @@
 # SouArtista — Gestão financeira para quem vive de música
-# https://souartista.app
+# https://central-souartista.lovable.app
 
 # Crawlers de Busca
 User-agent: Googlebot
@@ -54,7 +54,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap e LLMs
-Sitemap: https://souartista.app/sitemap.xml
+Sitemap: https://central-souartista.lovable.app/sitemap.xml
 
 # Disallow
 Disallow: /api/

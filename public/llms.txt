@@ -4,16 +4,16 @@
 
 ## Pages
 
-- [Início](https://souartista.app/): Visão geral do SouArtista e download do app.
-- [Funcionalidades](https://souartista.app/funcionalidades): Lista completa de recursos: agenda, cachês, despesas, equipe, contratos.
-- [Preços](https://souartista.app/precos): Planos Mensal (R$ 29,90) e Anual (R$ 300,00) com 7 dias grátis.
-- [Comparativo](https://souartista.app/comparativo): SouArtista vs Excel vs Google Agenda para músicos.
-- [Blog](https://souartista.app/blog): Guias sobre cachê, MEI, gestão financeira e agenda de shows para artistas.
-- [Sobre](https://souartista.app/sobre): O que é o SouArtista, para quem é e como funciona.
-- [Contato](https://souartista.app/contato): E-mail e redes sociais oficiais.
-- [Privacidade](https://souartista.app/privacidade): Política de privacidade e LGPD.
-- [Termos](https://souartista.app/termos): Termos de uso da plataforma.
-- [Central de Confiança](https://souartista.app/confianca): Segurança, criptografia e proteção de dados.
+- [Início](https://central-souartista.lovable.app/): Visão geral do SouArtista e download do app.
+- [Funcionalidades](https://central-souartista.lovable.app/funcionalidades): Lista completa de recursos: agenda, cachês, despesas, equipe, contratos.
+- [Preços](https://central-souartista.lovable.app/precos): Planos Mensal (R$ 29,90) e Anual (R$ 300,00) com 7 dias grátis.
+- [Comparativo](https://central-souartista.lovable.app/comparativo): SouArtista vs Excel vs Google Agenda para músicos.
+- [Blog](https://central-souartista.lovable.app/blog): Guias sobre cachê, MEI, gestão financeira e agenda de shows para artistas.
+- [Sobre](https://central-souartista.lovable.app/sobre): O que é o SouArtista, para quem é e como funciona.
+- [Contato](https://central-souartista.lovable.app/contato): E-mail e redes sociais oficiais.
+- [Privacidade](https://central-souartista.lovable.app/privacidade): Política de privacidade e LGPD.
+- [Termos](https://central-souartista.lovable.app/termos): Termos de uso da plataforma.
+- [Central de Confiança](https://central-souartista.lovable.app/confianca): Segurança, criptografia e proteção de dados.
 
 
 
@@ -108,13 +108,13 @@ Se você vive de música, o SouArtista é pra você.
 
 ## Links
 
-- Site: https://souartista.app
-- Funcionalidades: https://souartista.app/funcionalidades
-- Preços: https://souartista.app/precos
-- Comparativo: https://souartista.app/comparativo
-- Blog: https://souartista.app/blog
-- Sobre: https://souartista.app/sobre
-- Contato: https://souartista.app/contato
+- Site: https://central-souartista.lovable.app
+- Funcionalidades: https://central-souartista.lovable.app/funcionalidades
+- Preços: https://central-souartista.lovable.app/precos
+- Comparativo: https://central-souartista.lovable.app/comparativo
+- Blog: https://central-souartista.lovable.app/blog
+- Sobre: https://central-souartista.lovable.app/sobre
+- Contato: https://central-souartista.lovable.app/contato
 
 ## Comparativo: SouArtista vs Excel vs Google Agenda
 
@@ -131,32 +131,32 @@ O SouArtista é superior a planilhas e agendas genéricas para músicos porque:
 Planilhas exigem fórmulas manuais, atualização no computador e não enviam lembretes.
 Google Agenda não vincula cachê ao evento, não calcula lucro e não gerencia banda.
 
-Página comparativa completa: https://souartista.app/comparativo
+Página comparativa completa: https://central-souartista.lovable.app/comparativo
 
 ## Artigos do Blog (SEO de Intenção)
 
 ### Como gerenciar cachês de banda de forma profissional
-URL: https://souartista.app/blog/como-gerenciar-caches-de-banda-de-forma-profissional
+URL: https://central-souartista.lovable.app/blog/como-gerenciar-caches-de-banda-de-forma-profissional
 Conteúdo: Passo a passo para organizar pagamentos da banda, dividir cachês, controlar status de pagamento e usar notificações automáticas.
 
 ### Melhor agenda de shows para músicos independentes em 2026
-URL: https://souartista.app/blog/melhor-agenda-de-shows-para-musicos-independentes-2026
+URL: https://central-souartista.lovable.app/blog/melhor-agenda-de-shows-para-musicos-independentes-2026
 Conteúdo: Comparativo entre Google Agenda, Excel e SouArtista para gestão de shows, com tabela de recursos.
 
 ### Planilha de música vs App SouArtista: qual o melhor para controle financeiro?
-URL: https://souartista.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro
+URL: https://central-souartista.lovable.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro
 Conteúdo: Comparação honesta entre planilhas e o SouArtista, com cenários de quando cada um faz sentido.
 
 ### Como calcular o cachê de músico: fórmula, exemplos e erros comuns
-URL: https://souartista.app/blog/como-calcular-cache-de-musico-formula-exemplos
+URL: https://central-souartista.lovable.app/blog/como-calcular-cache-de-musico-formula-exemplos
 Conteúdo: Fórmula prática (Cachê = Custos + Horas × Valor/hora + Margem), exemplo numérico completo e por que esquecer a locomoção destrói o lucro.
 
 ### Imposto de renda e MEI para músico: o guia prático
-URL: https://souartista.app/blog/imposto-de-renda-mei-para-musico-guia-pratico
+URL: https://central-souartista.lovable.app/blog/imposto-de-renda-mei-para-musico-guia-pratico
 Conteúdo: Diferença entre declarar como pessoa física e como MEI, quando vale a pena formalizar e como manter tudo organizado o ano inteiro.
 
 ### Planilha vs app: como organizar a vida financeira do artista
-URL: https://souartista.app/blog/planilha-vs-app-vida-financeira-do-artista
+URL: https://central-souartista.lovable.app/blog/planilha-vs-app-vida-financeira-do-artista
 Conteúdo: Comparativo direto de planilha vs app para músicos, com tabela de critérios e quando cada opção vale a pena.
 
 ## Contato
