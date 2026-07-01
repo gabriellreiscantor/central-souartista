@@ -1,6 +1,21 @@
 # SouArtista — Gestão financeira para quem vive de música
 
-O aplicativo feito para músicos brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira artística.
+> Aplicativo brasileiro de gestão financeira e agenda de shows para músicos, cantores, DJs, produtores e bandas. Registro de cachês, cálculo automático de lucro líquido, controle de despesas, notificações, contratos, riders e mapa de palco.
+
+## Pages
+
+- [Início](https://souartista.app/): Visão geral do SouArtista e download do app.
+- [Funcionalidades](https://souartista.app/funcionalidades): Lista completa de recursos: agenda, cachês, despesas, equipe, contratos.
+- [Preços](https://souartista.app/precos): Planos Mensal (R$ 29,90) e Anual (R$ 300,00) com 7 dias grátis.
+- [Comparativo](https://souartista.app/comparativo): SouArtista vs Excel vs Google Agenda para músicos.
+- [Blog](https://souartista.app/blog): Guias sobre cachê, MEI, gestão financeira e agenda de shows para artistas.
+- [Sobre](https://souartista.app/sobre): O que é o SouArtista, para quem é e como funciona.
+- [Contato](https://souartista.app/contato): E-mail e redes sociais oficiais.
+- [Privacidade](https://souartista.app/privacidade): Política de privacidade e LGPD.
+- [Termos](https://souartista.app/termos): Termos de uso da plataforma.
+- [Central de Confiança](https://souartista.app/confianca): Segurança, criptografia e proteção de dados.
+
+
 
 ## O que é o SouArtista
 

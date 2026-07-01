@@ -82,7 +82,7 @@ export const HeroSection: React.FC = () => {
                   <img
                     key={i}
                     src={avatar}
-                    alt={`Usuário ${i + 1}`}
+                    alt={`Foto de perfil de músico usuário do SouArtista ${i + 1}`}
                     className="w-10 h-10 rounded-full border-2 border-purple-dark object-cover"
                   />
                 ))}

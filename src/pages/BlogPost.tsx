@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Layout } from '@/components/Layout';
+import { SEOHead } from '@/components/SEOHead';
 import { BlogCard } from '@/components/blog/BlogCard';
 import { ShareButtons } from '@/components/blog/ShareButtons';
 import { Badge } from '@/components/ui/badge';
@@ -101,8 +102,41 @@ const BlogPost: React.FC = () => {
     return elements;
   };
 
+  const postUrl = `https://souartista.app/blog/${post.slug}`;
+  const truncatedExcerpt = post.excerpt.length > 160 ? `${post.excerpt.slice(0, 157)}...` : post.excerpt;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.coverImage,
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    author: { '@type': 'Organization', name: 'SouArtista', url: 'https://souartista.app' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'SouArtista',
+      logo: { '@type': 'ImageObject', url: 'https://souartista.app/favicon.png' },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    articleSection: post.categoryLabel,
+  };
+
   return (
     <Layout>
+      <SEOHead
+        title={`${post.title} | Blog SouArtista`.slice(0, 60)}
+        description={truncatedExcerpt}
+        canonical={postUrl}
+        ogType="article"
+        ogImage={post.coverImage}
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Blog', url: 'https://souartista.app/blog' },
+          { name: post.title, url: postUrl },
+        ]}
+        extraSchemas={[articleSchema]}
+      />
       <article className="relative pt-32 pb-20">
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">

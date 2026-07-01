@@ -14,6 +14,7 @@ const Index: React.FC = () => {
         title="SouArtista — Gestão financeira para quem vive de música"
         description="O aplicativo feito para músicos, cantores, DJs e artistas brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira."
         canonical="https://souartista.app"
+        includeAppSchemas
         breadcrumbs={[
           { name: 'Início', url: 'https://souartista.app' }
         ]}

@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 
 interface BreadcrumbItem {
   name: string;
@@ -14,6 +15,10 @@ interface SEOHeadProps {
   ogType?: string;
   noIndex?: boolean;
   breadcrumbs?: BreadcrumbItem[];
+  /** Include SoftwareApplication + FAQPage schemas (home only). */
+  includeAppSchemas?: boolean;
+  /** Extra JSON-LD objects to append (e.g. Article for blog posts). */
+  extraSchemas?: object[];
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
@@ -25,9 +30,13 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   ogType = 'website',
   noIndex = false,
   breadcrumbs,
+  includeAppSchemas = false,
+  extraSchemas,
 }) => {
   const siteUrl = 'https://souartista.app';
-  const canonicalUrl = canonical || siteUrl;
+  const location = useLocation();
+  const canonicalUrl = canonical || `${siteUrl}${location.pathname === '/' ? '' : location.pathname}`;
+
 
   // JSON-LD WebSite Schema with SearchAction
   const websiteSchema = {
@@ -300,15 +309,24 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>
-      <script type="application/ld+json">
-        {JSON.stringify(softwareSchema)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </script>
+      {includeAppSchemas && (
+        <script type="application/ld+json">
+          {JSON.stringify(softwareSchema)}
+        </script>
+      )}
+      {includeAppSchemas && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      )}
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </script>
+      {extraSchemas?.map((schema, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      ))}
     </Helmet>
   );
 };

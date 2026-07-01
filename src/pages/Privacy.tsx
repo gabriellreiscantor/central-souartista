@@ -1,10 +1,20 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
+import { SEOHead } from '@/components/SEOHead';
 import { Shield, Calendar } from 'lucide-react';
 
 const Privacy: React.FC = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Política de Privacidade — SouArtista"
+        description="Como o SouArtista coleta, usa e protege os dados dos músicos, cantores, DJs e artistas usuários da plataforma, em conformidade com a LGPD."
+        canonical="https://souartista.app/privacidade"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Privacidade', url: 'https://souartista.app/privacidade' },
+        ]}
+      />
       <div className="relative pt-32 pb-20">
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">

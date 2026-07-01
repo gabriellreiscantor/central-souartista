@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
+import { SEOHead } from '@/components/SEOHead';
 import { 
   ShieldCheck, 
   Lock, 
@@ -94,6 +95,15 @@ const Trust: React.FC = () => {
 
   return (
     <Layout>
+      <SEOHead
+        title="Central de Confiança — Segurança e Privacidade | SouArtista"
+        description="Como o SouArtista protege seus dados: criptografia, LGPD, infraestrutura segura e transparência sobre o uso de informações de músicos e artistas."
+        canonical="https://souartista.app/confianca"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Central de Confiança', url: 'https://souartista.app/confianca' },
+        ]}
+      />
       <div className="relative pt-32 pb-20">
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">

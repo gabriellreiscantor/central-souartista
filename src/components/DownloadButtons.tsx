@@ -29,9 +29,10 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         href="https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Baixar o SouArtista na App Store para iPhone e iPad"
         className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
-        <Apple className={iconSizes[size]} />
+        <Apple className={iconSizes[size]} aria-hidden="true" />
         <div className="flex flex-col items-start">
           <span className="text-[10px] opacity-70 leading-none">Baixar na</span>
           <span className="font-semibold leading-tight">App Store</span>
@@ -43,9 +44,10 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         href="https://play.google.com/store/apps/details?id=app.souartista&hl=pt_BR"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Baixar o SouArtista na Google Play Store para Android"
         className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
-        <svg className={iconSizes[size]} viewBox="0 0 24 24" fill="currentColor">
+        <svg className={iconSizes[size]} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 9.99l-2.302 2.302-8.634-8.634z"/>
         </svg>
         <div className="flex flex-col items-start">
@@ -59,9 +61,10 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         href="https://souartista.app"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Acessar o SouArtista pela versão Web App no navegador"
         className={`hidden md:flex items-center gap-3 bg-gradient-to-r from-primary to-purple-400 text-white rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
-        <Globe className={iconSizes[size]} />
+        <Globe className={iconSizes[size]} aria-hidden="true" />
         <div className="flex flex-col items-start">
           <span className="text-[10px] opacity-90 leading-none">Acessar via</span>
           <span className="font-semibold leading-tight">Web App</span>
