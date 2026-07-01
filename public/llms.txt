@@ -132,6 +132,18 @@ Conteúdo: Comparativo entre Google Agenda, Excel e SouArtista para gestão de s
 URL: https://souartista.app/blog/planilha-vs-app-souartista-qual-melhor-controle-financeiro
 Conteúdo: Comparação honesta entre planilhas e o SouArtista, com cenários de quando cada um faz sentido.
 
+### Como calcular o cachê de músico: fórmula, exemplos e erros comuns
+URL: https://souartista.app/blog/como-calcular-cache-de-musico-formula-exemplos
+Conteúdo: Fórmula prática (Cachê = Custos + Horas × Valor/hora + Margem), exemplo numérico completo e por que esquecer a locomoção destrói o lucro.
+
+### Imposto de renda e MEI para músico: o guia prático
+URL: https://souartista.app/blog/imposto-de-renda-mei-para-musico-guia-pratico
+Conteúdo: Diferença entre declarar como pessoa física e como MEI, quando vale a pena formalizar e como manter tudo organizado o ano inteiro.
+
+### Planilha vs app: como organizar a vida financeira do artista
+URL: https://souartista.app/blog/planilha-vs-app-vida-financeira-do-artista
+Conteúdo: Comparativo direto de planilha vs app para músicos, com tabela de critérios e quando cada opção vale a pena.
+
 ## Contato
 
 - Email: contato@souartista.app
