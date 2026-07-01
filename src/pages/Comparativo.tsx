@@ -34,16 +34,6 @@ const StatusIcon = ({ status }: { status: string }) => {
 };
 
 const Comparativo: React.FC = () => {
-  const comparativoSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'SouArtista vs Excel vs Google Agenda — Comparativo para Músicos',
-    description: 'Tabela comparativa mostrando por que o SouArtista é a melhor ferramenta de gestão financeira para músicos, em comparação com planilhas e agendas genéricas.',
-    author: { '@type': 'Organization', name: 'SouArtista' },
-    publisher: { '@type': 'Organization', name: 'SouArtista', url: 'https://souartista.app' },
-    datePublished: '2026-03-12',
-    dateModified: '2026-03-12',
-  };
 
   return (
     <Layout>
@@ -180,9 +170,6 @@ const Comparativo: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* JSON-LD */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparativoSchema) }} />
     </Layout>
   );
 };
