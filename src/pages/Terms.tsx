@@ -1,10 +1,20 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
+import { SEOHead } from '@/components/SEOHead';
 import { FileText, Calendar } from 'lucide-react';
 
 const Terms: React.FC = () => {
   return (
     <Layout>
+      <SEOHead
+        title="Termos de Uso — SouArtista"
+        description="Termos e condições de uso do SouArtista, o aplicativo de gestão financeira e agenda de shows para músicos, cantores, DJs e artistas."
+        canonical="https://souartista.app/termos"
+        breadcrumbs={[
+          { name: 'Início', url: 'https://souartista.app' },
+          { name: 'Termos', url: 'https://souartista.app/termos' },
+        ]}
+      />
       <div className="relative pt-32 pb-20">
         {/* Background Elements */}
         <div className="absolute inset-0 -z-10">
