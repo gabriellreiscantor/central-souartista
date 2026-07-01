@@ -309,15 +309,24 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>
-      <script type="application/ld+json">
-        {JSON.stringify(softwareSchema)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </script>
+      {includeAppSchemas && (
+        <script type="application/ld+json">
+          {JSON.stringify(softwareSchema)}
+        </script>
+      )}
+      {includeAppSchemas && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      )}
       <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
       </script>
+      {extraSchemas?.map((schema, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      ))}
     </Helmet>
   );
 };
