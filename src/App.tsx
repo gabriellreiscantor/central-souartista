@@ -16,6 +16,7 @@ import Trust from "./pages/Trust";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Comparativo from "./pages/Comparativo";
+import Novidades from "./pages/Novidades";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
