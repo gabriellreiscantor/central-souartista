@@ -16,9 +16,12 @@ import {
   Calendar,
   Bell,
   Settings,
+  Mic2,
+  ListMusic,
 } from 'lucide-react';
 
 const categories = [
+  { id: 'palco', label: 'Modo Palco & Repertórios', icon: Mic2 },
   { id: 'shows', label: 'Gestão de Shows', icon: Music },
   { id: 'financeiro', label: 'Financeiro', icon: Wallet },
   { id: 'despesas', label: 'Despesas Gerais', icon: Receipt },
@@ -29,6 +32,46 @@ const categories = [
   { id: 'notificacoes', label: 'Notificações', icon: Bell },
   { id: 'configuracoes', label: 'Configurações', icon: Settings },
 ];
+
+const palcoFeatures = [
+  {
+    title: 'Modo Palco (Teleprompter Profissional)',
+    description: 'Teleprompter com rolagem automática, transposição de tom em tempo real e avanço automático de música. Para tocar sem preocupação.',
+    badge: 'NOVO',
+    resources: [
+      'Rolagem automática com velocidade ajustável',
+      'Transposição de tom on-the-fly',
+      'Avanço automático de música',
+      'Detecção inteligente de cifras',
+      'Aviso de "música curta"',
+      'Configurações globais salvas no perfil',
+    ],
+  },
+  {
+    title: 'Repertórios (Setlists) Reformulados',
+    description: 'Organize seus repertórios por blocos, com arrastar e soltar, importação em massa e salvamento automático.',
+    badge: 'NOVO',
+    resources: [
+      'Blocos e organização por música',
+      'Drag & drop com animação nativa',
+      'Importação em massa de músicas',
+      'Repertório de boas-vindas automático',
+      'Salvamento em rascunho automático',
+    ],
+  },
+  {
+    title: 'Código de Amizade (Artista ↔ Músico)',
+    description: 'Vincule sua conta de artista à conta de músicos parceiros e envie convites para shows direto pelo app.',
+    badge: 'NOVO',
+    resources: [
+      'Vínculo Artista ↔ Músico',
+      'Convites de show pelo app',
+      'Independência e privacidade preservadas',
+      'Notificações push de vínculo e convite',
+    ],
+  },
+];
+
 
 const showsFeatures = [
   {
@@ -225,6 +268,28 @@ const relatoriosFeatures = [
       'Envio por e-mail',
     ],
   },
+  {
+    title: 'Recibo de Cachê em PDF',
+    description: 'Gere recibos profissionais de cachê em PDF direto do celular e compartilhe pelo WhatsApp ou e-mail.',
+    badge: 'NOVO',
+    resources: [
+      'Geração 100% no celular',
+      'Compartilhamento nativo',
+      'Histórico de recibos por show',
+    ],
+  },
+  {
+    title: 'Demonstrativo Anual de Rendimentos',
+    description: 'Relatório completo do ano em PDF, pronto pra enviar ao contador. Ideal pra declaração do imposto de renda.',
+    badge: 'NOVO',
+    resources: [
+      'Somatório de cachês, despesas e líquido',
+      'Top 5 cidades por faturamento',
+      'PDF pronto pro contador',
+      'Compartilhamento direto',
+    ],
+  },
+
 ];
 
 const calendarioFeatures = [
@@ -322,19 +387,28 @@ const Features: React.FC = () => {
       
       <div className="bg-background">
         <FeatureSection
+          id="palco"
+          title="Modo Palco & Repertórios"
+          icon={Mic2}
+          features={palcoFeatures}
+        />
+
+        <FeatureSection
           id="shows"
           title="Gestão de Shows"
           icon={Music}
           features={showsFeatures}
+          className="bg-muted/30"
         />
+
         
         <FeatureSection
           id="financeiro"
           title="Controle Financeiro"
           icon={Wallet}
           features={financeiroFeatures}
-          className="bg-muted/30"
         />
+
         
         <FeatureSection
           id="despesas"
