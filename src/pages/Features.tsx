@@ -407,8 +407,8 @@ const Features: React.FC = () => {
           title="Controle Financeiro"
           icon={Wallet}
           features={financeiroFeatures}
-          className="bg-muted/30"
         />
+
         
         <FeatureSection
           id="despesas"
