@@ -268,6 +268,28 @@ const relatoriosFeatures = [
       'Envio por e-mail',
     ],
   },
+  {
+    title: 'Recibo de Cachê em PDF',
+    description: 'Gere recibos profissionais de cachê em PDF direto do celular e compartilhe pelo WhatsApp ou e-mail.',
+    badge: 'NOVO',
+    resources: [
+      'Geração 100% no celular',
+      'Compartilhamento nativo',
+      'Histórico de recibos por show',
+    ],
+  },
+  {
+    title: 'Demonstrativo Anual de Rendimentos',
+    description: 'Relatório completo do ano em PDF, pronto pra enviar ao contador. Ideal pra declaração do imposto de renda.',
+    badge: 'NOVO',
+    resources: [
+      'Somatório de cachês, despesas e líquido',
+      'Top 5 cidades por faturamento',
+      'PDF pronto pro contador',
+      'Compartilhamento direto',
+    ],
+  },
+
 ];
 
 const calendarioFeatures = [
