@@ -387,11 +387,20 @@ const Features: React.FC = () => {
       
       <div className="bg-background">
         <FeatureSection
+          id="palco"
+          title="Modo Palco & Repertórios"
+          icon={Mic2}
+          features={palcoFeatures}
+        />
+
+        <FeatureSection
           id="shows"
           title="Gestão de Shows"
           icon={Music}
           features={showsFeatures}
+          className="bg-muted/30"
         />
+
         
         <FeatureSection
           id="financeiro"
