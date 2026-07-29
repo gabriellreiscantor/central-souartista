@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
                         webkit-playsinline="true"
                         className="w-full h-full object-cover"
                       >
-                        <source src="/demo-video.mp4" type="video/mp4" />
+                        <source src={demoVideo.url} type="video/mp4" />
                       </video>
                     </div>
                   </div>
