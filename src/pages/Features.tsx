@@ -502,7 +502,6 @@ const Features: React.FC = () => {
           title="Gestão de Shows"
           icon={Music}
           features={showsFeatures}
-          className="bg-muted/30"
         />
 
         
