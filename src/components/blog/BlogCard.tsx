@@ -21,7 +21,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
   };
 
   return (
-    <Card className="group overflow-hidden border-white/10 bg-card/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+    <Card className="group overflow-hidden border-white/10 bg-card/50 backdrop-blur-xs hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
       <Link to={`/blog/${post.slug}`}>
         <div className="relative overflow-hidden aspect-video">
           <img

@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-8 animate-fade-in-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-xs mb-8 animate-fade-in-up">
               <DollarSign className="w-4 h-4 text-primary" />
               <span className="text-sm text-white/90 font-medium">{t.hero.badge}</span>
             </div>
@@ -122,8 +122,8 @@ export const HeroSection: React.FC = () => {
                         playsInline
                         webkit-playsinline="true"
                         preload="auto"
-                        // @ts-expect-error non-standard hint honored by Chrome/Safari
-                        fetchpriority="high"
+                        // @ts-expect-error fetchPriority is honored by Chrome/Safari but not yet in VideoHTMLAttributes
+                        fetchPriority="high"
                         src={demoVideo.url}
                         className="w-full h-full object-cover"
                       />

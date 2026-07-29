@@ -75,7 +75,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
 
   return (
     <div 
-      className={`fixed top-0 left-0 right-0 z-[60] bg-white border-b border-border shadow-sm transition-transform duration-300 ease-out ${
+      className={`fixed top-0 left-0 right-0 z-[60] bg-white border-b border-border shadow-xs transition-transform duration-300 ease-out ${
         isAnimating ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
@@ -85,7 +85,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
           <img 
             src={appIcon} 
             alt="SouArtista" 
-            className="w-12 h-12 rounded-xl shadow-sm flex-shrink-0"
+            className="w-12 h-12 rounded-xl shadow-xs flex-shrink-0"
           />
           <div className="min-w-0">
             <h3 className="font-semibold text-foreground text-sm leading-tight">SouArtista: Cachês e agenda</h3>

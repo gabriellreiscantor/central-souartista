@@ -109,7 +109,7 @@ export const Header: React.FC<HeaderProps> = ({ bannerVisible = false }) => {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div 
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/60 backdrop-blur-xs"
             onClick={() => setIsMobileMenuOpen(false)}
           />
           <div className="absolute right-0 top-0 h-full w-72 bg-purple-dark border-l border-white/10 animate-slide-in-right">

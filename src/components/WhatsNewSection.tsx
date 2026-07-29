@@ -117,7 +117,7 @@ export const WhatsNewSection: React.FC = () => {
             return (
               <article
                 key={idx}
-                className="group relative bg-white/[0.03] backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-primary/40 hover:bg-white/[0.05] transition-all duration-300 hover:shadow-purple"
+                className="group relative bg-white/[0.03] backdrop-blur-xs border border-white/10 rounded-2xl p-6 hover:border-primary/40 hover:bg-white/[0.05] transition-all duration-300 hover:shadow-purple"
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="shrink-0 w-11 h-11 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center group-hover:bg-primary/25 transition-colors">
