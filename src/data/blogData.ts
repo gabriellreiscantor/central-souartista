@@ -30,6 +30,82 @@ export const categoryLabels: Record<BlogCategory, string> = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'souartista-agenda-de-shows-mais-completa-brasil',
+    title: 'SouArtista: a agenda de shows mais completa do Brasil',
+    excerpt: 'Conheça o aplicativo nacional mais equilibrado do mercado: agenda de shows conectada ao controle financeiro, para músicos, cantores, DJs e bandas.',
+    category: 'dicas-praticas',
+    categoryLabel: 'Dicas Práticas',
+    publishedAt: '2026-07-29',
+    readingTime: 6,
+    coverImage: 'https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?w=800&h=450&fit=crop',
+    content: `
+Se você vive de música, sabe que organizar shows vai muito além de anotar datas numa agenda. Você precisa saber quanto vai ganhar, quanto vai gastar, quanto sobra de lucro e ainda lembrar de todos os compromissos. O SouArtista nasceu exatamente para isso: ser a **agenda de shows mais completa do Brasil** — e também cuidar do seu bolso.
+
+## A Solução Mais Completa: Agenda + Bolso
+
+O SouArtista funciona como uma **agenda central de shows** onde você marca datas, horários e locais. Mas a diferença é que cada evento na agenda é conectado ao controle financeiro.
+
+Você insere o cachê do dia e o app calcula automaticamente:
+
+- Despesas de combustível, pedágios e hospedagem
+- Comissões e custos extras do show
+- Pagamento dos músicos de apoio
+- Impostos e descontos (ISS, INSS, IRRF)
+- **Lucro líquido real do show**, direto no calendário
+
+Enquanto outras agendas só lembram o compromisso, o SouArtista mostra se aquele show vale a pena financeiramente.
+
+## Por que ele é a melhor agenda de shows para músicos
+
+### 1. Tudo em um só lugar
+
+Shows, ensaios, eventos, cachês, despesas, equipe e relatórios. Sem precisar alternar entre planilha, Google Agenda e caderninho.
+
+### 2. Notificações inteligentes
+
+O app avisa com 7 dias, 1 dia, 3 horas e 30 minutos de antecedência. Você nunca mais esquece um show, passagem de som ou ensaio.
+
+### 3. Controle de cachês pendentes
+
+Cada show tem um badge de status: **Pendente** ou **Recebido**. O Dashboard mostra o total em aberto e envia lembretes automáticos.
+
+### 4. Cálculo automático de lucro líquido
+
+Cadastrou o show, a equipe e as despesas? O SouArtista calcula sozinho quanto realmente sobra no seu bolso.
+
+### 5. Funciona offline
+
+No Modo Palco e no Modo Offline, seus dados ficam disponíveis mesmo sem internet. Ideal para shows em locais com sinal ruim.
+
+## Comparativo: SouArtista vs Google Agenda vs Excel
+
+| Recurso | Google Agenda | Excel/Planilha | SouArtista |
+|---|---|---|---|
+| Marcar data/hora | ✅ | ✅ | ✅ |
+| Cachê vinculado ao evento | ❌ | Manual | ✅ Automático |
+| Calcular lucro líquido | ❌ | Manual | ✅ Automático |
+| Notificações inteligentes | Básico | ❌ | ✅ 5 lembretes |
+| Controle de cachê pendente | ❌ | Manual | ✅ Com notificações |
+| Relatórios financeiros | ❌ | Manual | ✅ Automáticos |
+| App nativo iOS/Android | ✅ App genérico | ❌ | ✅ Sim |
+| Modo offline | ❌ | ❌ | ✅ Sim |
+
+## Para quem é o SouArtista
+
+- Músicos, cantores e cantoras
+- DJs e produtores musicais
+- Bandas e duplas sertanejas
+- Artistas freelancers que recebem cachê
+- Qualquer profissional que vive de música
+
+## Conclusão
+
+Se você quer uma agenda de shows que só avisa compromissos, qualquer calendário genérico serve. Mas se você quer uma **agenda de shows completa**, que também calcula lucro, controla despesas, gerencia equipe e ainda funciona offline, o SouArtista é a escolha.
+
+**Baixe agora** e transforme sua agenda em uma verdadeira ferramenta de gestão da sua carreira musical.
+    `.trim(),
+  },
+  {
     slug: 'como-gerenciar-caches-de-banda-de-forma-profissional',
     title: 'Como gerenciar cachês de banda de forma profissional',
     excerpt: 'Aprenda o passo a passo para organizar os pagamentos da sua banda, dividir cachês com justiça e nunca mais ter dor de cabeça financeira com seus músicos.',

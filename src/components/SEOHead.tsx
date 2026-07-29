@@ -22,9 +22,9 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'SouArtista — Gestão financeira para quem vive de música',
-  description = 'O aplicativo feito para músicos, cantores, DJs e artistas brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira.',
-  keywords = 'app para músicos, gestão financeira artistas, agenda de shows, controle de cachê, app para DJ, app para cantor, app banda, gerenciamento músicos, SouArtista, músicos brasileiros, app show, controle financeiro músico',
+  title = 'SouArtista — Agenda de shows + gestão financeira para músicos',
+  description = 'O app mais completo para músicos, cantores, DJs e bandas: agenda de shows, controle de cachês, despesas, equipe e lucro líquido em um só lugar.',
+  keywords = 'agenda de shows, app agenda de shows, agenda de show, melhor agenda de shows, app para músicos, gestão financeira artistas, controle de cachê, app para DJ, app para cantor, app banda, gerenciamento músicos, SouArtista, músicos brasileiros, app show, controle financeiro músico',
   canonical,
   ogImage = 'https://storage.googleapis.com/gpt-engineer-file-uploads/mKx26voRlBSrfQgaD8ihFhaECGz1/social-images/social-1768421693138-ICONE FINAL.png',
   ogType = 'website',

@@ -11,8 +11,8 @@ export const translations = {
     },
     hero: {
       badge: 'Experimente 7 dias grátis',
-      title: 'Suas finanças musicais e agenda organizadas',
-      subtitle: 'Cuidamos da parte chata e você cuida da música.',
+      title: 'A agenda de shows mais completa para quem vive de música',
+      subtitle: 'Agende seus shows e controle cachês, despesas e lucro líquido em um só lugar. A agenda que também cuida do seu bolso.',
       socialProof: 'Milhares de artistas já organizam sua carreira conosco',
       downloadApp: 'Baixar App',
     },
@@ -24,8 +24,8 @@ export const translations = {
         description: 'Registre cachês, despesas e recebimentos. Veja exatamente quanto sobra no seu bolso depois de cada show..',
       },
       calendar: {
-        title: 'Nunca mais perca um compromisso',
-        description: 'Shows, ensaios e eventos em um só lugar. Receba notificações direto na tela do seu celular e nunca esqueça um show.',
+        title: 'Agenda central de shows',
+        description: 'Sua agenda de shows conectada ao financeiro: cada evento mostra data, local, cachê, despesas e lucro líquido direto no calendário.',
       },
       musicians: {
         title: 'Gerencie sua equipe e cachês',
@@ -225,8 +225,8 @@ export const translations = {
     },
     hero: {
       badge: 'Try 7 days free',
-      title: 'Your music finances and schedule organized',
-      subtitle: 'We handle the boring stuff so you can focus on the music',
+      title: 'The most complete gig schedule and finance app for musicians',
+      subtitle: 'Schedule your gigs and control fees, expenses and net profit in one place. The calendar that also watches your wallet.',
       socialProof: 'Thousands of artists already manage their career with us',
       downloadApp: 'Download App',
     },
@@ -238,8 +238,8 @@ export const translations = {
         description: 'Record gig fees, expenses, and payments. See exactly how much you take home after each show.',
       },
       calendar: {
-        title: 'Never miss an appointment',
-        description: 'Shows, rehearsals, and events in one place. Get notifications right on your phone screen and never forget a gig.',
+        title: 'Central gig calendar',
+        description: 'Your gig calendar connected to finances: every event shows date, venue, fee, expenses and net profit right in the calendar.',
       },
       musicians: {
         title: 'Manage your team and fees',
@@ -439,8 +439,8 @@ export const translations = {
     },
     hero: {
       badge: 'Prueba 7 días gratis',
-      title: 'Tus finanzas musicales y agenda organizadas',
-      subtitle: 'Nos encargamos de lo aburrido para que te enfoques en la música',
+      title: 'La agenda de shows más completa para quien vive de la música',
+      subtitle: 'Agenda tus shows y controla cachés, gastos y ganancia neta en un solo lugar. La agenda que también cuida de tu bolsillo.',
       socialProof: 'Miles de artistas ya gestionan su carrera con nosotros',
       downloadApp: 'Descargar App',
     },
@@ -452,8 +452,8 @@ export const translations = {
         description: 'Registra cachés, gastos y pagos. Mira exactamente cuánto te queda después de cada show.',
       },
       calendar: {
-        title: 'Nunca pierdas una cita',
-        description: 'Shows, ensayos y eventos en un solo lugar. Recibe notificaciones en tu celular y nunca olvides un show.',
+        title: 'Agenda central de shows',
+        description: 'Tu agenda de shows conectada a las finanzas: cada evento muestra fecha, lugar, caché, gastos y ganancia neta directamente en el calendario.',
       },
       musicians: {
         title: 'Gestiona tu equipo y cachés',

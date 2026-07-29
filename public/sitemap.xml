@@ -101,6 +101,12 @@
 
   <!-- Blog Posts SEO -->
   <url>
+    <loc>https://souartista.com/blog/souartista-agenda-de-shows-mais-completa-brasil</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://souartista.com/blog/como-gerenciar-caches-de-banda-de-forma-profissional</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
