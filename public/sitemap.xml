@@ -98,13 +98,8 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Novidades -->
-  <url>
-    <loc>https://souartista.com/novidades</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
+
 
   <!-- Blog Posts SEO -->
   <url>
