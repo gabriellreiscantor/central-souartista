@@ -98,10 +98,10 @@ const Trust: React.FC = () => {
       <SEOHead
         title="Central de Confiança — Segurança e Privacidade | SouArtista"
         description="Como o SouArtista protege seus dados: criptografia, LGPD, infraestrutura segura e transparência sobre o uso de informações de músicos e artistas."
-        canonical="https://souartista.app/confianca"
+        canonical="https://central-souartista.lovable.app/confianca"
         breadcrumbs={[
-          { name: 'Início', url: 'https://souartista.app' },
-          { name: 'Central de Confiança', url: 'https://souartista.app/confianca' },
+          { name: 'Início', url: 'https://central-souartista.lovable.app' },
+          { name: 'Central de Confiança', url: 'https://central-souartista.lovable.app/confianca' },
         ]}
       />
       <div className="relative pt-32 pb-20">

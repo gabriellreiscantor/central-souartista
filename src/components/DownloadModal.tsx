@@ -19,7 +19,7 @@ interface DownloadModalProps {
 export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange }) => {
   const webDownload = {
     label: 'SouArtista no Web App',
-    href: 'https://souartista.app',
+    href: 'https://central-souartista.lovable.app',
   };
 
   const handleAndroidClick = () => {

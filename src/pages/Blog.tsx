@@ -31,10 +31,10 @@ const Blog: React.FC = () => {
         title="Blog - SouArtista"
         description="Artigos, dicas práticas e conteúdos que ajudam músicos, cantores, DJs e artistas a organizarem suas carreiras e finanças. Aprenda sobre gestão musical, impostos e muito mais."
         keywords="blog músico, dicas músicos, gestão carreira musical, finanças artistas, impostos músico, nota fiscal músico, como organizar shows, dicas para DJ"
-        canonical="https://souartista.app/blog"
+        canonical="https://central-souartista.lovable.app/blog"
         breadcrumbs={[
-          { name: 'Início', url: 'https://souartista.app' },
-          { name: 'Blog', url: 'https://souartista.app/blog' }
+          { name: 'Início', url: 'https://central-souartista.lovable.app' },
+          { name: 'Blog', url: 'https://central-souartista.lovable.app/blog' }
         ]}
       />
       {/* Hero Section */}
