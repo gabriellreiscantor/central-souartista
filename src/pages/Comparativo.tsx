@@ -76,7 +76,7 @@ const Comparativo: React.FC = () => {
 
           {/* Comparison Table */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="rounded-2xl border border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden">
+            <div className="rounded-2xl border border-border/50 bg-card/50 backdrop-blur-xs overflow-hidden">
               <Table>
                 <TableHeader>
                   <TableRow className="border-border/50 bg-muted/30">

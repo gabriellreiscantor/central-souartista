@@ -59,7 +59,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
                 href="https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
+                className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-xs hover:shadow-md"
               >
                 <div className="w-11 h-11 rounded-xl overflow-hidden">
                   <img src={appleLogo} alt="Apple" className="w-full h-full object-cover" />
@@ -72,7 +72,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
               {/* Android Button */}
               <button
                 onClick={handleAndroidClick}
-                className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md w-full text-left opacity-70"
+                className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-xs hover:shadow-md w-full text-left opacity-70"
               >
                 <div className="w-11 h-11 rounded-xl overflow-hidden flex items-center justify-center bg-white">
                   <img src={playstoreLogo} alt="Google Play" className="w-8 h-8 object-contain" />
@@ -93,7 +93,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
               href={webDownload.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-sm hover:shadow-md"
+              className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-xs hover:shadow-md"
             >
               <div className="w-11 h-11 rounded-xl overflow-hidden">
                 <img src={webLogo} alt="Web App" className="w-full h-full object-cover" />
