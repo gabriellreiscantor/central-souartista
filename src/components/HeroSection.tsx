@@ -121,10 +121,13 @@ export const HeroSection: React.FC = () => {
                         muted 
                         playsInline
                         webkit-playsinline="true"
+                        preload="auto"
+                        // @ts-expect-error non-standard hint honored by Chrome/Safari
+                        fetchpriority="high"
+                        src={demoVideo.url}
                         className="w-full h-full object-cover"
-                      >
-                        <source src={demoVideo.url} type="video/mp4" />
-                      </video>
+                      />
+
                     </div>
                   </div>
                 </div>
