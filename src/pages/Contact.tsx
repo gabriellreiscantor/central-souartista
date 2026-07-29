@@ -32,10 +32,10 @@ const Contact: React.FC = () => {
         title="Contato - SouArtista"
         description="Entre em contato com a equipe SouArtista. Estamos prontos para ajudar músicos, cantores, DJs e artistas com dúvidas sobre o app, suporte técnico e parcerias."
         keywords="contato souartista, suporte app músico, falar com souartista, ajuda músicos, email souartista, suporte DJ"
-        canonical="https://central-souartista.lovable.app/contato"
+        canonical="https://souartista.com/contato"
         breadcrumbs={[
-          { name: 'Início', url: 'https://central-souartista.lovable.app' },
-          { name: 'Contato', url: 'https://central-souartista.lovable.app/contato' }
+          { name: 'Início', url: 'https://souartista.com' },
+          { name: 'Contato', url: 'https://souartista.com/contato' }
         ]}
       />
       {/* Hero Section */}

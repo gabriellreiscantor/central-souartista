@@ -9,10 +9,10 @@ const Privacy: React.FC = () => {
       <SEOHead
         title="Política de Privacidade — SouArtista"
         description="Como o SouArtista coleta, usa e protege os dados dos músicos, cantores, DJs e artistas usuários da plataforma, em conformidade com a LGPD."
-        canonical="https://central-souartista.lovable.app/privacidade"
+        canonical="https://souartista.com/privacidade"
         breadcrumbs={[
-          { name: 'Início', url: 'https://central-souartista.lovable.app' },
-          { name: 'Privacidade', url: 'https://central-souartista.lovable.app/privacidade' },
+          { name: 'Início', url: 'https://souartista.com' },
+          { name: 'Privacidade', url: 'https://souartista.com/privacidade' },
         ]}
       />
       <div className="relative pt-32 pb-20">

@@ -58,7 +58,7 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
 
       {/* Web App Button */}
       <a
-        href="https://central-souartista.lovable.app"
+        href="https://souartista.com"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Acessar o SouArtista pela versão Web App no navegador"
