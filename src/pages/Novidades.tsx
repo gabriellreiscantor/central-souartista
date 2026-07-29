@@ -180,8 +180,8 @@ const Novidades: React.FC = () => {
         title="Novidades da Plataforma — SouArtista"
         description="Confira as últimas atualizações do SouArtista: Modo Palco, Repertórios, Código de Amizade, Recibos em PDF, Demonstrativo Anual e muito mais."
         breadcrumbs={[
-          { name: 'Início', url: 'https://central-souartista.lovable.app' },
-          { name: 'Novidades', url: 'https://central-souartista.lovable.app/novidades' },
+          { name: 'Início', url: 'https://souartista.com' },
+          { name: 'Novidades', url: 'https://souartista.com/novidades' },
         ]}
       />
 

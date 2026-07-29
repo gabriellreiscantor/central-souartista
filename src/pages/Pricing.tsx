@@ -11,10 +11,10 @@ const Pricing: React.FC = () => {
         title="Preços e Planos - SouArtista"
         description="Conheça os planos do SouArtista: Plano Mensal por R$ 29,90 ou Plano Anual por R$ 300,00. Organize sua carreira musical com o melhor app para músicos, cantores e DJs."
         keywords="preços souartista, planos app músico, assinatura gestão musical, quanto custa souartista, plano pro músico, app para DJ preço"
-        canonical="https://central-souartista.lovable.app/precos"
+        canonical="https://souartista.com/precos"
         breadcrumbs={[
-          { name: 'Início', url: 'https://central-souartista.lovable.app' },
-          { name: 'Preços', url: 'https://central-souartista.lovable.app/precos' }
+          { name: 'Início', url: 'https://souartista.com' },
+          { name: 'Preços', url: 'https://souartista.com/precos' }
         ]}
       />
       <PricingSection />
