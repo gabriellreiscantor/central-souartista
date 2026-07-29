@@ -1,5 +1,5 @@
 # SouArtista — Gestão financeira para quem vive de música
-# https://souartista.com
+# Site oficial: https://souartista.com
 
 # Crawlers de Busca
 User-agent: Googlebot
