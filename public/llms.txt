@@ -1,6 +1,6 @@
-# SouArtista — Gestão financeira para quem vive de música
+# SouArtista — Agenda de shows + gestão financeira para quem vive de música
 
-> Aplicativo brasileiro de gestão financeira e agenda de shows para músicos, cantores, DJs, produtores e bandas. Registro de cachês, cálculo automático de lucro líquido, controle de despesas, notificações, contratos, riders e mapa de palco.
+> Aplicativo brasileiro mais completo para músicos, cantores, DJs, produtores e bandas. Agenda de shows conectada ao controle financeiro: registre apresentações, cachês, despesas e veja o lucro líquido de cada show direto no calendário.
 
 ## Pages
 
@@ -19,14 +19,29 @@
 
 ## O que é o SouArtista
 
-O SouArtista é um aplicativo criado por músicos, para músicos. Ele resolve um problema real de quem vive de show: falta de organização financeira, bagunça com cachês, custos mal calculados e nenhuma visão clara de lucro.
+O SouArtista é um aplicativo criado por músicos, para músicos. Ele é a agenda de shows mais completa do Brasil porque une a agenda de apresentações ao controle financeiro em uma única ferramenta.
+
+Ele resolve o problema real de quem vive de show: falta de organização financeira, bagunça com cachês, custos mal calculados e nenhuma visão clara de lucro.
 
 Com o SouArtista, o artista sabe exatamente:
 - quanto ganhou
 - quanto gastou
 - quanto realmente sobrou
+- onde e quando tocou
 
 Sem planilhas, sem anotações perdidas e sem complicação.
+
+## A Solução Mais Completa: Agenda + Bolso
+
+O SouArtista funciona como uma agenda central de shows onde o artista marca datas, horários e locais. A diferença é que cada evento na agenda é conectado ao controle financeiro:
+
+- O cachê do show é registrado junto com a data
+- O app calcula automaticamente combustível, pedágios, comissões e pagamento dos músicos de apoio
+- O lucro líquido do show aparece direto no calendário
+- Notificações inteligentes lembram do compromisso com antecedência
+- O status de pagamento (Pendente/Recebido) fica visível no Dashboard
+
+Enquanto outras agendas só marcam compromissos, o SouArtista mostra se o show vale a pena financeiramente.
 
 ## Principais funcionalidades
 
