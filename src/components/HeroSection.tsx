@@ -7,6 +7,7 @@ import testimonialAvatar2 from '@/assets/testimonial-avatar-2.jpg';
 import testimonialAvatar3 from '@/assets/testimonial-avatar-3.jpg';
 import testimonialAvatar4 from '@/assets/testimonial-avatar-4.jpg';
 import testimonialAvatar5 from '@/assets/testimonial-avatar-5.jpg';
+import demoVideo from '@/assets/demo-video.mp4.asset.json';
 
 const avatars = [
   testimonialAvatar1,
