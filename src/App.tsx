@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
@@ -16,7 +16,7 @@ import Trust from "./pages/Trust";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Comparativo from "./pages/Comparativo";
-import Novidades from "./pages/Novidades";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,7 +41,7 @@ const App = () => (
               <Route path="/sobre" element={<About />} />
               <Route path="/contato" element={<Contact />} />
               <Route path="/comparativo" element={<Comparativo />} />
-              <Route path="/novidades" element={<Novidades />} />
+              <Route path="/novidades" element={<Navigate to="/funcionalidades#novidades" replace />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -149,8 +149,8 @@ export const WhatsNewSection: React.FC = () => {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-purple"
           >
-            <Link to="/novidades">
-              Ver todas as novidades
+            <Link to="/funcionalidades#novidades">
+              Ver todas as funcionalidades
               <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </Button>

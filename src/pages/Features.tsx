@@ -17,10 +17,17 @@ import {
   Bell,
   Settings,
   Mic2,
+  Sparkles,
+  WifiOff,
   ListMusic,
+  Mail,
+  LogIn,
+  Star,
+  Palette,
 } from 'lucide-react';
 
 const categories = [
+  { id: 'novidades', label: 'Novidades v2.0', icon: Sparkles },
   { id: 'palco', label: 'Modo Palco & Repertórios', icon: Mic2 },
   { id: 'shows', label: 'Gestão de Shows', icon: Music },
   { id: 'financeiro', label: 'Financeiro', icon: Wallet },
@@ -32,6 +39,95 @@ const categories = [
   { id: 'notificacoes', label: 'Notificações', icon: Bell },
   { id: 'configuracoes', label: 'Configurações', icon: Settings },
 ];
+
+const novidadesFeatures = [
+  {
+    title: 'Modo Offline turbinado',
+    description: 'Tela nunca mais fica travada carregando. Você vê há quanto tempo os dados foram atualizados e recarrega com um toque.',
+    badge: 'NOVO',
+    resources: [
+      'Timeout inteligente de 30s em todas as requisições',
+      'Banner offline com hora da última atualização',
+      'Botão de recarregar sempre à mão',
+      'Pré-carregamento dos próximos 30 dias de shows e setlists',
+    ],
+  },
+  {
+    title: 'Modo Palco blindado',
+    description: 'Uma vez aberto, seus dados ficam intactos durante todo o show, mesmo sem sinal. Zero risco no meio da apresentação.',
+    badge: 'NOVO',
+    resources: [
+      'Dados congelados durante o show',
+      'Funciona sem internet do início ao fim',
+      'Otimizado como referência ao vivo',
+      'Não recarrega nada durante a apresentação',
+    ],
+  },
+  {
+    title: 'Repertório (Setlists)',
+    description: 'Monte e organize seus repertórios com blocos, tons e letras. Disponível offline no Modo Palco.',
+    badge: 'NOVO',
+    resources: [
+      'Blocos, tons e letras',
+      'Vincule um setlist direto ao show',
+      'Disponível offline no Modo Palco',
+    ],
+  },
+  {
+    title: 'Vínculo Artista ↔ Músico',
+    description: 'Código de amizade para conectar artistas e músicos, com convites automáticos para shows.',
+    badge: 'NOVO',
+    resources: [
+      'Código de amizade fácil de compartilhar',
+      'Compartilhamento nativo com mensagem do SouArtista',
+      'Músicos vinculados aparecem com destaque',
+      'Convites automáticos quando o artista escala o músico',
+      'Revogar o vínculo cancela convites pendentes',
+    ],
+  },
+  {
+    title: 'E-mails com a cara do SouArtista',
+    description: 'Novo visual em todos os e-mails, com respeito total às suas preferências de comunicação.',
+    badge: 'NOVO',
+    resources: [
+      'Novo visual em todos os e-mails',
+      'Link de descadastro em todo e-mail de novidades',
+      'Preferências respeitadas',
+      'Proteção contra excesso de mensagens',
+    ],
+  },
+  {
+    title: 'Login mais esperto',
+    description: 'Usuários antigos com credenciais migradas recebem aviso claro do que fazer — ninguém fica preso sem entender.',
+    badge: 'NOVO',
+    resources: [
+      'Aviso claro para credenciais migradas',
+      'Orientação passo a passo',
+      'Sem telas confusas',
+    ],
+  },
+  {
+    title: 'Avaliação sem travas',
+    description: 'Ao tocar em "Avaliar" no perfil, se o pop-up nativo não aparecer, o app abre direto a página da loja.',
+    badge: 'NOVO',
+    resources: [
+      'Fallback automático para a página da loja',
+      'Sem travas na avaliação',
+      'Um toque e pronto',
+    ],
+  },
+  {
+    title: 'Visual repaginado',
+    description: 'Modais de atualização, LGPD, boas-vindas, anúncios e conteúdo bloqueado com o tema SouArtista.',
+    badge: 'NOVO',
+    resources: [
+      'Modais de atualização com identidade SouArtista',
+      'Tela de LGPD e boas-vindas repaginadas',
+      'Anúncios e conteúdo bloqueado no novo tema',
+    ],
+  },
+];
+
 
 const palcoFeatures = [
   {
@@ -387,10 +483,18 @@ const Features: React.FC = () => {
       
       <div className="bg-background">
         <FeatureSection
+          id="novidades"
+          title="Novidades da versão 2.0"
+          icon={Sparkles}
+          features={novidadesFeatures}
+        />
+
+        <FeatureSection
           id="palco"
           title="Modo Palco & Repertórios"
           icon={Mic2}
           features={palcoFeatures}
+          className="bg-muted/30"
         />
 
         <FeatureSection
@@ -398,7 +502,6 @@ const Features: React.FC = () => {
           title="Gestão de Shows"
           icon={Music}
           features={showsFeatures}
-          className="bg-muted/30"
         />
 
         
