@@ -41,10 +41,10 @@ const Comparativo: React.FC = () => {
         title="SouArtista vs Excel vs Google Agenda — Comparativo para Músicos"
         description="Compare o SouArtista com planilhas Excel e Google Agenda. Veja por que músicos, cantores, DJs e bandas escolhem o SouArtista para gestão de shows, cachês e finanças."
         keywords="souartista vs excel, app vs planilha músico, melhor app para músico, comparativo agenda shows, souartista vs google agenda, gestão financeira músico, controle de cachê, app para DJ, app para cantor"
-        canonical="https://souartista.app/comparativo"
+        canonical="https://central-souartista.lovable.app/comparativo"
         breadcrumbs={[
-          { name: 'Início', url: 'https://souartista.app' },
-          { name: 'Comparativo', url: 'https://souartista.app/comparativo' },
+          { name: 'Início', url: 'https://central-souartista.lovable.app' },
+          { name: 'Comparativo', url: 'https://central-souartista.lovable.app/comparativo' },
         ]}
       />
 

@@ -87,10 +87,10 @@ const About: React.FC = () => {
         title="Sobre - SouArtista"
         description="Conheça o SouArtista: aplicativo de gestão financeira criado por músicos, para músicos. Organize shows, cachês e despesas. Para cantores, DJs, bandas e artistas."
         keywords="sobre souartista, app para músicos, plataforma artistas, gestão musical, organização carreira musical, app para DJ, app para cantor"
-        canonical="https://souartista.app/sobre"
+        canonical="https://central-souartista.lovable.app/sobre"
         breadcrumbs={[
-          { name: 'Início', url: 'https://souartista.app' },
-          { name: 'Sobre', url: 'https://souartista.app/sobre' }
+          { name: 'Início', url: 'https://central-souartista.lovable.app' },
+          { name: 'Sobre', url: 'https://central-souartista.lovable.app/sobre' }
         ]}
       />
       {/* Hero Section */}
@@ -301,7 +301,7 @@ const About: React.FC = () => {
               <br />
               Para acessar o sistema e conhecer as funcionalidades, visite{' '}
               <a 
-                href="https://souartista.app" 
+                href="https://central-souartista.lovable.app" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline font-medium"

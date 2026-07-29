@@ -9,10 +9,10 @@ const Terms: React.FC = () => {
       <SEOHead
         title="Termos de Uso — SouArtista"
         description="Termos e condições de uso do SouArtista, o aplicativo de gestão financeira e agenda de shows para músicos, cantores, DJs e artistas."
-        canonical="https://souartista.app/termos"
+        canonical="https://central-souartista.lovable.app/termos"
         breadcrumbs={[
-          { name: 'Início', url: 'https://souartista.app' },
-          { name: 'Termos', url: 'https://souartista.app/termos' },
+          { name: 'Início', url: 'https://central-souartista.lovable.app' },
+          { name: 'Termos', url: 'https://central-souartista.lovable.app/termos' },
         ]}
       />
       <div className="relative pt-32 pb-20">

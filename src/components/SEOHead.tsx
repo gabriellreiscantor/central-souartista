@@ -33,7 +33,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   includeAppSchemas = false,
   extraSchemas,
 }) => {
-  const siteUrl = 'https://souartista.app';
+  const siteUrl = 'https://central-souartista.lovable.app';
   const location = useLocation();
   const canonicalUrl = canonical || `${siteUrl}${location.pathname === '/' ? '' : location.pathname}`;
 

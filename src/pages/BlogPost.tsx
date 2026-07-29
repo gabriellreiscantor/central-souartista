@@ -102,7 +102,7 @@ const BlogPost: React.FC = () => {
     return elements;
   };
 
-  const postUrl = `https://souartista.app/blog/${post.slug}`;
+  const postUrl = `https://central-souartista.lovable.app/blog/${post.slug}`;
   const truncatedExcerpt = post.excerpt.length > 160 ? `${post.excerpt.slice(0, 157)}...` : post.excerpt;
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -112,11 +112,11 @@ const BlogPost: React.FC = () => {
     image: post.coverImage,
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
-    author: { '@type': 'Organization', name: 'SouArtista', url: 'https://souartista.app' },
+    author: { '@type': 'Organization', name: 'SouArtista', url: 'https://central-souartista.lovable.app' },
     publisher: {
       '@type': 'Organization',
       name: 'SouArtista',
-      logo: { '@type': 'ImageObject', url: 'https://souartista.app/favicon.png' },
+      logo: { '@type': 'ImageObject', url: 'https://central-souartista.lovable.app/favicon.png' },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
     articleSection: post.categoryLabel,
@@ -131,8 +131,8 @@ const BlogPost: React.FC = () => {
         ogType="article"
         ogImage={post.coverImage}
         breadcrumbs={[
-          { name: 'Início', url: 'https://souartista.app' },
-          { name: 'Blog', url: 'https://souartista.app/blog' },
+          { name: 'Início', url: 'https://central-souartista.lovable.app' },
+          { name: 'Blog', url: 'https://central-souartista.lovable.app/blog' },
           { name: post.title, url: postUrl },
         ]}
         extraSchemas={[articleSchema]}
