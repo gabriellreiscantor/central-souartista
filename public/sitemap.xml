@@ -10,8 +10,6 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://souartista.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://souartista.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://souartista.com/es/"/>
     <image:image>
       <image:loc>https://souartista.com/favicon.png</image:loc>
       <image:title>SouArtista - Gestão financeira para quem vive de música</image:title>
