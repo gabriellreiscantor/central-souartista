@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "preload",
         as: "video",
         type: "video/mp4",
-        href: "/__l5e/assets-v1/eb00f988-67ea-48ce-ad54-fc1a71b903b0/demo-video.mp4",
+        href: "/demo-video.mp4",
         fetchPriority: "high",
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
