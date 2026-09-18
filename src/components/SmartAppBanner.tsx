@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import appIcon from '@/assets/app-icon.png';
+import { trackDownloadClick } from '@/lib/tracking';
 
 const BANNER_DISMISS_KEY = 'souartista_banner_dismissed';
 const DISMISS_DURATION_DAYS = 7;
