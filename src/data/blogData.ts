@@ -1,3 +1,5 @@
+import { seoPosts } from './blogPostsSeo';
+
 export type BlogCategory = 'all' | 'gestao-financeira' | 'carreira' | 'dicas-praticas' | 'novidades';
 
 export interface BlogPost {
@@ -29,6 +31,7 @@ export const categoryLabels: Record<BlogCategory, string> = {
 };
 
 export const blogPosts: BlogPost[] = [
+  ...seoPosts,
   {
     slug: 'souartista-agenda-de-shows-mais-completa-brasil',
     title: 'SouArtista: a agenda de shows mais completa do Brasil',

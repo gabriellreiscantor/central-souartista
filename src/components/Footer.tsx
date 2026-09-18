@@ -41,6 +41,9 @@ export const Footer: React.FC = () => {
     product: [
       { label: t.footer.features, path: '/funcionalidades' },
       { label: t.footer.pricing, path: '/precos' },
+      { label: 'Agenda de shows', path: '/agenda-de-shows' },
+      { label: 'App de cachê', path: '/app-de-cache' },
+      { label: 'App para banda', path: '/app-para-banda' },
       { label: t.footer.download, path: null, onClick: () => { trackDownloadClick('cta_footer'); setIsDownloadModalOpen(true); } },
     ],
     company: [

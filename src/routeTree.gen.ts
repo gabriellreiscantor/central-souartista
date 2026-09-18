@@ -10,6 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AgendaDeShowsRouteImport } from './routes/agenda-de-shows'
+import { Route as AppDeCacheRouteImport } from './routes/app-de-cache'
+import { Route as AppParaBandaRouteImport } from './routes/app-para-banda'
 import { Route as ComparativoRouteImport } from './routes/comparativo'
 import { Route as ConfiancaRouteImport } from './routes/confianca'
 import { Route as ContatoRouteImport } from './routes/contato'
@@ -25,6 +28,21 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgendaDeShowsRoute = AgendaDeShowsRouteImport.update({
+  id: '/agenda-de-shows',
+  path: '/agenda-de-shows',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AppDeCacheRoute = AppDeCacheRouteImport.update({
+  id: '/app-de-cache',
+  path: '/app-de-cache',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AppParaBandaRoute = AppParaBandaRouteImport.update({
+  id: '/app-para-banda',
+  path: '/app-para-banda',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ComparativoRoute = ComparativoRouteImport.update({
@@ -85,6 +103,9 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/agenda-de-shows': typeof AgendaDeShowsRoute
+  '/app-de-cache': typeof AppDeCacheRoute
+  '/app-para-banda': typeof AppParaBandaRoute
   '/comparativo': typeof ComparativoRoute
   '/confianca': typeof ConfiancaRoute
   '/contato': typeof ContatoRoute
@@ -99,6 +120,9 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/agenda-de-shows': typeof AgendaDeShowsRoute
+  '/app-de-cache': typeof AppDeCacheRoute
+  '/app-para-banda': typeof AppParaBandaRoute
   '/comparativo': typeof ComparativoRoute
   '/confianca': typeof ConfiancaRoute
   '/contato': typeof ContatoRoute
@@ -114,6 +138,9 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/agenda-de-shows': typeof AgendaDeShowsRoute
+  '/app-de-cache': typeof AppDeCacheRoute
+  '/app-para-banda': typeof AppParaBandaRoute
   '/comparativo': typeof ComparativoRoute
   '/confianca': typeof ConfiancaRoute
   '/contato': typeof ContatoRoute
@@ -130,6 +157,9 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/agenda-de-shows'
+    | '/app-de-cache'
+    | '/app-para-banda'
     | '/comparativo'
     | '/confianca'
     | '/contato'
@@ -144,6 +174,9 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/agenda-de-shows'
+    | '/app-de-cache'
+    | '/app-para-banda'
     | '/comparativo'
     | '/confianca'
     | '/contato'
@@ -158,6 +191,9 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/agenda-de-shows'
+    | '/app-de-cache'
+    | '/app-para-banda'
     | '/comparativo'
     | '/confianca'
     | '/contato'
@@ -173,6 +209,9 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AgendaDeShowsRoute: typeof AgendaDeShowsRoute
+  AppDeCacheRoute: typeof AppDeCacheRoute
+  AppParaBandaRoute: typeof AppParaBandaRoute
   ComparativoRoute: typeof ComparativoRoute
   ConfiancaRoute: typeof ConfiancaRoute
   ContatoRoute: typeof ContatoRoute
@@ -193,6 +232,27 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agenda-de-shows': {
+      id: '/agenda-de-shows'
+      path: '/agenda-de-shows'
+      fullPath: '/agenda-de-shows'
+      preLoaderRoute: typeof AgendaDeShowsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/app-de-cache': {
+      id: '/app-de-cache'
+      path: '/app-de-cache'
+      fullPath: '/app-de-cache'
+      preLoaderRoute: typeof AppDeCacheRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/app-para-banda': {
+      id: '/app-para-banda'
+      path: '/app-para-banda'
+      fullPath: '/app-para-banda'
+      preLoaderRoute: typeof AppParaBandaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/comparativo': {
@@ -277,6 +337,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AgendaDeShowsRoute: AgendaDeShowsRoute,
+  AppDeCacheRoute: AppDeCacheRoute,
+  AppParaBandaRoute: AppParaBandaRoute,
   ComparativoRoute: ComparativoRoute,
   ConfiancaRoute: ConfiancaRoute,
   ContatoRoute: ContatoRoute,
