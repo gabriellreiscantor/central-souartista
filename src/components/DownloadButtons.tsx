@@ -1,5 +1,6 @@
 import React from 'react';
 import { Apple, Globe } from 'lucide-react';
+import { trackDownloadClick } from '@/lib/tracking';
 
 interface DownloadButtonsProps {
   size?: 'sm' | 'md' | 'lg';

@@ -6,6 +6,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { toast } from '@/hooks/use-toast';
+import { trackDownloadClick } from '@/lib/tracking';
 import appIcon from '@/assets/app-icon.png';
 import appleLogo from '@/assets/apple-logo.png';
 import playstoreLogo from '@/assets/playstore-logo.webp';
