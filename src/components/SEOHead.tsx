@@ -91,8 +91,26 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'SouArtista',
-    applicationCategory: 'FinanceApplication',
+    alternateName: ['SouArtista App', 'Sou Artista', 'SouArtista agenda de shows'],
+    applicationCategory: ['FinanceApplication', 'BusinessApplication', 'ProductivityApplication'],
+    applicationSubCategory: 'Agenda de shows e gestão financeira para músicos',
     operatingSystem: 'iOS, Android, Web',
+    softwareVersion: '2.0',
+    inLanguage: ['pt-BR', 'en', 'es'],
+    url: siteUrl,
+    downloadUrl: 'https://play.google.com/store/apps/details?id=app.souartista',
+    installUrl: 'https://play.google.com/store/apps/details?id=app.souartista',
+    availableOnDevice: 'iPhone, iPad, Android, Navegador Web',
+    countriesSupported: 'BR',
+    publisher: { '@type': 'Organization', name: 'SouArtista', url: siteUrl },
+    audience: {
+      '@type': 'Audience',
+      audienceType:
+        'Músicos, cantores, bandas, duplas sertanejas, DJs, produtores musicais e artistas independentes',
+      geographicArea: { '@type': 'Country', name: 'Brazil' },
+    },
+    keywords:
+      'agenda de shows, app agenda de shows para banda, controle de cachê, repartir cachê de banda, nota fiscal para show de cantor, organizar equipe de apoio de músicos, gestão financeira para músicos, rider técnico, mapa de palco, contrato de show',
     offers: [
       {
         '@type': 'Offer',
@@ -309,11 +327,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>
-      {includeAppSchemas && (
-        <script type="application/ld+json">
-          {JSON.stringify(softwareSchema)}
-        </script>
-      )}
+      <script type="application/ld+json">
+        {JSON.stringify(softwareSchema)}
+      </script>
       {includeAppSchemas && (
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
