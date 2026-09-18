@@ -39,7 +39,7 @@ const WEBSITE_JSON_LD = JSON.stringify({
   name: "SouArtista",
   alternateName: "SouArtista App",
   url: "https://souartista.com",
-  description: "Gestão financeira para quem vive de música",
+  description: "Agenda de shows e gestão financeira multiplataforma para Web, iPhone e Android",
   inLanguage: ["pt-BR", "en", "es"],
   potentialAction: {
     "@type": "SearchAction",
@@ -51,9 +51,9 @@ const WEBSITE_JSON_LD = JSON.stringify({
   },
 });
 
-const SITE_TITLE = "SouArtista — Gestão financeira para quem vive de música";
+const SITE_TITLE = "SouArtista — Agenda de shows para Web, iPhone e Android";
 const SITE_DESCRIPTION =
-  "O aplicativo feito para músicos, cantores, DJs e artistas brasileiros organizarem shows, cachês, despesas e terem controle real da vida financeira.";
+  "Agenda de shows e gestão financeira multiplataforma para músicos, cantores, DJs e bandas. Use na Web, iPhone e Android com tudo sincronizado.";
 const OG_IMAGE =
   "https://storage.googleapis.com/gpt-engineer-file-uploads/mKx26voRlBSrfQgaD8ihFhaECGz1/social-images/social-1768421693138-ICONE FINAL.png";
 
