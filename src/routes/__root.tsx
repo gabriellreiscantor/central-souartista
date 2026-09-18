@@ -51,7 +51,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         name: "google-site-verification",
-        content: "uh3TUcdn-B0CI5C5eJ-k0t4ttKgLXLZjJm-08YI7_tk",
+        content: "POO_FCGtqxDLzu8THvP7R0Jh4J1t_1q_CK4K4Owy_Es",
       },
       { name: "title", content: SITE_TITLE },
       { name: "description", content: SITE_DESCRIPTION },
