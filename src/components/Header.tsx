@@ -5,6 +5,7 @@ import { LanguageSelector } from './LanguageSelector';
 import { DownloadModal } from './DownloadModal';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { trackDownloadClick } from '@/lib/tracking';
 import logo from '@/assets/logo.png';
 
 interface HeaderProps {
@@ -86,7 +87,7 @@ export const Header: React.FC<HeaderProps> = ({ bannerVisible = false }) => {
           <div className="hidden md:flex items-center gap-3">
             <LanguageSelector variant="dark" />
             <Button 
-              onClick={() => setIsDownloadModalOpen(true)}
+              onClick={() => { trackDownloadClick('cta_header'); setIsDownloadModalOpen(true); }}
               className="rounded-full px-6 shadow-purple hover:shadow-purple-lg transition-smooth"
             >
               {t.nav.download}
@@ -135,6 +136,7 @@ export const Header: React.FC<HeaderProps> = ({ bannerVisible = false }) => {
                 <Button 
                   onClick={() => {
                     setIsMobileMenuOpen(false);
+                    trackDownloadClick('cta_header');
                     setIsDownloadModalOpen(true);
                   }}
                   className="w-full rounded-full shadow-purple"

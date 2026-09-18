@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import appIcon from '@/assets/app-icon.png';
+import { trackDownloadClick } from '@/lib/tracking';
 
 const BANNER_DISMISS_KEY = 'souartista_banner_dismissed';
 const DISMISS_DURATION_DAYS = 7;
@@ -61,6 +62,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
   };
 
   const handleOpen = () => {
+    trackDownloadClick(os === 'ios' ? 'app_store' : 'google_play', 'smart_banner');
     if (os === 'ios') {
       window.open('https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476', '_blank');
     } else if (os === 'android') {

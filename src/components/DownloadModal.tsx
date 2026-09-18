@@ -6,6 +6,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { toast } from '@/hooks/use-toast';
+import { trackDownloadClick } from '@/lib/tracking';
 import appIcon from '@/assets/app-icon.png';
 import appleLogo from '@/assets/apple-logo.png';
 import playstoreLogo from '@/assets/playstore-logo.webp';
@@ -59,6 +60,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
                 href="https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackDownloadClick('app_store')}
                 className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-xs hover:shadow-md"
               >
                 <div className="w-11 h-11 rounded-xl overflow-hidden">
@@ -71,7 +73,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
 
               {/* Android Button */}
               <button
-                onClick={handleAndroidClick}
+                onClick={() => { trackDownloadClick('google_play'); handleAndroidClick(); }}
                 className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-xs hover:shadow-md w-full text-left opacity-70"
               >
                 <div className="w-11 h-11 rounded-xl overflow-hidden flex items-center justify-center bg-white">
@@ -93,6 +95,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ open, onOpenChange
               href={webDownload.href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackDownloadClick('web_app')}
               className="flex items-center gap-4 px-5 py-4 bg-gradient-to-r from-gray-50 to-gray-100/50 hover:from-primary/5 hover:to-primary/10 border border-gray-100 hover:border-primary/20 rounded-2xl transition-all duration-300 group shadow-xs hover:shadow-md"
             >
               <div className="w-11 h-11 rounded-xl overflow-hidden">

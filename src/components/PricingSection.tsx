@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Check, X, Star, Shield, Lock, RefreshCw, Headphones, CreditCard, QrCode } from 'lucide-react';
 import { DownloadModal } from '@/components/DownloadModal';
+import { trackDownloadClick } from '@/lib/tracking';
 
 type BillingCycle = 'monthly' | 'yearly';
 type PaymentMethod = 'card' | 'pix';
@@ -225,7 +226,7 @@ export const PricingSection: React.FC = () => {
             <Button 
               className="w-full rounded-full shadow-purple hover:shadow-purple-lg"
               size="lg"
-              onClick={() => setIsDownloadModalOpen(true)}
+              onClick={() => { trackDownloadClick('cta_pricing'); setIsDownloadModalOpen(true); }}
             >
               {paymentMethod === 'card' ? 'Começar teste grátis' : 'Assinar agora'}
             </Button>
