@@ -5,6 +5,7 @@ import { LanguageSelector } from './LanguageSelector';
 import { DownloadModal } from './DownloadModal';
 import { Instagram, Youtube } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { trackDownloadClick } from '@/lib/tracking';
 import logo from '@/assets/logo.png';
 
 export const Footer: React.FC = () => {
