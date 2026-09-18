@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
     product: [
       { label: t.footer.features, path: '/funcionalidades' },
       { label: t.footer.pricing, path: '/precos' },
-      { label: t.footer.download, path: null, onClick: () => setIsDownloadModalOpen(true) },
+      { label: t.footer.download, path: null, onClick: () => { trackDownloadClick('cta_footer'); setIsDownloadModalOpen(true); } },
     ],
     company: [
       { label: t.footer.about, path: '/sobre' },

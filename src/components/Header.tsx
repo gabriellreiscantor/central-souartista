@@ -5,6 +5,7 @@ import { LanguageSelector } from './LanguageSelector';
 import { DownloadModal } from './DownloadModal';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { trackDownloadClick } from '@/lib/tracking';
 import logo from '@/assets/logo.png';
 
 interface HeaderProps {
