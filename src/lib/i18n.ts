@@ -12,7 +12,8 @@ export const translations = {
     hero: {
       badge: 'Experimente 7 dias grátis',
       title: 'A agenda de shows mais completa para quem vive de música',
-      subtitle: 'Agende seus shows e controle cachês, despesas e lucro líquido em um só lugar. A agenda que também cuida do seu bolso.',
+      subtitle: 'Agende seus shows e controle cachês, despesas e lucro líquido em um só lugar. Use no navegador, iPhone ou Android com tudo sincronizado.',
+      platforms: 'Disponível na Web, iPhone e Android',
       socialProof: 'Milhares de artistas já organizam sua carreira conosco',
       downloadApp: 'Baixar App',
     },
@@ -226,7 +227,8 @@ export const translations = {
     hero: {
       badge: 'Try 7 days free',
       title: 'The most complete gig schedule and finance app for musicians',
-      subtitle: 'Schedule your gigs and control fees, expenses and net profit in one place. The calendar that also watches your wallet.',
+      subtitle: 'Schedule gigs and control fees, expenses and net profit in one place. Use it on the web, iPhone or Android with everything synced.',
+      platforms: 'Available on Web, iPhone and Android',
       socialProof: 'Thousands of artists already manage their career with us',
       downloadApp: 'Download App',
     },
@@ -440,7 +442,8 @@ export const translations = {
     hero: {
       badge: 'Prueba 7 días gratis',
       title: 'La agenda de shows más completa para quien vive de la música',
-      subtitle: 'Agenda tus shows y controla cachés, gastos y ganancia neta en un solo lugar. La agenda que también cuida de tu bolsillo.',
+      subtitle: 'Agenda tus shows y controla cachés, gastos y ganancias en un solo lugar. Úsala en la web, iPhone o Android con todo sincronizado.',
+      platforms: 'Disponible en Web, iPhone y Android',
       socialProof: 'Miles de artistas ya gestionan su carrera con nosotros',
       downloadApp: 'Descargar App',
     },

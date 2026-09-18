@@ -22,9 +22,9 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'SouArtista — Agenda de shows + gestão financeira para músicos',
-  description = 'O app mais completo para músicos, cantores, DJs e bandas: agenda de shows, controle de cachês, despesas, equipe e lucro líquido em um só lugar.',
-  keywords = 'agenda de shows, app agenda de shows, agenda de show, melhor agenda de shows, app para músicos, gestão financeira artistas, controle de cachê, app para DJ, app para cantor, app banda, gerenciamento músicos, SouArtista, músicos brasileiros, app show, controle financeiro músico',
+  title = 'SouArtista — Agenda de shows para Web, iPhone e Android',
+  description = 'Agenda de shows e gestão financeira multiplataforma para músicos, cantores, DJs e bandas. Use na Web, iPhone e Android com tudo sincronizado.',
+  keywords = 'agenda de shows multiplataforma, agenda de shows web, agenda de shows iPhone, agenda de shows Android, app agenda de shows, melhor agenda de shows, app para músicos, gestão financeira artistas, controle de cachê, app para DJ, app para cantor, app banda, SouArtista',
   canonical,
   ogImage = 'https://storage.googleapis.com/gpt-engineer-file-uploads/mKx26voRlBSrfQgaD8ihFhaECGz1/social-images/social-1768421693138-ICONE FINAL.png',
   ogType = 'website',
@@ -93,7 +93,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     name: 'SouArtista',
     alternateName: ['SouArtista App', 'Sou Artista', 'SouArtista agenda de shows'],
     applicationCategory: ['FinanceApplication', 'BusinessApplication', 'ProductivityApplication'],
-    applicationSubCategory: 'Agenda de shows e gestão financeira para músicos',
+    applicationSubCategory: 'Agenda de shows e gestão financeira multiplataforma para músicos',
     operatingSystem: 'iOS, Android, Web',
     softwareVersion: '2.0',
     inLanguage: ['pt-BR', 'en', 'es'],
@@ -101,6 +101,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     downloadUrl: 'https://play.google.com/store/apps/details?id=app.souartista',
     installUrl: 'https://play.google.com/store/apps/details?id=app.souartista',
     availableOnDevice: 'iPhone, iPad, Android, Navegador Web',
+    device: ['iPhone', 'iPad', 'Android', 'Desktop', 'Navegador Web'],
     countriesSupported: 'BR',
     publisher: { '@type': 'Organization', name: 'SouArtista', url: siteUrl },
     audience: {

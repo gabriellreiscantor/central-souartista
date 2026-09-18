@@ -12,8 +12,8 @@ const Index: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="SouArtista — Agenda de shows + gestão financeira para músicos"
-        description="O app mais completo para músicos, cantores, DJs e bandas: agenda de shows, controle de cachês, despesas, equipe e lucro líquido em um só lugar."
+        title="SouArtista — Agenda de shows para Web, iPhone e Android"
+        description="Agenda de shows e gestão financeira multiplataforma para músicos, cantores, DJs e bandas. Use na Web, iPhone e Android com tudo sincronizado."
         canonical="https://souartista.com"
         includeAppSchemas
         breadcrumbs={[
