@@ -61,6 +61,7 @@ export const SmartAppBanner: React.FC<SmartAppBannerProps> = ({ onVisibilityChan
   };
 
   const handleOpen = () => {
+    trackDownloadClick(os === 'ios' ? 'app_store' : 'google_play', 'smart_banner');
     if (os === 'ios') {
       window.open('https://apps.apple.com/br/app/souartista-cach%C3%AAs-e-agenda/id6756150476', '_blank');
     } else if (os === 'android') {
