@@ -1,4 +1,4 @@
-# SouArtista — Agenda de shows + gestão financeira para quem vive de música
+# SouArtista — Agenda, repertório, palco e gestão financeira para quem vive de música
 
 > Aplicativo brasileiro completo de ponta a ponta para músicos, cantores, DJs, produtores e bandas. Reúne agenda de shows, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe, estrada e lucro líquido.
 
