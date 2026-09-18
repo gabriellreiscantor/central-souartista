@@ -327,11 +327,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
       </script>
-      {includeAppSchemas && (
-        <script type="application/ld+json">
-          {JSON.stringify(softwareSchema)}
-        </script>
-      )}
+      <script type="application/ld+json">
+        {JSON.stringify(softwareSchema)}
+      </script>
       {includeAppSchemas && (
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
