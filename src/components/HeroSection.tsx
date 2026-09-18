@@ -75,9 +75,6 @@ export const HeroSection: React.FC = () => {
             <div className="animate-fade-in-up stagger-3">
               <DownloadButtons size="lg" className="justify-center lg:justify-start" />
               <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm font-medium text-white/80 lg:justify-start" aria-label={t.hero.platforms}>
-                <span className="flex items-center gap-1.5"><Globe className="h-4 w-4 text-primary" aria-hidden="true" />Web</span>
-                <span className="flex items-center gap-1.5"><Apple className="h-4 w-4 text-primary" aria-hidden="true" />iPhone</span>
-                <span className="flex items-center gap-1.5"><Smartphone className="h-4 w-4 text-primary" aria-hidden="true" />Android</span>
                 <span className="basis-full text-center text-xs text-white/60 lg:text-left">{t.hero.platforms}</span>
               </div>
             </div>
