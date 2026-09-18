@@ -5,13 +5,13 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://souartista.com/</loc>
+    <loc>https://central-souartista.lovable.app/</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://souartista.com/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://central-souartista.lovable.app/"/>
     <image:image>
-      <image:loc>https://souartista.com/favicon.png</image:loc>
+      <image:loc>https://central-souartista.lovable.app/favicon.png</image:loc>
       <image:title>SouArtista - Gestão financeira para quem vive de música</image:title>
     </image:image>
   </url>

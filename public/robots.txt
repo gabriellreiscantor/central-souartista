@@ -54,7 +54,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap e LLMs
-Sitemap: https://souartista.com/sitemap.xml
+Sitemap: https://central-souartista.lovable.app/sitemap.xml
 
 # Disallow
 Disallow: /api/
