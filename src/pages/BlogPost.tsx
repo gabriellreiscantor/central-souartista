@@ -23,11 +23,12 @@ const BlogPost: React.FC = () => {
   }
 
   const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
+    const date = new Date(`${dateString}T12:00:00Z`);
     return date.toLocaleDateString('pt-BR', {
       day: '2-digit',
       month: 'long',
       year: 'numeric',
+      timeZone: 'UTC',
     });
   };
 
