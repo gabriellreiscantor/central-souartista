@@ -31,6 +31,7 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Baixar o SouArtista na App Store para iPhone e iPad"
+        onClick={() => trackDownloadClick('app_store')}
         className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
         <Apple className={iconSizes[size]} aria-hidden="true" />
@@ -46,6 +47,7 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Baixar o SouArtista na Google Play Store para Android"
+        onClick={() => trackDownloadClick('google_play')}
         className={`flex items-center gap-3 bg-white text-purple-dark rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
         <svg className={iconSizes[size]} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -63,6 +65,7 @@ export const DownloadButtons: React.FC<DownloadButtonsProps> = ({
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Acessar o SouArtista pela versão Web App no navegador"
+        onClick={() => trackDownloadClick('web_app')}
         className={`hidden md:flex items-center gap-3 bg-gradient-to-r from-primary to-purple-400 text-white rounded-xl font-medium shadow-purple hover:shadow-purple-lg hover-lift ${sizeClasses[size]}`}
       >
         <Globe className={iconSizes[size]} aria-hidden="true" />
