@@ -33,24 +33,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1642429076941218');
 fbq('track', 'PageView');`;
 
-const WEBSITE_JSON_LD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "SouArtista",
-  alternateName: "SouArtista App",
-  url: "https://souartista.com",
-  description: "Agenda, repertórios, Modo Palco, notificações push e gestão financeira para músicos",
-  inLanguage: ["pt-BR", "en", "es"],
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: "https://souartista.com/blog?q={search_term_string}",
-    },
-    "query-input": "required name=search_term_string",
-  },
-});
-
 const SITE_TITLE = "SouArtista — Agenda, repertório, palco e financeiro para músicos";
 const SITE_DESCRIPTION =
   "App completo para músicos: agenda, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe e estrada.";
@@ -118,7 +100,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     scripts: [
       { children: GTM_SCRIPT },
       { children: META_PIXEL_SCRIPT },
-      { type: "application/ld+json", children: WEBSITE_JSON_LD },
     ],
   }),
   shellComponent: RootDocument,
