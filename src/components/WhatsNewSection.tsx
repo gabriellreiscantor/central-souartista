@@ -11,6 +11,7 @@ import {
   LogIn,
   Star,
   Palette,
+  BellRing,
   ArrowRight,
   type LucideIcon,
 } from 'lucide-react';
@@ -47,6 +48,15 @@ const news: NewsItem[] = [
       'Monte e organize seus repertórios com blocos, tons e letras',
       'Vincule um setlist direto ao show',
       'Disponível offline dentro do Modo Palco',
+    ],
+  },
+  {
+    icon: BellRing,
+    title: 'Lembretes push de shows',
+    items: [
+      'Notificações automáticas 7 dias e 1 dia antes do show',
+      'Avisos no dia, 3 horas e 30 minutos antes de subir ao palco',
+      'Alertas de convites e cachês pendentes direto no celular',
     ],
   },
   {
@@ -107,7 +117,7 @@ export const WhatsNewSection: React.FC = () => {
             Novidades da versão 2.0
           </h2>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Uma atualização inteira pensada pra você tocar tranquilo, do camarim ao palco.
+            Agenda, repertórios com letras e tons, Modo Palco offline, notificações push, financeiro, contratos e estrada em uma única plataforma.
           </p>
         </div>
 

@@ -418,7 +418,8 @@ const notificacoesFeatures = [
       '7 dias antes',
       '1 dia antes',
       'No dia do show',
-      '3h e 30min antes',
+      '3 horas antes',
+      '30 minutos antes',
     ],
   },
   {
@@ -469,9 +470,9 @@ const Features: React.FC = () => {
   return (
     <Layout>
       <SEOHead 
-        title="Funcionalidades - SouArtista"
-        description="Descubra todas as funcionalidades do SouArtista: gestão de shows, controle de cachês, gestão de despesas, relatórios financeiros e muito mais para músicos, cantores e DJs."
-        keywords="funcionalidades souartista, recursos app músico, gestão shows, controle cachê, simulador nota fiscal, agenda músico, relatórios financeiros, app para DJ, gestão de cachê músico, controle de pagamento músico, cachê pendente app, gerenciar pagamentos shows, contrato para músico, rider técnico, mapa de palco"
+        title="Funcionalidades: agenda, repertórios e Modo Palco — SouArtista"
+        description="Conheça os recursos do SouArtista: agenda, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe e estrada."
+        keywords="funcionalidades souartista, repertório musical, setlist para banda, letras e tons, modo palco offline, teleprompter músico, notificações push de shows, agenda músico, gestão shows, controle cachê, simulador nota fiscal, rider técnico, mapa de palco"
         canonical="https://souartista.com/funcionalidades"
         breadcrumbs={[
           { name: 'Início', url: 'https://souartista.com' },

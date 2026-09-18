@@ -22,9 +22,9 @@ interface SEOHeadProps {
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
-  title = 'SouArtista — Agenda de shows para Web, iPhone e Android',
-  description = 'Agenda de shows e gestão financeira multiplataforma para músicos, cantores, DJs e bandas. Use na Web, iPhone e Android com tudo sincronizado.',
-  keywords = 'agenda de shows multiplataforma, agenda de shows web, agenda de shows iPhone, agenda de shows Android, app agenda de shows, melhor agenda de shows, app para músicos, gestão financeira artistas, controle de cachê, app para DJ, app para cantor, app banda, SouArtista',
+  title = 'SouArtista — Agenda, repertório, palco e financeiro para músicos',
+  description = 'App completo para músicos: agenda, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe e estrada.',
+  keywords = 'agenda de shows com repertório, app de repertório musical, setlist para banda, letras e tons, modo palco offline, notificações push de shows, agenda de shows multiplataforma, agenda de shows iPhone, agenda de shows Android, controle de cachê, gestão financeira para músicos, SouArtista',
   canonical,
   ogImage = 'https://storage.googleapis.com/gpt-engineer-file-uploads/mKx26voRlBSrfQgaD8ihFhaECGz1/social-images/social-1768421693138-ICONE FINAL.png',
   ogType = 'website',
@@ -93,7 +93,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     name: 'SouArtista',
     alternateName: ['SouArtista App', 'Sou Artista', 'SouArtista agenda de shows'],
     applicationCategory: ['FinanceApplication', 'BusinessApplication', 'ProductivityApplication'],
-    applicationSubCategory: 'Agenda de shows e gestão financeira multiplataforma para músicos',
+    applicationSubCategory: 'Agenda de shows, repertórios, setlists, Modo Palco e gestão financeira para músicos',
     operatingSystem: 'iOS, Android, Web',
     softwareVersion: '2.0',
     inLanguage: ['pt-BR', 'en', 'es'],
@@ -111,7 +111,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       geographicArea: { '@type': 'Country', name: 'Brazil' },
     },
     keywords:
-      'agenda de shows, app agenda de shows para banda, controle de cachê, repartir cachê de banda, nota fiscal para show de cantor, organizar equipe de apoio de músicos, gestão financeira para músicos, rider técnico, mapa de palco, contrato de show',
+      'agenda de shows com repertório, repertório musical, setlists, letras e tons, modo palco offline, teleprompter para músico, notificações push de shows, controle de cachê, nota fiscal para show de cantor, gestão financeira para músicos, rider técnico, mapa de palco, contrato de show',
     offers: [
       {
         '@type': 'Offer',
@@ -164,6 +164,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
     screenshot: ogImage,
     featureList: [
       'Agenda de shows e apresentações',
+      'Repertórios e setlists com blocos, letras e tons',
+      'Modo Palco offline com teleprompter e rolagem automática',
+      'Notificações push de shows: 7 dias, 1 dia, no dia, 3 horas e 30 minutos antes',
       'Controle de cachês e lucro líquido',
       'Gestão de despesas e custos',
       'Gestão de equipe com administração de cachês da banda',
@@ -211,6 +214,22 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Sim! O SouArtista está disponível na App Store (iOS), Google Play Store (Android) e também possui versão web integrada.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'O SouArtista possui repertórios, setlists e letras de música?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Sim. O SouArtista permite montar repertórios e setlists por blocos, organizar letras e tons, vincular o repertório ao show e usar tudo offline no Modo Palco, com teleprompter e rolagem automática.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'O SouArtista envia notificações push para lembrar dos shows?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Sim. O SouArtista envia lembretes push 7 dias antes, 1 dia antes, no dia do show, 3 horas antes e 30 minutos antes da apresentação.',
         },
       },
       {
