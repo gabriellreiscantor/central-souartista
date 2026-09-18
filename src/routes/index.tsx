@@ -5,15 +5,15 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "SouArtista — Agenda de shows para Web, iPhone e Android" },
+      { title: "SouArtista — Agenda, repertório, palco e financeiro para músicos" },
       {
         name: "description",
-        content: "Agenda de shows e gestão financeira multiplataforma para músicos. Use na Web, iPhone e Android com tudo sincronizado.",
+        content: "App completo para músicos: agenda, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe e estrada.",
       },
-      { property: "og:title", content: "SouArtista — Agenda de shows para Web, iPhone e Android" },
+      { property: "og:title", content: "SouArtista — Agenda, repertório, palco e financeiro para músicos" },
       {
         property: "og:description",
-        content: "Agenda de shows e gestão financeira multiplataforma para músicos. Use na Web, iPhone e Android com tudo sincronizado.",
+        content: "App completo para músicos: agenda, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe e estrada.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

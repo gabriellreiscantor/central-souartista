@@ -39,7 +39,7 @@ const WEBSITE_JSON_LD = JSON.stringify({
   name: "SouArtista",
   alternateName: "SouArtista App",
   url: "https://souartista.com",
-  description: "Agenda de shows e gestão financeira multiplataforma para Web, iPhone e Android",
+  description: "Agenda, repertórios, Modo Palco, notificações push e gestão financeira para músicos",
   inLanguage: ["pt-BR", "en", "es"],
   potentialAction: {
     "@type": "SearchAction",
@@ -51,9 +51,9 @@ const WEBSITE_JSON_LD = JSON.stringify({
   },
 });
 
-const SITE_TITLE = "SouArtista — Agenda de shows para Web, iPhone e Android";
+const SITE_TITLE = "SouArtista — Agenda, repertório, palco e financeiro para músicos";
 const SITE_DESCRIPTION =
-  "Agenda de shows e gestão financeira multiplataforma para músicos, cantores, DJs e bandas. Use na Web, iPhone e Android com tudo sincronizado.";
+  "App completo para músicos: agenda, repertórios e setlists com letras e tons, Modo Palco offline, notificações push, cachês, contratos, equipe e estrada.";
 const OG_IMAGE =
   "https://storage.googleapis.com/gpt-engineer-file-uploads/mKx26voRlBSrfQgaD8ihFhaECGz1/social-images/social-1768421693138-ICONE FINAL.png";
 
