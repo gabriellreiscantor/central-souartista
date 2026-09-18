@@ -1,3 +1,5 @@
+import { seoPosts } from './blogPostsSeo';
+
 export type BlogCategory = 'all' | 'gestao-financeira' | 'carreira' | 'dicas-praticas' | 'novidades';
 
 export interface BlogPost {
