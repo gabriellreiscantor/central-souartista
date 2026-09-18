@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { DownloadModal } from '@/components/DownloadModal';
+import { trackDownloadClick } from '@/lib/tracking';
 
 export const FeaturesCTA: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,7 +20,7 @@ export const FeaturesCTA: React.FC = () => {
             </p>
             <Button 
               size="lg"
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => { trackDownloadClick('cta_features'); setIsModalOpen(true); }}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               Começar
