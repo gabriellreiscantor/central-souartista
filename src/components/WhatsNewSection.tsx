@@ -83,7 +83,7 @@ const news: NewsItem[] = [
     icon: LogIn,
     title: 'Login mais esperto',
     items: [
-      'Usuários antigos com credenciais migradas recebem aviso claro do que fazer — ninguém fica preso no login sem entender',
+      'Usuários antigos com credenciais migradas recebem aviso claro do que fazer, ninguém fica preso no login sem entender',
     ],
   },
   {
