@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       badge: 'Experimente 7 dias grátis',
       title: 'A agenda de shows mais completa para quem vive de música',
-      subtitle: 'Agenda, repertórios com letras e tons, Modo Palco offline, cachês, contratos, despesas e lucro em um só lugar — com notificações push antes de cada show.',
+      subtitle: 'Agenda, repertórios com letras e tons, Modo Palco offline, cachês, contratos, despesas e lucro em um só lugar, com notificações push antes de cada show.',
       platforms: 'Disponível na Web, iPhone e Android',
       socialProof: 'Milhares de artistas já organizam sua carreira conosco',
       downloadApp: 'Baixar App',
